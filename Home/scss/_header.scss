@@ -1,0 +1,63 @@
+@use 'variables';
+
+.header {
+    background-color: variables.$verde-ric;
+    padding: 0 3rem;
+
+    .header__top {
+        display: flex;
+        justify-content: end;
+        padding: 2rem 0;
+        .top__language {
+            margin-right: 3rem;
+            display: flex;
+            align-items: center;
+    
+            .language__toggle {
+                color: #fff;
+                font-family: variables.$font-haskoy;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+    
+            .dropdown-menu {
+                width: auto;
+                background-color: variables.$verde-ric;
+    
+                .menu__item {
+                    width: auto;
+    
+                    .item__option {
+                        color: #fff;
+                        font-family: variables.$font-haskoy;
+                        text-decoration: none;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .top__contactar {
+            .contactar__link {
+                .link__button {
+                    padding: 0.25rem 1rem;
+                    font-size: 1rem;
+                    background-color: variables.$verde-lima;
+                    border: 1px solid variables.$verde-lima;
+                    color: variables.$azul-egeo;
+                    font-family: variables.$font-haskoy;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .header__nav {
+        background-color: variables.$verde-ric;
+        display: flex;
+        padding: 0 4rem;
+        .nav__logotipo {
+            /*fdf*/
+        }
+    }
+}
