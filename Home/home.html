@@ -22,7 +22,7 @@
                     aria-expanded="false">
                     ES
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownLanguage">
+                <ul class="toggle__menu dropdown-menu" aria-labelledby="dropdownLanguage">
                     <li class="menu__item">
                         <a class="item__option dropdown-item" href="#">US</a>
                     </li>
@@ -42,15 +42,80 @@
                 </a>
             </div>
         </section>
-        
+
         <section class="header__nav">
             <div class="nav__logotipo">
                 <a href="home.html">
                     <img src="images/header/logotipo.png" alt="logotipo_ricEnergy">
                 </a>
             </div>
+            <nav class="nav__navbar">
+                <ul class="navbar__ul">
+                    <li class="ul__list">
+                        <a class="list__link" href="#">
+                            ¿Quiénes somos?
+                        </a>
+                    </li>
+                    <li class="ul__list">
+                        <a class="list__link dropdown-toggle" id="dropdownLanguage" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ¿Qué hacemos?
+                        </a>
+                        <ul class="list__ulDropdown dropdown-menu" aria-labelledby="dropdownLanguage">
+                            <li class="ulDropdown__li">
+                                <a class="li__optionLink dropdown-item" href="#">Action</a>
+                            </li>
+                            <li class="ulDropdown__li">
+                                <a class="li__optionLink dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li class="ulDropdown__li">
+                                <a class="li__optionLink dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ul__list">
+                        <a class="list__link" href="#">
+                            Sostenibilidad
+                        </a>
+                    </li>
+                    <li class="ul__list">
+                        <a class="list__link" href="#">
+                            Sala de prensa
+                        </a>
+                    </li>
+                    <li class="ul__list">
+                        <a class="list__link" href="#">
+                            Talento
+                        </a>
+                    </li>
+                    <li class="ul__list">
+                        <a class="navbar__usa" href="#">
+                            <button class="usa__button">
+                                <img class="button__image" src="images/header/icon_globe.png" alt="icon_globe">
+                                USA
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </header>
+
+    <main class="main">
+        <section class="main__cabecera">
+            <div class="cabecera__background"></div>
+            <div class="cabecera__vector">
+                <h1 class="vector__title">
+                    Impulsamos el cambio
+                    <br>
+                    hacia la energía limpia
+                </h1>
+            </div>
+        </section>
+        <section class="main__somos">
+            
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

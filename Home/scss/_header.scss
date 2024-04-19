@@ -8,30 +8,37 @@
         display: flex;
         justify-content: end;
         padding: 2rem 0;
+
         .top__language {
             margin-right: 3rem;
             display: flex;
             align-items: center;
-    
+
             .language__toggle {
                 color: #fff;
                 font-family: variables.$font-haskoy;
                 text-decoration: none;
                 font-size: 1rem;
             }
-    
-            .dropdown-menu {
-                width: auto;
+
+            .toggle__menu {
                 background-color: variables.$verde-ric;
-    
+
                 .menu__item {
-                    width: auto;
-    
+                    //width: 50px;
+
                     .item__option {
                         color: #fff;
                         font-family: variables.$font-haskoy;
                         text-decoration: none;
                         font-size: 1rem;
+                    }
+
+                    .item__option:hover,
+                    .item__option.show,
+                    .item__option:focus {
+                        color: #fff;
+                        background-color: variables.$verde-bosque;
                     }
                 }
             }
@@ -55,9 +62,78 @@
     .header__nav {
         background-color: variables.$verde-ric;
         display: flex;
-        padding: 0 4rem;
+        justify-content: space-between;
+
         .nav__logotipo {
-            /*fdf*/
+            width: 30%;
+        }
+
+        .nav__navbar {
+            width: 65%;
+
+            .navbar__ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: end;
+
+
+                .ul__list {
+                    border-top: 1px solid #fff;
+                    padding-top: 1rem;
+                    display: flex;
+                    align-items: center;
+
+                    .list__link {
+                        color: #fff;
+                        font-family: variables.$font-haskoy;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        margin-right: 2rem;
+                    }
+
+                    .list__ulDropdown {
+                        background-color: variables.$verde-ric;
+
+                        .ulDropdown__li {
+                            .li__optionLink {
+                                color: #fff;
+                                font-family: variables.$font-haskoy;
+                                text-decoration: none;
+                                font-size: 1rem;
+                            }
+
+                            .li__optionLink:hover,
+                            .li__optionLink.show,
+                            .li__optionLink:focus {
+                                color: #fff;
+                                background-color: variables.$verde-bosque;
+                            }
+
+                        }
+                    }
+
+                    .navbar__usa {
+                        text-decoration: none;
+
+                        .usa__button {
+                            padding: 0.25rem 2rem;
+                            font-size: 1.25rem;
+                            background-color: variables.$verde-usa;
+                            border: 1px solid #fff;
+                            color: #fff;
+                            font-family: variables.$font-haskoy;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .button__image {
+                                margin: 0 0.5rem;
+                            }
+                        }
+
+                    }
+                }
+            }
         }
     }
 }

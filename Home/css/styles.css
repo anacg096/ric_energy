@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .header {
   background-color: #0F5E42;
   padding: 0 3rem;
@@ -24,18 +30,20 @@
   text-decoration: none;
   font-size: 1rem;
 }
-.header .header__top .top__language .dropdown-menu {
-  width: auto;
+.header .header__top .top__language .toggle__menu {
   background-color: #0F5E42;
 }
-.header .header__top .top__language .dropdown-menu .menu__item {
-  width: auto;
-}
-.header .header__top .top__language .dropdown-menu .menu__item .item__option {
+.header .header__top .top__language .toggle__menu .menu__item .item__option {
   color: #fff;
   font-family: "Haskoy-Medium";
   text-decoration: none;
   font-size: 1rem;
+}
+.header .header__top .top__language .toggle__menu .menu__item .item__option:hover,
+.header .header__top .top__language .toggle__menu .menu__item .item__option.show,
+.header .header__top .top__language .toggle__menu .menu__item .item__option:focus {
+  color: #fff;
+  background-color: #088745;
 }
 .header .header__top .top__contactar .contactar__link .link__button {
   padding: 0.25rem 1rem;
@@ -49,10 +57,101 @@
 .header .header__nav {
   background-color: #0F5E42;
   display: flex;
-  padding: 0 4rem;
+  justify-content: space-between;
 }
 .header .header__nav .nav__logotipo {
-  /*fdf*/
+  width: 30%;
+}
+.header .header__nav .nav__navbar {
+  width: 65%;
+}
+.header .header__nav .nav__navbar .navbar__ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list {
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .list__link {
+  color: #fff;
+  font-family: "Haskoy-Medium";
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: 2rem;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .list__ulDropdown {
+  background-color: #0F5E42;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink {
+  color: #fff;
+  font-family: "Haskoy-Medium";
+  text-decoration: none;
+  font-size: 1rem;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:hover,
+.header .header__nav .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink.show,
+.header .header__nav .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:focus {
+  color: #fff;
+  background-color: #088745;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .navbar__usa {
+  text-decoration: none;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button {
+  padding: 0.25rem 2rem;
+  font-size: 1.25rem;
+  background-color: #0d533a;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Haskoy-Medium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__nav .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button .button__image {
+  margin: 0 0.5rem;
+}
+
+.main__cabecera {
+  position: relative;
+  width: 100%;
+  /* Asegura que la cabecera ocupe todo el ancho del contenedor */
+  height: 750px;
+}
+.main__cabecera .cabecera__background {
+  background-image: url("../images/main/cabecera/mujer_bosque.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: 12%;
+  left: 0;
+  z-index: 1;
+}
+.main__cabecera .cabecera__vector {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  background-image: url("../images/main/cabecera/Vector_4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.main__cabecera .cabecera__vector .vector__title {
+  font-family: "Interstate-Condensed";
+  color: #fff;
+  font-size: 4.95rem;
+  padding-right: 7rem;
+  padding-bottom: 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
