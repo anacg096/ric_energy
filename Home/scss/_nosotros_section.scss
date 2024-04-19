@@ -1,0 +1,98 @@
+@use 'variables';
+
+.main__nosotros {
+    background-color: #fff;
+
+    .nosotros__cabecera {
+        padding-top: 10rem;
+        padding-left: 10rem;
+        padding-bottom: 3rem;
+
+        .cabecera__titulo {
+            font-family: variables.$font-interstate;
+            color: variables.$azul-egeo;
+            font-size: 3rem;
+        }
+    }
+
+    .nosotros__bloques {
+        display: flex;
+        margin: 2rem 10rem;
+
+        .bloques__resumen {
+            /* 
+            width: 500px;
+            height: 346px; 
+            */
+            width: 26vw;
+            height: 18vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            .resumen__title {
+                font-family: variables.$font-haskoy_medium;
+                color: variables.$azul-egeo;
+                font-size: 4rem;
+                padding-left: 2rem;
+                padding-top: 1rem;
+                
+                .unidades {
+                    font-family: variables.$font-haskoy_bold;
+                    font-size: 2rem;
+                }
+            }
+
+            .resumen__contenido {
+                color: #fff;
+                font-family: variables.$font-haskoy_bold;
+                font-size: 1.325rem;
+                line-height: 26px;
+                padding-left: 2rem;
+            }
+
+            .resumen_subtitle {
+                color: #fff;
+                font-family: variables.$font-haskoy_bold;
+                font-size: 1.75rem;
+                line-height: 22px;
+                padding-left: 2rem;
+            }
+        }
+
+        .pipeline {
+            background-image: url('../images/main/nosotros/pipeline.png');
+        }
+
+        .empleados {
+            background-image: url('../images/main/nosotros/empleado.png');
+        }
+
+        .continentes {
+            background-image: url('../images/main/nosotros/continentes.png');
+        }
+
+        .paises {
+            background-image: url('../images/main/nosotros/paises.png');
+        }
+
+        .proyectos {
+            background-image: url('../images/main/nosotros/proyectos.png');
+        }
+    }
+
+    .fila_uno {
+        justify-content: space-between;
+    }
+
+    .fila_dos {
+        justify-content: space-evenly;
+    }
+}
+
+/* 
+.cabecera__titulo {
+            font-family: variables.$font-haskoy;
+            color: variables.$azul-egeo;
+        }
+*/

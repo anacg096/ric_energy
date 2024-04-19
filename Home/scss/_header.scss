@@ -16,7 +16,7 @@
 
             .language__toggle {
                 color: #fff;
-                font-family: variables.$font-haskoy;
+                font-family: variables.$font-haskoy_medium;
                 text-decoration: none;
                 font-size: 1rem;
             }
@@ -29,7 +29,7 @@
 
                     .item__option {
                         color: #fff;
-                        font-family: variables.$font-haskoy;
+                        font-family: variables.$font-haskoy_medium;
                         text-decoration: none;
                         font-size: 1rem;
                     }
@@ -52,7 +52,7 @@
                     background-color: variables.$verde-lima;
                     border: 1px solid variables.$verde-lima;
                     color: variables.$azul-egeo;
-                    font-family: variables.$font-haskoy;
+                    font-family: variables.$font-haskoy_medium;
                     text-decoration: none;
                 }
             }
@@ -85,7 +85,7 @@
 
                     .list__link {
                         color: #fff;
-                        font-family: variables.$font-haskoy;
+                        font-family: variables.$font-haskoy_medium;
                         text-decoration: none;
                         font-size: 1rem;
                         margin-right: 2rem;
@@ -97,7 +97,7 @@
                         .ulDropdown__li {
                             .li__optionLink {
                                 color: #fff;
-                                font-family: variables.$font-haskoy;
+                                font-family: variables.$font-haskoy_medium;
                                 text-decoration: none;
                                 font-size: 1rem;
                             }
@@ -121,7 +121,7 @@
                             background-color: variables.$verde-usa;
                             border: 1px solid #fff;
                             color: #fff;
-                            font-family: variables.$font-haskoy;
+                            font-family: variables.$font-haskoy_medium;
                             display: flex;
                             justify-content: center;
                             align-items: center;

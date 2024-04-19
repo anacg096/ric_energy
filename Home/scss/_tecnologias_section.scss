@@ -1,0 +1,9 @@
+@use 'variables';
+
+.main__tecnologias {
+    background-color: variables.$azul-egeo;
+
+    .tecnologias__vector {
+        width: 100%;
+    }
+}

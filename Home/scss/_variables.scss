@@ -6,14 +6,23 @@
 }
 
 @font-face {
+    font-family: 'Haskoy-Bold';
+    src: url('../../fonts/Haskoy-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Interstate-Condensed';
     src: url('../../fonts/Interstate_Condensed_Bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-$font-haskoy: 'Haskoy-Medium';
+$font-haskoy_medium: 'Haskoy-Medium';
+$font-haskoy_bold: 'Haskoy-Bold';
 $font-interstate: 'Interstate-Condensed';
+
 
 $verde-ric: #0F5E42;
 $verde-usa: #0d533a;

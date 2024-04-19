@@ -5,6 +5,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Interstate-Condensed";
   src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
   font-weight: normal;
@@ -116,13 +122,12 @@
   margin: 0 0.5rem;
 }
 
-.main__cabecera {
+.section__cabecera {
   position: relative;
   width: 100%;
-  /* Asegura que la cabecera ocupe todo el ancho del contenedor */
-  height: 750px;
+  height: 905px;
 }
-.main__cabecera .cabecera__background {
+.section__cabecera .cabecera__background {
   background-image: url("../images/main/cabecera/mujer_bosque.png");
   background-size: cover;
   background-position: center;
@@ -133,25 +138,168 @@
   left: 0;
   z-index: 1;
 }
-.main__cabecera .cabecera__vector {
+.section__cabecera .cabecera__vector {
   position: absolute;
   text-align: center;
   z-index: 2;
-  background-image: url("../images/main/cabecera/Vector_4.png");
+  background-image: url("../images/main/cabecera/Vector_5.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 55%;
+  height: 440px;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.main__cabecera .cabecera__vector .vector__title {
+.section__cabecera .cabecera__vector .vector__title {
   font-family: "Interstate-Condensed";
   color: #fff;
-  font-size: 4.95rem;
+  font-size: 4.5rem;
   padding-right: 7rem;
   padding-bottom: 4rem;
+}
+
+.main__somos {
+  background-color: #072517;
+  position: relative;
+  z-index: 2;
+  height: 624px;
+}
+.main__somos .somos__informacion {
+  width: 23vw;
+  margin-left: 15vw;
+  padding-top: 10vw;
+}
+.main__somos .somos__informacion .informacion__titulo {
+  color: #fff;
+  font-family: "Interstate-Condensed";
+  font-size: 3rem;
+}
+.main__somos .somos__informacion .informacion__contenido {
+  color: #fff;
+  font-family: "Haskoy-Medium";
+}
+.main__somos .somos__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.main__somos .somos__bottom .bottom__enlace {
+  padding-top: 3rem;
+  margin-left: 15vw;
+}
+.main__somos .somos__bottom .bottom__enlace .enlace__link {
+  text-decoration: none;
+}
+.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  background-color: #98EF36;
+  border: 1px solid #98EF36;
+  color: #303030;
+  font-family: "Haskoy-Medium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas .verMas__row {
+  padding-left: 1rem;
+}
+.main__somos .somos__bottom .bottom__waves {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
+.main__somos .somos__bottom .bottom__waves .waves__image {
+  width: 520px;
+  height: 240px;
+}
+
+.main__nosotros {
+  background-color: #fff;
+}
+.main__nosotros .nosotros__cabecera {
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-bottom: 3rem;
+}
+.main__nosotros .nosotros__cabecera .cabecera__titulo {
+  font-family: "Interstate-Condensed";
+  color: #054349;
+  font-size: 3rem;
+}
+.main__nosotros .nosotros__bloques {
+  display: flex;
+  margin: 2rem 10rem;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen {
+  /* 
+  width: 500px;
+  height: 346px; 
+  */
+  width: 26vw;
+  height: 18vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen__title {
+  font-family: "Haskoy-Medium";
+  color: #054349;
+  font-size: 4rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen__title .unidades {
+  font-family: "Haskoy-Bold";
+  font-size: 2rem;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen__contenido {
+  color: #fff;
+  font-family: "Haskoy-Bold";
+  font-size: 1.325rem;
+  line-height: 26px;
+  padding-left: 2rem;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen_subtitle {
+  color: #fff;
+  font-family: "Haskoy-Bold";
+  font-size: 1.75rem;
+  line-height: 22px;
+  padding-left: 2rem;
+}
+.main__nosotros .nosotros__bloques .pipeline {
+  background-image: url("../images/main/nosotros/pipeline.png");
+}
+.main__nosotros .nosotros__bloques .empleados {
+  background-image: url("../images/main/nosotros/empleado.png");
+}
+.main__nosotros .nosotros__bloques .continentes {
+  background-image: url("../images/main/nosotros/continentes.png");
+}
+.main__nosotros .nosotros__bloques .paises {
+  background-image: url("../images/main/nosotros/paises.png");
+}
+.main__nosotros .nosotros__bloques .proyectos {
+  background-image: url("../images/main/nosotros/proyectos.png");
+}
+.main__nosotros .fila_uno {
+  justify-content: space-between;
+}
+.main__nosotros .fila_dos {
+  justify-content: space-evenly;
+}
+
+/* 
+.cabecera__titulo {
+            font-family: variables.$font-haskoy;
+            color: variables.$azul-egeo;
+        }
+*/
+.main__tecnologias {
+  background-color: #054349;
+}
+.main__tecnologias .tecnologias__vector {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
