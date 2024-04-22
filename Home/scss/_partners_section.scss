@@ -1,0 +1,86 @@
+@use 'variables';
+
+.main__partners {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/main/partners/fondo.png");
+
+    .partners__encabezado {
+        padding: 10rem 10rem 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .encabezado__title {
+            font-family: variables.$font-interstate;
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        .encabezado__parrafo {
+            font-family: variables.$font-haskoy_medium;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    }
+
+    .partners__slider {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 10rem;
+
+        .slider__object {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .controls__slider {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .slider__arrows {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrows__arrow {
+                .arrow__btn {
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 3rem;
+                }
+
+                .opacity_partners {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .slider__progressBar {
+            width: 50%;
+            margin: 2.5rem 10rem 10rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .progressbar__section {
+                border-bottom: 2px solid #fff;
+                width: 33%;
+                //height: 64px;
+            }
+
+            .active_partners {
+                border-bottom: 10px solid #fff;
+            }
+        }
+    }
+}

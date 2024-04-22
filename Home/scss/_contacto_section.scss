@@ -1,0 +1,68 @@
+@use 'variables';
+
+.main__contacto {
+    background-color: variables.$azul-claro;
+
+    .contacto__bloqueTitulos {
+        padding: 10rem 10rem 1rem 10rem;
+
+        .bloqueTitulos__contacto {
+            color: variables.$verde-manzana;
+            font-family: variables.$font-haskoy_bold;
+            font-size: 1.5rem;
+        }
+
+        .bloqueTitulos__pregunta {
+            color: variables.$verde-ric;
+            font-family: variables.$font-interstate;
+            font-size: 5rem;
+            line-height: 70px;
+        }
+    }
+
+    .contacto__texto {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        text-align: right;
+        padding: 0 10rem 2rem 10rem;
+
+        .texto__dudas {
+            color: variables.$verde-ric;
+            font-family: variables.$font-haskoy_medium;
+            font-size: 1.625rem;
+            line-height: 40px;
+        }
+    }
+
+    .contacto__enlaceContacto {
+        padding: 0 10rem;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        .enlaceContacto__link {
+            text-decoration: none;
+
+            .link__btnContacto {
+                padding: 1.5rem 1.5rem;
+                font-size: 1.125rem;
+                background-color: variables.$verde-lima;
+                border: 1px solid variables.$verde-lima;
+                color: variables.$gris-oscuro;
+                font-family: variables.$font-haskoy_medium;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .contacto__row {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .contacto__mountains {
+        width: 100%;
+    }
+}

@@ -1,9 +1,110 @@
 @use 'variables';
 
 .main__tecnologias {
-    background-color: variables.$azul-egeo;
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-image: url("../images/main/tecnologias/base_2.png");
 
     .tecnologias__vector {
         width: 100%;
+    }
+
+    .tecnologias__container {
+        width: 100%;
+
+        .container__title {
+            padding: 8rem 11rem 4rem;
+
+            .title {
+                font-family: variables.$font-interstate;
+                color: variables.$verde-lima;
+                font-size: 3rem;
+            }
+        }
+
+        .container__tabs {
+            padding: 1rem 5rem;
+            display: flex;
+            justify-content: space-evenly;
+
+
+            .tabs__tab {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 740px;
+                height: 555px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+
+            .tab__title {
+                display: flex;
+                align-items: end;
+                justify-content: flex-start;
+                padding: 0 2rem;
+
+                .title__tech {
+                    font-family: variables.$font-haskoy_bold;
+                    color: variables.$verde-lima;
+                    font-size: 2.4rem; /*1.875rem;*/
+                }
+            }
+
+            .tab__contenido {
+                font-family: variables.$font-haskoy_medium;
+                color: #fff;
+                font-size: 1.9rem; /* 1.5rem */
+                padding: 0 2rem;
+            }
+
+            .tab__button {
+                display: flex;
+                justify-content: right;
+                align-items: flex-end;
+
+                .button__enlace {
+                    text-decoration: none;
+
+                    .enlace__ampliar {
+                        padding: 1.5rem 1.5rem;
+                        font-size: 1.125rem;
+                        background-color: variables.$verde-lima;
+                        border: 1px solid variables.$verde-lima;
+                        color: variables.$gris-oscuro;
+                        font-family: variables.$font-haskoy_medium;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .ampliar__row {
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .margen_inferior {
+            padding-bottom: 17rem;
+        }
+
+        .solar {
+            background-image: url('../images/main/tecnologias/solar.png');
+        }
+
+        .hidrogeno {
+            background-image: url('../images/main/tecnologias/hidrogeno.png');
+        }
+
+        .biogas {
+            background-image: url('../images/main/tecnologias/biogas.png');
+        }
+
+        .almacenamiento {
+            background-image: url('../images/main/tecnologias/almacenamiento.png');
+        }
     }
 }

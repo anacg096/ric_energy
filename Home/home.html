@@ -11,7 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- slick slider de jquery -->
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
+    <script src="./jquery/jquery-3.7.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- javascript externo para el slider -->
+    <script src="./javascript/slider.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -119,7 +130,9 @@
                     ¿QUIÉNES SOMOS?
                 </h1>
                 <p class="informacion__contenido">
-                    Somos una empresa pionera en el desarrollo de energías fotovoltaicas con presencia en una docena de países, de cuatro continentes y con una apuesta firme por las nuevas tecnologías renovables, como el hidrógeno verde, el almacenamiento o el biogás.
+                    Somos una empresa pionera en el desarrollo de energías fotovoltaicas con presencia en una docena de
+                    países, de cuatro continentes y con una apuesta firme por las nuevas tecnologías renovables, como el
+                    hidrógeno verde, el almacenamiento o el biogás.
                 </p>
             </div>
             <div class="somos__bottom">
@@ -195,13 +208,326 @@
         </section>
 
         <section class="main__tecnologias">
-            <img class="tecnologias__vector" src="./images/main/nosotros/vector_blanco.png" alt="vector_blanco">
+            <img class="tecnologias__vector" src="./images/main/nosotros/vector_blanco.png" alt="vector_blanco" />
 
             <div class="tecnologias__container">
-                
-                <img src="./images/main/tecnologias/marcas.png" alt="marcas">
+                <div class="container__title">
+                    <h1 class="title">
+                        NUESTRAS TECNOLOGÍAS
+                    </h1>
+                </div>
+
+                <div class="container__tabs">
+                    <div class="tabs__tab solar">
+                        <div class="tab__title">
+                            <h1 class="title__tech">
+                                ENERGÍA SOLAR, <br />
+                                EL ORIGEN DE RIC
+                            </h1>
+                        </div>
+
+                        <p class="tab__contenido">
+                            Más de 4.000 MW ya realizados y <br />
+                            12.000 MW en proyectos globales.
+                        </p>
+                        <div class="tab__button">
+                            <a class="button__enlace" href="#">
+                                <button class="enlace__ampliar">
+                                    VER MÁS
+                                    <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha" />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tabs__tab hidrogeno">
+                        <div class="tab__title">
+                            <h1 class="title__tech">
+                                HIDRÓGENO VERDE <br />
+                                Y DERIVADOS, LA RUTA DE <br />
+                                LA DESCARBONIZACIÓN.
+                            </h1>
+                        </div>
+                        <p class="tab__contenido">
+                            Más de 2.500 MW en 10 proyectos en <br />
+                            desarrollo en España y Estados Unidos.
+                        </p>
+                        <div class="tab__button">
+                            <a class="button__enlace" href="#">
+                                <button class="enlace__ampliar">
+                                    VER MÁS
+                                    <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha" />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__tabs margen_inferior">
+                    <div class="tabs__tab biogas">
+                        <div class="tab__title">
+                            <h1 class="title__tech">
+                                BIOGÁS Y BIOMETANO, LA POTENCIA <br />
+                                DE LA ECONOMÍA CIRCULAR
+                            </h1>
+                        </div>
+                        <p class="tab__contenido">
+                            12 proyectos en desarrollo con una producción <br />
+                            anual estimada en 850 GW y un millón de <br />
+                            toneladas de residuos procesados al año.
+                        </p>
+                        <div class="tab__button">
+                            <a class="button__enlace" href="#">
+                                <button class="enlace__ampliar">
+                                    VER MÁS
+                                    <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha" />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tabs__tab almacenamiento">
+                        <div class="tab__title">
+                            <h1 class="title__tech">
+                                ALMACENAMIENTO, <br />
+                                UNA GARANTÍA DE ÉXITO <br />
+                                PARA LAS RENOVABLES
+                            </h1>
+                        </div>
+                        <p class="tab__contenido">
+                            Más de 250 MW con acceso y conexión <br />
+                            y más de 1.500 MW en proceso de solicitud <br />
+                            de permisos.
+                        </p>
+                        <div class="tab__button">
+                            <a class="button__enlace" href="#">
+                                <button class="enlace__ampliar">
+                                    VER MÁS
+                                    <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha" />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__presencia">
+            <div class="presencia__title">
+                <h1 class="title__global">
+                    NUESTRA <br />
+                    PRESENCIA GLOBAL
+                </h1>
+            </div>
+            <img class="presencia__img" src="./images/main/presencia/mapa.png" alt="mapa" />
+        </section>
+
+        <section class="main__partners">
+            <div class="partners__encabezado">
+                <h1 class="encabezado__title">
+                    CLIENTES QUE NOS LLENAN DE ENERGÍA
+                </h1>
+                <p class="encabezado__parrafo">
+                    Lorem ipsum dolor sit amet consectetur. Id nullam purus nec <br />
+                    habitasse sit proin vel vel hendrerit.
+                </p>
+            </div>
+            <div class="partners__slider slider">
+                <div class="slider__object">
+                    <img src="./images/main/partners/qenergy.png" alt="Qenergy">
+                </div>
+                <div class="slider__object">
+                    <img src="./images/main/partners/Macquarie.png" alt="Macquarie">
+                </div>
+                <div class="slider__object">
+                    <img src="./images/main/partners/lightsource_bp.png" alt="Lightsource bp">
+                </div>
+                <!-- Partners que no puedo descargar del figma, pero los pongo para tenerlos en cuenta -->
+                <div class="slider__object">
+                    <img src="" alt="Golman Sachs">
+                </div>
+                <div class="slider__object">
+                    <img src="" alt="PGE">
+                </div>
+                <div class="slider__object">
+                    <img src="" alt="Trinasolar">
+                </div>
+                <div class="slider__object">
+                    <img src="" alt="Panasonic">
+                </div>
+                <div class="slider__object">
+                    <img src="" alt="Everwood">
+                </div>
+                <div class="slider__object">
+                    <img src="" alt="Sonnedix">
+                </div>
             </div>
 
+            <div class="controls__slider">
+                <div class="slider__progressBar">
+                    <div id="progress_one" class="progressbar__section active_partners"></div>
+                    <div id="progress_two" class="progressbar__section"></div>
+                    <div id="progress_three" class="progressbar__section"></div>
+                </div>
+                <div class="slider__arrows">
+                    <div class="arrows__arrow">
+                        <button id="prev_partners" class="arrow__btn opacity_partners">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="arrows__arrow">
+                        <button id="next_partners" class="arrow__btn">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__noticias">
+            <div class="noticias__encabezado">
+                <div class="encabezado__bloqueTitle">
+                    <h1 class="bloqueTitle">
+                        ÚLTIMAS NOTICIAS
+                    </h1>
+                </div>
+                <div class="encabezado__bloqueLink">
+                    <a class="bloqueLink__enlace" href="#">
+                        <button class="enlace__noticias">
+                            VER MÁS NOTICIAS
+                            <img class="noticias__row" src="./images/main/somos/row.png" alt="flecha" />
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="noticias__slider slider">
+                <div class="slider__container">
+                    <div class="container__newsInformation">
+                        <div class="newsInformation__encabezado">
+                            <p class="encabezado__comunicados">
+                                COMUNICADOS
+                            </p>
+                        </div>
+                        <div class="newsInformation__line"></div>
+                        <div class="newsInformation__date">
+                            <p class="date">
+                                    13/09/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container__newsContent">
+                        <div class="newsContent__bloque">
+                            <p class="bloque__newsParrafo">
+                                RIC Energy y FADEMUR <br />
+                                firman un convenio para <br />
+                                promover el progreso <br />
+                                de las mujeres rurales
+                            </p>
+                        </div>
+                        <img class="newsContent__img" src="./images/main/noticias/image_news2.png" alt="news 1" />
+                    </div>
+                </div>
+                <div class="slider__container">
+                    <div class="container__newsInformation">
+                        <div class="newsInformation__encabezado">
+                            <p class="encabezado__comunicados">
+                                COMUNICADOS
+                            </p>
+                        </div>
+                        <div class="newsInformation__line"></div>
+                        <div class="newsInformation__date">
+                            <p class="date">
+                                    13/09/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container__newsContent">
+                        <div class="newsContent__bloque">
+                            <p class="bloque__newsParrafo">
+                                RIC Energy y FADEMUR <br />
+                                firman un convenio para <br />
+                                promover el progreso <br />
+                                de las mujeres rurales
+                            </p>
+                        </div>
+                        <img class="newsContent__img" src="./images/main/noticias/image_news2.png" alt="news 2" />
+                    </div>
+                </div>
+                <div class="slider__container">
+                    <div class="container__newsInformation">
+                        <div class="newsInformation__encabezado">
+                            <p class="encabezado__comunicados">
+                                COMUNICADOS
+                            </p>
+                        </div>
+                        <div class="newsInformation__line"></div>
+                        <div class="newsInformation__date">
+                            <p class="date">
+                                    13/09/2023
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container__newsContent">
+                        <div class="newsContent__bloque">
+                            <p class="bloque__newsParrafo">
+                                RIC Energy y FADEMUR <br />
+                                firman un convenio para <br />
+                                promover el progreso <br />
+                                de las mujeres rurales
+                            </p>
+                        </div>
+                        <img class="newsContent__img" src="./images/main/noticias/image_news2.png" alt="news 2" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="noticias__controller">
+                <div class="controller__progressBar">
+                    <div id="news_one" class="progressbar__bloque active_news"></div>
+                    <div id="news_two" class="progressbar__bloque"></div>
+                    <div id="news_three" class="progressbar__bloque"></div>
+                </div>
+                <div class="controller__panel">
+                    <div class="arrows__btn">
+                        <button id="prev_news" class="btn__flecha opacity_news">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                    </div>
+                    <div class="arrows__btn">
+                        <button id="next_news" class="btn__flecha">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__contacto">
+            <div class="contacto__bloqueTitulos">
+                <h3 class="bloqueTitulos__contacto">
+                    CONTACTO
+                </h3>
+                <h1 class="bloqueTitulos__pregunta">
+                    ¿TIENES DUDAS?
+                </h1>
+            </div>
+            <div class="contacto__texto">
+                <p class="texto__dudas">
+                    Lorem ipsum dolor sit amet consectetur <br />
+                    sagittis felis sed ut odio. Dictumst suspendisse <br />
+                    pretium tincidunt tellus senectus congue. 
+                </p>
+            </div>
+            <div class="contacto__enlaceContacto">
+                <a class="enlaceContacto__link" href="#">
+                    <button class="link__btnContacto">
+                        CONTÁCTANOS
+                        <img class="contacto__row" src="./images/main/somos/row.png" alt="flecha" />
+                    </button>
+                </a>
+            </div>
+            <img class="contacto__mountains" src="./images/main/contacto/mountains.png" alt="mountains">
         </section>
     </main>
 

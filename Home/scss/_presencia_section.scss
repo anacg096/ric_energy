@@ -1,0 +1,18 @@
+@use 'variables';
+
+.main__presencia {
+    .presencia__title {
+        padding: 10rem 10rem;
+        position: absolute;
+
+        .title__global {
+            font-family: variables.$font-interstate;
+            color: variables.$verde-oscuro;
+            font-size: 3rem;
+        }
+    }
+
+    .presencia__img {
+        width: 100%;
+    }
+}

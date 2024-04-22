@@ -1,0 +1,143 @@
+@use 'variables';
+
+.main__noticias {
+    background-color: #fff;
+
+    .noticias__encabezado {
+        padding: 10rem 10rem 5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .encabezado__bloqueTitle {
+            .bloqueTitle {
+                font-family: variables.$font-interstate;
+                color: variables.$verde-ric;
+                font-size: 3rem;
+            }
+        }
+
+        .encabezado__bloqueLink {
+            .bloqueLink__enlace {
+                text-decoration: none;
+
+                .enlace__noticias {
+                    padding: 1.5rem 1.5rem;
+                    font-size: 1.125rem;
+                    background-color: variables.$verde-lima;
+                    border: 1px solid variables.$verde-lima;
+                    color: variables.$gris-oscuro;
+                    font-family: variables.$font-haskoy_medium;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .noticias__row {
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .noticias__slider {
+        .slider__container {
+            background-color: variables.$verde-manzana;
+            margin: 3rem 12rem;
+
+            .container__newsInformation {
+                padding: 2rem 2rem 0 2rem;
+                display: flex;
+                justify-content: flex-start;
+
+                .newsInformation__encabezado {
+                    font-family: variables.$font-haskoy_medium;
+                    color: variables.$verde-lima;
+                    font-size: 1.5rem;
+                    padding: 0.25rem 1rem;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .newsInformation__line {
+                    border-right: 1px solid #fff;
+                    height: 45px;
+                }
+
+                .newsInformation__date {
+                    font-family: variables.$font-haskoy_medium;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    padding: 0.25rem 1rem;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .container__newsContent {
+                padding: 0 2rem 2rem 2rem;
+                display: flex;
+                justify-content: space-between;
+
+                .newsContent__bloque {
+                    display: flex;
+                    justify-content: baseline;
+                    align-items: end;
+
+                    .bloque__newsParrafo {
+                        font-family: variables.$font-interstate;
+                        color: #fff;
+                        font-size: 3.5rem;
+                        line-height: 60px;
+                    }
+                }
+
+                .newsContent__img {
+                    width: 700px;
+                }
+            }
+        }
+    }
+
+    .noticias__controller {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        .controller__progressBar {
+            width: 56%;
+            margin: 2.5rem 10rem 5rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .progressbar__bloque {
+                border-bottom: 2px solid variables.$gris-oscuro;
+                width: 33%;
+            }
+
+            .active_news {
+                border-bottom: 10px solid variables.$gris-oscuro;
+            }
+        }
+
+        .controller__panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrows__btn {
+                .btn__flecha {
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    color: variables.$gris-oscuro;
+                    cursor: pointer;
+                    font-size: 3rem;
+                }
+
+                .opacity_news {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
