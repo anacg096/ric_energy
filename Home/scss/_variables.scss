@@ -13,6 +13,20 @@
 }
 
 @font-face {
+    font-family: 'Haskoy-SemiBold';
+    src: url('../../fonts/Haskoy-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haskoy-Regular';
+    src: url('../../fonts/Haskoy-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Interstate-Condensed';
     src: url('../../fonts/Interstate_Condensed_Bold.otf') format('opentype');
     font-weight: normal;
@@ -21,6 +35,8 @@
 
 $font-haskoy_medium: 'Haskoy-Medium';
 $font-haskoy_bold: 'Haskoy-Bold';
+$font-haskoy_semibold: 'Haskoy-SemiBold';
+$font-haskoy_regular: 'Haskoy-Regular';
 $font-interstate: 'Interstate-Condensed';
 
 

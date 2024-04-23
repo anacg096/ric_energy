@@ -1,0 +1,114 @@
+@use 'variables';
+
+
+.footer {
+    padding: 2rem;
+
+    .footer__sectionppal {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid variables.$gris-oscuro;
+        padding-bottom: 1rem;
+
+        .sectionppal__logotipo {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            padding-bottom: 1rem;
+
+            .logotipo__ric {
+                width: 100px;
+            }
+        }
+
+        .sectionppal__enlaces {
+            display: flex;
+            justify-content: space-between;
+            width: 35%;
+
+            .enlaces__columna {
+                width: 33.33%;
+
+                .columna__linkTitle {
+                    text-decoration: none;
+                }
+
+                .columna__title {
+                    font-family: variables.$font-haskoy_semibold;
+                    color: variables.$verde-ric;
+                    font-size: 1.25rem;
+                    padding-bottom: 1rem;
+                }
+
+                .columna__link {
+                    text-decoration: none;
+                    font-family: variables.$font-haskoy_regular;
+                    color: variables.$gris-oscuro;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .footer__sectionFinal {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        .sectionFinal__politicas {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .politicas__bloque {
+                width: 33.33%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .bloque__enlacePoliticas {
+                    text-decoration: none;
+                    font-family: variables.$font-haskoy_regular;
+                    color: variables.$gris-oscuro;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .sectionFinal__redesSociales {
+            width: 50%;
+            display: flex;
+            justify-content: right;
+            align-items: end;
+
+            .redesSociales__bloque {
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .bloque__enlaceRedesSociales {
+                    text-decoration: none;
+                    width: 20px;
+
+                    .enlaceRedesSociales__logo {
+                        //padding: 1.5rem;
+                    }
+                }
+            }
+
+            .instagram {
+                background-color: variables.$verde-manzana;
+            }
+
+            .facebook {
+                background-color: variables.$verde-bosque;
+            }
+
+            .twitter {
+                background-color: variables.$verde-ric;
+            }
+        }
+    }
+}

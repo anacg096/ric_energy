@@ -11,6 +11,18 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Interstate-Condensed";
   src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
   font-weight: normal;
@@ -211,7 +223,7 @@
 }
 .main__somos .somos__bottom .bottom__waves .waves__image {
   width: 520px;
-  height: 240px;
+  height: 230px;
 }
 
 .main__nosotros {
@@ -636,6 +648,97 @@
 }
 .main__contacto .contacto__mountains {
   width: 100%;
+}
+
+.footer {
+  padding: 2rem;
+}
+.footer .footer__sectionppal {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #303030;
+  padding-bottom: 1rem;
+}
+.footer .footer__sectionppal .sectionppal__logotipo {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 1rem;
+}
+.footer .footer__sectionppal .sectionppal__logotipo .logotipo__ric {
+  width: 100px;
+}
+.footer .footer__sectionppal .sectionppal__enlaces {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna {
+  width: 33.33%;
+}
+.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__linkTitle {
+  text-decoration: none;
+}
+.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__title {
+  font-family: "Haskoy-SemiBold";
+  color: #0F5E42;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+}
+.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__link {
+  text-decoration: none;
+  font-family: "Haskoy-Regular";
+  color: #303030;
+  font-size: 1rem;
+}
+.footer .footer__sectionFinal {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__sectionFinal .sectionFinal__politicas {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__sectionFinal .sectionFinal__politicas .politicas__bloque {
+  width: 33.33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__sectionFinal .sectionFinal__politicas .politicas__bloque .bloque__enlacePoliticas {
+  text-decoration: none;
+  font-family: "Haskoy-Regular";
+  color: #303030;
+  font-size: 0.9rem;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales .redesSociales__bloque {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales .redesSociales__bloque .bloque__enlaceRedesSociales {
+  text-decoration: none;
+  width: 20px;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales .instagram {
+  background-color: #14AD53;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales .facebook {
+  background-color: #088745;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales .twitter {
+  background-color: #0F5E42;
 }
 
 /*# sourceMappingURL=styles.css.map */
