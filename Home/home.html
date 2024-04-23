@@ -27,6 +27,91 @@
 
 <body>
     <header class="header">
+        <!-- Navbar hecho con bootstrap para que cuando se haga pequeña la pantalla se contraiga el navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="nav__logotipo mobile_logo">
+                <a href="home.html">
+                    <img class="nav_logoImg" src="images/header/logotipo.png" alt="logotipo_ricEnergy" />
+                </a>
+            </div>
+            <div class="nav__menu">
+                <div class="mobile_logo">
+                    <a href="home.html">
+                        <img class="nav_logoImg" src="images/header/logotipo.png" alt="logotipo_ricEnergy" />
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ric_navbar"
+                    aria-controls="ric_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="menu__top">
+                    <div class="top__language dropdown-center">
+                        <a class="language__toggle dropdown-toggle" id="dropdownLanguage" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ES
+                        </a>
+                        <ul class="toggle__menu dropdown-menu" aria-labelledby="dropdownLanguage">
+                            <li class="menu__item">
+                                <a class="item__option dropdown-item seleccionado" href="#">ES</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="item__option dropdown-item" href="#">EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top__contactar">
+                        <a class="contactar__link" href="#">
+                            <button class="link__button">
+                                CONTACTAR
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse nav__navbar" id="ric_navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__ul">
+                        <li class="nav-item ul__list">
+                            <a class="nav-link list__link" href="#">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item dropdown ul__list">
+                            <a class="list__link dropdown-toggle" id="dropdownLanguage" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ¿Qué hacemos?
+                            </a>
+                            <ul class="list__ulDropdown dropdown-menu" aria-labelledby="dropdownLanguage">
+                                <li class="ulDropdown__li">
+                                    <a class="li__optionLink dropdown-item" href="#">NUESTRA ACTIVIDAD</a>
+                                </li>
+                                <li class="ulDropdown__li">
+                                    <a class="li__optionLink dropdown-item" href="#">PROYECTOS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ul__list">
+                            <a class="nav-link list__link" href="#">Sostenibilidad</a>
+                        </li>
+                        <li class="nav-item ul__list">
+                            <a class="nav-link list__link" href="#">Sala de prensa</a>
+                        </li>
+                        <li class="nav-item ul__list">
+                            <a class="nav-link list__link" href="#">Talento</a>
+                        </li>
+                        <li class="ul__list mobile__list">
+                            <div class="list__navbar">
+                                <a class="navbar__usa" href="#">
+                                    <button class="usa__button">
+                                        <img class="button__image" src="images/header/icon_globe.png" alt="icon_globe" />
+                                        USA
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!-- 
         <section class="header__top">
             <div class="top__language dropdown-center">
                 <a class="language__toggle dropdown-toggle" id="dropdownLanguage" data-bs-toggle="dropdown"
@@ -52,11 +137,7 @@
         </section>
 
         <section class="header__nav">
-            <div class="nav__logotipo">
-                <a href="home.html">
-                    <img src="images/header/logotipo.png" alt="logotipo_ricEnergy" />
-                </a>
-            </div>
+
             <nav class="nav__navbar">
                 <ul class="navbar__ul">
                     <li class="ul__list">
@@ -103,7 +184,7 @@
                     </li>
                 </ul>
             </nav>
-        </section>
+        </section> -->
     </header>
 
     <section class="section__cabecera">
@@ -352,7 +433,7 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </section>
         </section>
 
@@ -445,7 +526,7 @@
                         <div class="newsInformation__line"></div>
                         <div class="newsInformation__date">
                             <p class="date">
-                                    21/03/2024
+                                21/03/2024
                             </p>
                         </div>
                     </div>
@@ -472,7 +553,7 @@
                         <div class="newsInformation__line"></div>
                         <div class="newsInformation__date">
                             <p class="date">
-                                    04/03/2024
+                                04/03/2024
                             </p>
                         </div>
                     </div>
@@ -639,7 +720,7 @@
             <div class="contacto__texto">
                 <p class="texto__dudas">
                     Envíanos tu consulta o proyecto y nos <br />
-                    pondremos en contacto contigo. 
+                    pondremos en contacto contigo.
                 </p>
             </div>
             <div class="contacto__enlaceContacto">
@@ -733,17 +814,20 @@
             <div class="sectionFinal__redesSociales">
                 <div class="redesSociales__bloque instagram">
                     <a class="bloque__enlaceRedesSociales" href="#">
-                        <img class="enlaceRedesSociales__logo" src="./images/footer/icono_instagram.png" alt="logo_instagram" />
+                        <img class="enlaceRedesSociales__logo" src="./images/footer/icono_instagram.png"
+                            alt="logo_instagram" />
                     </a>
                 </div>
                 <div class="redesSociales__bloque facebook">
                     <a class="bloque__enlaceRedesSociales" href="#">
-                        <img class="enlaceRedesSociales__logo" src="./images/footer/icono_facebook.png" alt="logo_facebook" />
+                        <img class="enlaceRedesSociales__logo" src="./images/footer/icono_facebook.png"
+                            alt="logo_facebook" />
                     </a>
                 </div>
                 <div class="redesSociales__bloque twitter">
                     <a class="bloque__enlaceRedesSociales" href="#">
-                        <img class="enlaceRedesSociales__logo" src="./images/footer/icono_twitter.png" alt="logo_twitter" />
+                        <img class="enlaceRedesSociales__logo" src="./images/footer/icono_twitter.png"
+                            alt="logo_twitter" />
                     </a>
                 </div>
             </div>
