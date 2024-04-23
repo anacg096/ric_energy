@@ -1,9 +1,10 @@
 @use 'variables';
 
 .main__presencia {
+    background-color: variables.$azul-marClaro;
+
     .presencia__title {
-        padding: 10rem 10rem;
-        position: absolute;
+        padding: 10rem 22rem 3rem;
 
         .title__global {
             font-family: variables.$font-interstate;
@@ -12,7 +13,75 @@
         }
     }
 
-    .presencia__img {
-        width: 100%;
+    .presencia__sectionMapa {
+        margin: 0 22rem;
+        padding-bottom: 3rem;
+
+        .sectionMapa__containerMapa {
+            background-image: url("../images/main/presencia/map_countries.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 770px;
+
+            .containerMapa__informacion {
+                display: flex;
+
+                .informacion__datos {
+                    cursor: pointer;
+                    background-color: variables.$verde-ric;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0.625rem 0.938rem;
+                    border-radius: 5px;
+                    min-width: 130px;
+
+                    .datos__country {
+                        font-size: 1.125rem;
+                        color: #fff;
+                        font-family: variables.$font-haskoy_bold;
+                    }
+
+                    .datos__valor {
+                        padding: 0.625rem 1rem;
+                        margin-top: 0.938rem;
+                        background-color: variables.$verde-lima;
+                        color: variables.$verde-ric;
+                        font-size: 1.125rem;
+                        font-family: variables.$font-haskoy_semibold;
+                    }
+                }
+
+                .espania {
+                    margin-right: 10rem;
+                }
+
+                .italia {
+                    margin-right: 25rem;
+                }
+
+                .africa {
+                    margin-right: 20rem;
+                    margin-top: 3rem;
+                }
+            }
+
+            .fila_1 {
+                padding-top: 17rem;
+                justify-content: end;
+                align-items: end;
+            }
+
+            .fila_2 {
+                justify-content: start;
+                align-items: start;
+            }
+
+            .fila_3 {
+                justify-content: end;
+                align-items: end;
+            }
+        }
     }
 }

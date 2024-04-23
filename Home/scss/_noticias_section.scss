@@ -4,7 +4,7 @@
     background-color: #fff;
 
     .noticias__encabezado {
-        padding: 10rem 10rem 5rem;
+        padding: 10rem 22rem 3rem;
         display: flex;
         justify-content: space-between;
 
@@ -21,7 +21,7 @@
                 text-decoration: none;
 
                 .enlace__noticias {
-                    padding: 1.5rem 1.5rem;
+                    padding: 1.75rem 1.625rem;
                     font-size: 1.125rem;
                     background-color: variables.$verde-lima;
                     border: 1px solid variables.$verde-lima;
@@ -40,6 +40,7 @@
     }
 
     .noticias__slider {
+        padding: 0 7rem;
         .slider__container {
             background-color: variables.$verde-manzana;
             margin: 3rem 12rem;
@@ -52,7 +53,8 @@
                 .newsInformation__encabezado {
                     font-family: variables.$font-haskoy_medium;
                     color: variables.$verde-lima;
-                    font-size: 1.5rem;
+                    font-size: 1.125rem;
+                    line-height: 1.44;
                     padding: 0.25rem 1rem;
                     display: flex;
                     align-items: center;
@@ -60,13 +62,13 @@
 
                 .newsInformation__line {
                     border-right: 1px solid #fff;
-                    height: 45px;
+                    height: 35px;
                 }
 
                 .newsInformation__date {
                     font-family: variables.$font-haskoy_medium;
                     color: #fff;
-                    font-size: 1.5rem;
+                    font-size: 1.125rem;
                     padding: 0.25rem 1rem;
                     display: flex;
                     align-items: center;
@@ -86,13 +88,15 @@
                     .bloque__newsParrafo {
                         font-family: variables.$font-interstate;
                         color: #fff;
-                        font-size: 3.5rem;
+                        font-size: 3rem;
+                        line-height: 1.15;
                         line-height: 60px;
                     }
                 }
 
                 .newsContent__img {
-                    width: 700px;
+                    width: 524px;
+                    height: 420px;
                 }
             }
         }
@@ -104,7 +108,7 @@
         align-items: flex-start;
 
         .controller__progressBar {
-            width: 56%;
+            width: 38%;
             margin: 2.5rem 10rem 5rem 0;
             display: flex;
             justify-content: center;

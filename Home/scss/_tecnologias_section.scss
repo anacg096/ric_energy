@@ -14,7 +14,7 @@
         width: 100%;
 
         .container__title {
-            padding: 8rem 11rem 4rem;
+            padding: 8rem 22rem 4rem;
 
             .title {
                 font-family: variables.$font-interstate;
@@ -24,17 +24,17 @@
         }
 
         .container__tabs {
-            padding: 1rem 5rem;
+            padding: 1rem 22rem;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
 
             .tabs__tab {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                width: 740px;
-                height: 555px;
+                width: 582px;
+                height: 448.6px;
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
@@ -49,14 +49,16 @@
                 .title__tech {
                     font-family: variables.$font-haskoy_bold;
                     color: variables.$verde-lima;
-                    font-size: 2.4rem; /*1.875rem;*/
+                    font-size: 1.875rem;
+                    /*1.875rem;*/
                 }
             }
 
             .tab__contenido {
                 font-family: variables.$font-haskoy_medium;
                 color: #fff;
-                font-size: 1.9rem; /* 1.5rem */
+                font-size: 1.5rem;
+                /* 1.5rem */
                 padding: 0 2rem;
             }
 
@@ -69,7 +71,7 @@
                     text-decoration: none;
 
                     .enlace__ampliar {
-                        padding: 1.5rem 1.5rem;
+                        padding: 1.75rem 1.625rem;
                         font-size: 1.125rem;
                         background-color: variables.$verde-lima;
                         border: 1px solid variables.$verde-lima;

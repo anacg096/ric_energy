@@ -2,19 +2,16 @@
 
 .main__somos {
     background-color: variables.$verde-oscuro;
-    position: relative;
-    z-index: 2;
-    height: 624px;
 
     .somos__informacion {
-        width: 23vw;
-        margin-left: 15vw;
+        margin-left: 25vw;
         padding-top: 10vw;
 
         .informacion__titulo {
             color: #fff;
             font-family: variables.$font-interstate;
             font-size: 3rem;
+            line-height: 1.04;
         }
 
         .informacion__contenido {
@@ -29,14 +26,16 @@
 
         .bottom__enlace {
             padding-top: 3rem;
-            margin-left: 15vw;
+            margin-left: 25vw;
 
             .enlace__link {
                 text-decoration: none;
 
                 .link__verMas {
-                    padding: 1rem 2rem;
+                    padding: 2rem 2.25rem;
                     font-size: 1.125rem;
+                    line-height: 1.44;
+                    font-weight: 500;
                     background-color: variables.$verde-lima;
                     border: 1px solid variables.$verde-lima;
                     color: variables.$gris-oscuro;

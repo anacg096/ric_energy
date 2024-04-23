@@ -80,14 +80,26 @@ $(document).ready(function(){
         // Eliminar la clase opacity_news de todos los elementos
         $('.btn__flecha').removeClass('opacity_news');  
 
-        if(currentSlide === 1) { // cuando estamos en el 2º slide de noticias
-            $('#news_two').addClass('active_news');
-        } else if(currentSlide === 2) {
-            $('#news_three').addClass('active_news');
-            $('#next_news').addClass('opacity_news'); 
-        } else {
-            $('#news_one').addClass('active_news');
-            $('#prev_news').addClass('opacity_news'); 
+        switch(currentSlide) {
+            case 1:
+                $('#news_two').addClass('active_news');
+                break;
+            case 2:
+                $('#news_three').addClass('active_news');
+                break;
+            case 3:
+                $('#news_four').addClass('active_news');
+                break;
+            case 4:
+                $('#news_five').addClass('active_news');
+                break;
+            case 5:
+                $('#news_six').addClass('active_news');
+                $('#next_news').addClass('opacity_news'); 
+                break;
+            default:
+                $('#news_one').addClass('active_news');
+                $('#prev_news').addClass('opacity_news'); 
         }
     });
 

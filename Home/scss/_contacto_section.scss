@@ -4,19 +4,21 @@
     background-color: variables.$azul-claro;
 
     .contacto__bloqueTitulos {
-        padding: 10rem 10rem 1rem 10rem;
+        padding: 10rem 22rem 1rem;
 
         .bloqueTitulos__contacto {
             color: variables.$verde-manzana;
             font-family: variables.$font-haskoy_bold;
             font-size: 1.5rem;
+            line-height: .8;
+            margin-bottom: 20px;
         }
 
         .bloqueTitulos__pregunta {
             color: variables.$verde-ric;
             font-family: variables.$font-interstate;
             font-size: 5rem;
-            line-height: 70px;
+            line-height: 1;
         }
     }
 
@@ -25,18 +27,18 @@
         justify-content: end;
         align-items: end;
         text-align: right;
-        padding: 0 10rem 2rem 10rem;
+        padding: 0 22rem 2rem;
 
         .texto__dudas {
             color: variables.$verde-ric;
             font-family: variables.$font-haskoy_medium;
             font-size: 1.625rem;
-            line-height: 40px;
+            line-height: 1.15;
         }
     }
 
     .contacto__enlaceContacto {
-        padding: 0 10rem;
+        padding: 0 22rem;
         display: flex;
         justify-content: end;
         align-items: end;
@@ -45,8 +47,9 @@
             text-decoration: none;
 
             .link__btnContacto {
-                padding: 1.5rem 1.5rem;
+                padding: 1.75rem 1.625rem;
                 font-size: 1.125rem;
+                line-height: 1;
                 background-color: variables.$verde-lima;
                 border: 1px solid variables.$verde-lima;
                 color: variables.$gris-oscuro;

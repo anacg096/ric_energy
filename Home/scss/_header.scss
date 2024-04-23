@@ -22,13 +22,12 @@
             }
 
             .toggle__menu {
-                background-color: variables.$verde-ric;
+                background-color: #fff;
 
                 .menu__item {
                     //width: 50px;
 
                     .item__option {
-                        color: #fff;
                         font-family: variables.$font-haskoy_medium;
                         text-decoration: none;
                         font-size: 1rem;
@@ -37,8 +36,11 @@
                     .item__option:hover,
                     .item__option.show,
                     .item__option:focus {
-                        color: #fff;
-                        background-color: variables.$verde-bosque;
+                        background-color: variables.$azul-claro;
+                    }
+
+                    .seleccionado {
+                        font-weight: bold;
                     }
                 }
             }
@@ -47,13 +49,18 @@
         .top__contactar {
             .contactar__link {
                 .link__button {
-                    padding: 0.25rem 1rem;
-                    font-size: 1rem;
+                    padding: 0.625rem 1rem;
+                    font-size: 1.125rem;
                     background-color: variables.$verde-lima;
                     border: 1px solid variables.$verde-lima;
                     color: variables.$azul-egeo;
                     font-family: variables.$font-haskoy_medium;
                     text-decoration: none;
+                }
+
+                .link__button:hover {
+                    background-color: #fff;
+                    border: 1px solid #fff;
                 }
             }
         }
@@ -92,11 +99,11 @@
                     }
 
                     .list__ulDropdown {
-                        background-color: variables.$verde-ric;
+                        background-color: variables.$azul-cielo;
 
                         .ulDropdown__li {
                             .li__optionLink {
-                                color: #fff;
+                                color: variables.$gris-oscuro;
                                 font-family: variables.$font-haskoy_medium;
                                 text-decoration: none;
                                 font-size: 1rem;
@@ -105,8 +112,8 @@
                             .li__optionLink:hover,
                             .li__optionLink.show,
                             .li__optionLink:focus {
-                                color: #fff;
-                                background-color: variables.$verde-bosque;
+                                color: variables.$gris-oscuro;
+                                background-color: variables.$azul-cielo;
                             }
 
                         }
@@ -117,7 +124,7 @@
 
                         .usa__button {
                             padding: 0.25rem 2rem;
-                            font-size: 1.25rem;
+                            font-size: 1.125rem;
                             background-color: variables.$verde-usa;
                             border: 1px solid #fff;
                             color: #fff;
@@ -128,6 +135,17 @@
 
                             .button__image {
                                 margin: 0 0.5rem;
+                            }
+                        }
+
+                        .usa__button:hover,
+                        .usa__button.show,
+                        .usa__button:focus {
+                            background-color: variables.$verde-lima;
+                            color: variables.$verde-ric;
+
+                            .button__image {
+                                filter: hue-rotate(150deg) saturate(100%) brightness(50%);
                             }
                         }
 

@@ -37,14 +37,18 @@
                     font-family: variables.$font-haskoy_semibold;
                     color: variables.$verde-ric;
                     font-size: 1.25rem;
-                    padding-bottom: 1rem;
+                    margin-bottom: 1.25rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 .columna__link {
                     text-decoration: none;
                     font-family: variables.$font-haskoy_regular;
                     color: variables.$gris-oscuro;
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                 }
             }
         }
@@ -62,7 +66,6 @@
             align-items: center;
 
             .politicas__bloque {
-                width: 33.33%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -71,7 +74,7 @@
                     text-decoration: none;
                     font-family: variables.$font-haskoy_regular;
                     color: variables.$gris-oscuro;
-                    font-size: 0.9rem;
+                    font-size: 0.875rem;
                 }
             }
         }
@@ -83,18 +86,14 @@
             align-items: end;
 
             .redesSociales__bloque {
-                width: 5rem;
-                height: 5rem;
+                width: 78px;
+                height: 78px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 .bloque__enlaceRedesSociales {
                     text-decoration: none;
-                    width: 20px;
-
-                    .enlaceRedesSociales__logo {
-                        //padding: 1.5rem;
-                    }
                 }
             }
 

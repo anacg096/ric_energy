@@ -2,11 +2,12 @@
 
 .main__nosotros {
     background-color: #fff;
+    padding-bottom: 4rem;
 
     .nosotros__cabecera {
-        padding-top: 10rem;
-        padding-left: 10rem;
-        padding-bottom: 3rem;
+        padding-top: 7.5rem;
+        padding-left: 22rem;
+        padding-bottom: 2rem;
 
         .cabecera__titulo {
             font-family: variables.$font-interstate;
@@ -17,15 +18,15 @@
 
     .nosotros__bloques {
         display: flex;
-        margin: 2rem 10rem;
+        margin: 1.5rem 22rem;
 
         .bloques__resumen {
             /* 
             width: 500px;
             height: 346px; 
             */
-            width: 26vw;
-            height: 18vw;
+            width: 20vw;
+            height: 14vw;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -33,20 +34,20 @@
             .resumen__title {
                 font-family: variables.$font-haskoy_medium;
                 color: variables.$azul-egeo;
-                font-size: 4rem;
+                font-size: 4.25rem;
                 padding-left: 2rem;
                 padding-top: 1rem;
-                
+
                 .unidades {
                     font-family: variables.$font-haskoy_bold;
-                    font-size: 2rem;
+                    font-size: 1.75rem;
                 }
             }
 
             .resumen__contenido {
                 color: #fff;
                 font-family: variables.$font-haskoy_bold;
-                font-size: 1.325rem;
+                font-size: 1.375rem;
                 line-height: 26px;
                 padding-left: 2rem;
             }
@@ -87,6 +88,7 @@
 
     .fila_dos {
         justify-content: space-evenly;
+        padding: 0 11rem;
     }
 }
 
