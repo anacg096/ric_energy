@@ -120,8 +120,11 @@
 
         .nosotros__bloques {
             .bloques__resumen {
-                width: 455px;
-                height: 283px;
+                width: 46vw;
+                height: 38vw;
+                background-size: contain;
+                background-position: bottom;
+                background-color: variables.$verde-manzana;
                 margin-bottom: 1.5rem;
             }
         }
@@ -132,8 +135,9 @@
     .main__nosotros {
         .nosotros__bloques {
             .bloques__resumen {
-                width: 668px;
-                height: 366px;
+                width: 92vw;
+                height: 50vw;
+                background-position: right;
 
                 .resumen__contenido {
                     .mobile__nosotros {
@@ -156,8 +160,8 @@
             margin: 1.5rem 0;
 
             .bloques__resumen {
-                width: 370px;
-                height: 255px;
+                width: 90vw;
+                height: 72vw;
             }
         }
     }
