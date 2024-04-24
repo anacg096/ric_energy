@@ -39,7 +39,7 @@
   margin: 0 3rem;
 }
 .header .navbar .nav__logotipo .nav_logoImg {
-  width: 16vw;
+  width: 180px;
 }
 .header .navbar .nav__menu {
   display: flex;
@@ -122,9 +122,7 @@
   text-decoration: none;
   font-size: 1rem;
 }
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:hover,
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink.show,
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:focus {
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:hover, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink.show, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:focus {
   color: #303030;
   background-color: #81D8D0;
 }
@@ -145,26 +143,41 @@
 .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button .button__image {
   margin: 0 0.5rem;
 }
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:hover,
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button.show,
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:focus {
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:hover, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button.show, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:focus {
   background-color: #98EF36;
   color: #0F5E42;
 }
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:hover .button__image,
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button.show .button__image,
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:focus .button__image {
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:hover .button__image, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button.show .button__image, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:focus .button__image {
   filter: hue-rotate(150deg) saturate(100%) brightness(50%);
+}
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_contactar, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_lenguage {
+  display: none;
 }
 
 @media only screen and (max-width: 1440px) {
   .header .navbar .nav__logotipo {
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     margin-right: 1vw;
+  }
+  .header .navbar .nav__logotipo .nav_logoImg {
+    padding-bottom: 0.5rem;
+  }
+  .header .navbar .nav__menu {
+    margin-right: 2.5rem;
+  }
+  .header .navbar .nav__menu .menu__top {
+    padding: 1.5rem 0;
+  }
+  .header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button {
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
   }
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__link {
     font-size: 0.938rem;
     margin-right: 0.7vw;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa .usa__button {
+    padding: 0.25rem 1.4rem;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -214,6 +227,60 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__link {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_contactar,
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_lenguage {
+    display: block;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar {
+    display: inline-flex;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa {
+    margin-right: 2rem;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa .usa__button {
+    font-size: 1rem;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .contactar__link .link__button {
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    background-color: #98EF36;
+    border: 1px solid #98EF36;
+    color: #054349;
+    font-family: "Haskoy-Medium";
+    text-decoration: none;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .contactar__link .link__button:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language {
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .language__toggle {
+    color: #fff;
+    font-family: "Haskoy-Medium";
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .toggle__menu {
+    background-color: #fff;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .toggle__menu .menu__item .item__option {
+    font-family: "Haskoy-Medium";
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .toggle__menu .menu__item .item__option:hover, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .toggle__menu .menu__item .item__option.show, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .toggle__menu .menu__item .item__option:focus {
+    background-color: #E9F3ED;
+  }
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language .toggle__menu .menu__item .seleccionado {
+    font-weight: bold;
   }
   .header .navbar .nav__menu .nav__navbar .navbar__ul .mobile__list {
     border-bottom: 2px solid transparent;

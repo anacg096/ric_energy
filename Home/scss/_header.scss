@@ -8,11 +8,10 @@
         justify-content: space-between;
 
         .nav__logotipo {
-            //width: 30%;
             margin: 0 3rem;
 
             .nav_logoImg {
-                width: 16vw;
+                width: 180px;
             }
         }
 
@@ -46,16 +45,12 @@
                         background-color: #fff;
 
                         .menu__item {
-                            //width: 50px;
-
                             .item__option {
                                 font-family: variables.$font-haskoy_medium;
                                 text-decoration: none;
                                 font-size: 1rem;
 
-                                &:hover,
-                                &.show,
-                                &:focus {
+                                &:hover, &.show, &:focus {
                                     background-color: variables.$azul-claro;
                                 }
                             }
@@ -77,11 +72,11 @@
                             color: variables.$azul-egeo;
                             font-family: variables.$font-haskoy_medium;
                             text-decoration: none;
-                        }
 
-                        .link__button:hover {
-                            background-color: #fff;
-                            border: 1px solid #fff;
+                            &:hover {
+                                background-color: #fff;
+                                border: 1px solid #fff;
+                            }
                         }
                     }
                 }
@@ -119,15 +114,12 @@
                                     font-family: variables.$font-haskoy_medium;
                                     text-decoration: none;
                                     font-size: 1rem;
-                                }
 
-                                .li__optionLink:hover,
-                                .li__optionLink.show,
-                                .li__optionLink:focus {
-                                    color: variables.$gris-oscuro;
-                                    background-color: variables.$azul-cielo;
+                                    &:hover, &.show, &:focus {
+                                        color: variables.$gris-oscuro;
+                                        background-color: variables.$azul-cielo;
+                                    }
                                 }
-
                             }
                         }
 
@@ -148,19 +140,20 @@
                                 .button__image {
                                     margin: 0 0.5rem;
                                 }
-                            }
 
-                            .usa__button:hover,
-                            .usa__button.show,
-                            .usa__button:focus {
-                                background-color: variables.$verde-lima;
-                                color: variables.$verde-ric;
+                                &:hover, &.show, &:focus {
+                                    background-color: variables.$verde-lima;
+                                    color: variables.$verde-ric;
 
-                                .button__image {
-                                    filter: hue-rotate(150deg) saturate(100%) brightness(50%);
+                                    .button__image {
+                                        filter: hue-rotate(150deg) saturate(100%) brightness(50%);
+                                    }
                                 }
                             }
+                        }
 
+                        .mobile_contactar, .mobile_lenguage {
+                            display: none;
                         }
                     }
                 }
@@ -173,17 +166,44 @@
     .header {
         .navbar {
             .nav__logotipo {
-                margin-left: 3rem;
+                margin-left: 2.5rem;
                 margin-right: 1vw;
+
+                .nav_logoImg {
+                    padding-bottom: 0.5rem;
+                }
             }
 
             .nav__menu {
+                margin-right: 2.5rem;
+
+                .menu__top {
+                    padding: 1.5rem 0;
+
+                    .top__contactar {
+                        .contactar__link {
+                            .link__button {
+                                font-size: 1rem;
+                                padding: 0.25rem 1rem;
+                            }
+                        }
+                    }
+                }
+
                 .nav__navbar {
                     .navbar__ul {
                         .ul__list {
                             .list__link {
                                 font-size: 0.938rem;
                                 margin-right: 0.7vw;
+                            }
+
+                            .list__navbar {
+                                .navbar__usa {
+                                    .usa__button {
+                                        padding: 0.25rem 1.4rem;
+                                    }
+                                }
                             }
                         }
                     }
@@ -208,7 +228,6 @@
                 margin: 0;
 
                 .mobile_logo {
-                    //position: absolute;
                     display: block;
                     margin-left: 3rem;
 
@@ -219,7 +238,6 @@
 
                 .navbar-toggler {
                     margin-right: 3rem;
-                    //background-color: variables.$azul-egeo;
                     border: 1px solid transparent;
 
                     .navbar-toggler-icon {
@@ -249,6 +267,77 @@
                             align-items: center;
                             text-align: center;
                             flex-direction: column;
+
+                            .list__link {
+                                margin-bottom: 0.5rem;
+                                margin-right: 0;
+                            }
+
+                            .mobile_contactar,
+                            .mobile_lenguage {
+                                display: block;
+                            }
+
+                            .list__navbar {
+                                display: inline-flex;
+
+                                .navbar__usa {
+                                    margin-right: 2rem;
+
+                                    .usa__button {
+                                        font-size: 1rem;
+                                    }
+                                }
+
+                                .contactar__link {
+                                    .link__button {
+                                        padding: 0.25rem 1rem;
+                                        font-size: 1rem;
+                                        background-color: variables.$verde-lima;
+                                        border: 1px solid variables.$verde-lima;
+                                        color: variables.$azul-egeo;
+                                        font-family: variables.$font-haskoy_medium;
+                                        text-decoration: none;
+
+                                        &:hover {
+                                            background-color: #fff;
+                                            border: 1px solid #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .top__language {
+                                margin-right: 0;
+                                margin-top: 1rem;
+
+                                .language__toggle {
+                                    color: #fff;
+                                    font-family: variables.$font-haskoy_medium;
+                                    text-decoration: none;
+                                    font-size: 1rem;
+                                }
+
+                                .toggle__menu {
+                                    background-color: #fff;
+
+                                    .menu__item {
+                                        .item__option {
+                                            font-family: variables.$font-haskoy_medium;
+                                            text-decoration: none;
+                                            font-size: 1rem;
+
+                                            &:hover, &.show, &:focus {
+                                                background-color: variables.$azul-claro;
+                                            }
+                                        }
+
+                                        .seleccionado {
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         .mobile__list {
@@ -260,7 +349,3 @@
         }
     }
 }
-
-@media only screen and (max-width: 767px) {}
-
-@media only screen and (max-width: 430px) {}
