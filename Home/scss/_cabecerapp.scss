@@ -34,8 +34,78 @@
             font-family: variables.$font-interstate;
             color: #fff;
             font-size: 4.5rem;
+            line-height: 1.1;
             padding-right: 7rem;
             padding-bottom: 4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .section__cabecera {
+        /* height: 625px;  */
+        height: 55vw;
+
+        .cabecera__background {
+            /* height: 550px; */
+            /* height: 44vw; */
+            height: 80%;
+            top: 25%;
+        }
+
+        .cabecera__vector {
+            background-size: inherit;
+
+            .vector__title {
+                font-size: 4rem;
+                padding-right: 8rem;
+                padding-bottom: 14rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section__cabecera {
+        .cabecera__background {
+            height: 90%;
+            top: 17%;
+        }
+
+        .cabecera__vector {
+            background-size: contain;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            text-align: center;
+
+            .vector__title {
+                font-size: 2.75rem;
+                padding-right: 0;
+                padding-bottom: 25rem;
+                margin: 2rem 0;
+
+                .mobile__cabecera {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .section__cabecera {
+        height: 73vw;
+        .cabecera__background {
+            height: 100%;
+            top: 8%;
+        }
+
+        .cabecera__vector {
+            .vector__title {
+                padding-bottom: 29rem;
+                margin: 4rem 0;
+            }
         }
     }
 }
