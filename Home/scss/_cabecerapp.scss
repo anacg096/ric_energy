@@ -43,14 +43,11 @@
 
 @media only screen and (max-width: 1440px) {
     .section__cabecera {
-        /* height: 625px;  */
-        height: 55vw;
+        height: 625px;
 
         .cabecera__background {
-            /* height: 550px; */
-            /* height: 44vw; */
-            height: 80%;
-            top: 25%;
+            height: 580px;
+            top: 18%;
         }
 
         .cabecera__vector {
@@ -67,9 +64,10 @@
 
 @media only screen and (max-width: 768px) {
     .section__cabecera {
+        height: 315px;
         .cabecera__background {
-            height: 90%;
-            top: 17%;
+            top: 5%;
+            height: 372px;
         }
 
         .cabecera__vector {
@@ -95,10 +93,9 @@
 
 @media only screen and (max-width: 430px) {
     .section__cabecera {
-        height: 73vw;
+        height: 300px;
         .cabecera__background {
-            height: 100%;
-            top: 8%;
+            top: 0%;
         }
 
         .cabecera__vector {

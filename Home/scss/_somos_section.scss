@@ -12,6 +12,7 @@
             font-family: variables.$font-interstate;
             font-size: 3rem;
             line-height: 1.04;
+            padding-bottom: 1rem;
         }
 
         .informacion__contenido {
@@ -44,6 +45,10 @@
                     justify-content: center;
                     align-items: center;
 
+                    &:hover {
+                        opacity: 0.75;
+                    }
+
                     .verMas__row {
                         padding-left: 1rem;
                     }
@@ -57,8 +62,94 @@
             align-items: baseline;
 
             .waves__image {
-                width: 520px;
-                height: 230px;
+                /* width: 520px;
+                height: 230px; */
+                width: 34vw;
+                height: 15vw;
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .main__somos {
+        .somos__informacion {
+            margin-left: 17vw;
+            margin-top: 3.9rem;
+
+            .informacion__titulo {
+                padding-bottom: 1.75rem;
+            }
+        }
+
+        .somos__bottom {
+            .bottom__enlace {
+                margin-left: 17vw;
+            }
+
+            .bottom__waves {
+                .waves__image {
+                    width: 35vw;
+                    height: 19.5vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main__somos {
+        .somos__informacion {
+            margin-left: 3vw;
+            margin-right: 3vw;
+            margin-top: 4.5rem;
+
+            .informacion__titulo {
+                font-size: 2.375rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+
+            .informacion__contenido {
+                .mobile__informacion {
+                    display: none;
+                }
+            }
+        }
+
+        .somos__bottom {
+            align-items: end;
+            .bottom__enlace {
+                margin-left: 3vw;
+                margin-bottom: 4rem;
+            }
+
+            .bottom__waves {
+                .waves__image {
+                    width: 37vw;
+                    height: 28.5vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .main__somos {
+        .somos__informacion {
+            margin-left: 5vw;
+
+            .informacion__titulo {
+                padding-bottom: 3rem;
+                padding-top: 2.75rem;
+            }
+        }
+
+        .somos__bottom {
+            .bottom__enlace {
+                margin-left: 5vw;
             }
         }
     }
