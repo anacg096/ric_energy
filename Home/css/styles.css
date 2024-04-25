@@ -961,24 +961,19 @@
     margin-bottom: 26px;
   }
   .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
-    /* margin-right: 17.5rem; */
-    /* margin-right: 28.5vw; */
-    margin-right: 290px;
+    margin-right: 340px;
     margin-top: 26px;
   }
   .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
-    /* margin-right: 24vw; */
-    margin-right: 14rem;
-    margin-top: 4rem;
+    margin-right: 16rem;
+    margin-top: 0rem;
   }
   .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .usa {
     margin-top: 3.5rem;
-    /* margin-left: 5vw; */
     margin-left: 1rem;
   }
   .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
-    /* padding-top: 10rem; */
-    padding-top: 160px;
+    padding-top: 205px;
   }
 }
 .main__partners {
@@ -988,7 +983,7 @@
   background-image: url("../images/main/partners/fondo.png");
 }
 .main__partners .partners__encabezado {
-  padding: 10rem 22rem 5rem;
+  padding: 8.5rem 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -998,7 +993,7 @@
 .main__partners .partners__encabezado .encabezado__title {
   font-family: "Interstate-Condensed";
   color: #fff;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.04;
 }
 .main__partners .partners__encabezado .encabezado__parrafo {
@@ -1006,27 +1001,33 @@
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.33;
+  font-weight: 700;
 }
 .main__partners .partners__slider {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 10rem;
+  margin: 0 12vw;
 }
 .main__partners .partners__slider .slider__object {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.main__partners .partners__slider .slider__object .object__partner {
+  width: 15vw;
+}
 .main__partners .controls__slider {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin: 0 19.5vw;
 }
 .main__partners .controls__slider .slider__arrows {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 2.25vw;
 }
 .main__partners .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
   background-color: transparent;
@@ -1039,8 +1040,8 @@
   opacity: 0.5;
 }
 .main__partners .controls__slider .slider__progressBar {
-  width: 50%;
-  margin: 2.5rem 10rem 10rem 0;
+  width: 100%;
+  margin: 2.5rem 0 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1053,6 +1054,55 @@
   border-bottom: 10px solid #fff;
 }
 
+@media only screen and (max-width: 1440px) {
+  .main__partners .partners__slider {
+    margin: 0 5vw;
+  }
+  .main__partners .controls__slider {
+    margin: 0 8.5vw;
+  }
+  .main__partners .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
+    font-size: 3rem;
+  }
+  .main__partners .controls__slider .slider__arrows {
+    margin-left: 4vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    /* Necesario para que el desbordamiento del slider no haga que haya un scroll de izquierda a derecha */
+    overflow-x: hidden;
+  }
+  .main__partners .partners__encabezado {
+    padding: 2.5rem;
+  }
+  .main__partners .partners__encabezado .encabezado__title {
+    font-size: 2.375rem;
+  }
+  .main__partners .partners__encabezado .encabezado__parrafo {
+    font-size: 1.188rem;
+    padding: 1rem 0;
+    font-weight: inherit;
+  }
+  .main__partners .partners__encabezado .encabezado__parrafo .partners__br {
+    display: none;
+  }
+  .main__partners .partners__slider {
+    margin: 0 5.75vw;
+  }
+  .main__partners .partners__slider .slider__object .object__partner {
+    width: 21vw;
+  }
+  .main__partners .controls__slider {
+    margin: 0 10.5vw;
+  }
+  .main__partners .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
+    font-size: 2.5rem;
+  }
+  .main__partners .controls__slider .slider__progressBar {
+    margin: 2rem 0 4rem;
+  }
+}
 .main__noticias {
   background-color: #fff;
 }
@@ -1322,6 +1372,11 @@
 }
 .footer .footer__sectionFinal .sectionFinal__redesSociales .twitter {
   background-color: #0F5E42;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

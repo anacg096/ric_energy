@@ -7,7 +7,7 @@
     background-image: url("../images/main/partners/fondo.png");
 
     .partners__encabezado {
-        padding: 10rem 22rem 5rem;
+        padding: 8.5rem 0 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,7 +17,7 @@
         .encabezado__title {
             font-family: variables.$font-interstate;
             color: #fff;
-            font-size: 3rem;
+            font-size: 4rem;
             line-height: 1.04;
         }
 
@@ -26,6 +26,7 @@
             color: #fff;
             font-size: 1.5rem;
             line-height: 1.33;
+            font-weight: 700;
         }
     }
 
@@ -33,12 +34,16 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin: 0 10rem;
+        margin: 0 12vw;
 
         .slider__object {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .object__partner {
+                width: 15vw;
+            }
         }
     }
 
@@ -46,11 +51,13 @@
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
+        margin: 0 19.5vw;
 
         .slider__arrows {
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-left: 2.25vw;
 
             .arrows__arrow {
                 .arrow__btn {
@@ -68,8 +75,8 @@
         }
 
         .slider__progressBar {
-            width: 50%;
-            margin: 2.5rem 10rem 10rem 0;
+            width: 100%;
+            margin: 2.5rem 0 10rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -88,13 +95,79 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .main__partners {
+        .partners__slider {
+            margin: 0 5vw;
+        }
+
+        .controls__slider {
+            margin: 0 8.5vw;
+
+            .slider__arrows {
+                .arrows__arrow {
+                    .arrow__btn {
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            .slider__arrows {
+                margin-left: 4vw;
+            }
+        }
+    }
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+    body {
+        /* Necesario para que el desbordamiento del slider no haga que haya un scroll de izquierda a derecha */
+        overflow-x: hidden;
+    }
 
-}
+    .main__partners {
+        .partners__encabezado {
+            padding: 2.5rem;
 
-@media only screen and (max-width: 430px) {
+            .encabezado__title {
+                font-size: 2.375rem;
+            }
 
+            .encabezado__parrafo {
+                font-size: 1.188rem;
+                padding: 1rem 0;
+                font-weight: inherit;
+
+                .partners__br {
+                    display: none;
+                }
+            }
+        }
+
+        .partners__slider {
+            margin: 0 5.75vw;
+
+            .slider__object {
+                .object__partner {
+                    width: 21vw;
+                }
+            }
+        }
+
+        .controls__slider {
+            margin: 0 10.5vw;
+
+            .slider__arrows {
+                .arrows__arrow {
+                    .arrow__btn {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            .slider__progressBar {
+                margin: 2rem 0 4rem;
+            }
+        }
+    }
 }
