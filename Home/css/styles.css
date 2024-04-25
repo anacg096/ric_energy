@@ -808,22 +808,30 @@
   background-color: #B8D3D9;
 }
 .main__presencia .presencia__title {
-  padding: 10rem 22rem 3rem;
+  padding: 10rem 18.5vw 2.5vw;
 }
 .main__presencia .presencia__title .title__global {
   font-family: "Interstate-Condensed";
   color: #072517;
   font-size: 3rem;
+  line-height: 1.04;
 }
 .main__presencia .presencia__sectionMapa {
-  margin: 0 22rem;
+  margin: 0 18.5vw;
   padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
 }
 .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa {
   background-image: url("../images/main/presencia/map_countries.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   height: 770px;
+  width: 100%;
+}
+.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .mobile__mapa {
+  display: none;
 }
 .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion {
   display: flex;
@@ -853,14 +861,14 @@
   font-family: "Haskoy-SemiBold";
 }
 .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .espania {
-  margin-right: 10rem;
+  margin-right: 8.5vw;
 }
 .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
-  margin-right: 25rem;
+  margin-right: 21vw;
 }
 .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
-  margin-right: 20rem;
-  margin-top: 3rem;
+  margin-right: 16.5vw;
+  margin-top: 2.5vw;
 }
 .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
   padding-top: 17rem;
@@ -876,6 +884,103 @@
   align-items: end;
 }
 
+@media only screen and (max-width: 1440px) {
+  .main__presencia .presencia__title {
+    padding: 6rem 3vw 4vw;
+  }
+  .main__presencia .presencia__sectionMapa {
+    margin: 0 11vw;
+    padding-bottom: 4rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa {
+    height: 50vw;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .espania {
+    margin-right: 8.5vw;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
+    margin-right: 17vw;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
+    margin-right: 14vw;
+    margin-top: 0rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .usa {
+    margin-top: 3rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
+    padding-top: 14vw;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .main__presencia .presencia__title {
+    padding: 6rem 3vw 2vw;
+  }
+  .main__presencia .presencia__title .title__global {
+    font-size: 2.375rem;
+  }
+  .main__presencia .presencia__sectionMapa {
+    margin: 0 2vw;
+    padding-bottom: 4rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa {
+    background-image: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    height: 650px;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .mobile__mapa {
+    display: block;
+    width: auto;
+    max-width: initial;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    width: 978px;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos {
+    padding: 0.5rem 0.625rem;
+    min-width: 100px;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos .datos__country {
+    font-size: 0.875rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos .datos__valor {
+    padding: 0.375rem;
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .espania {
+    margin-right: 6.5rem;
+    margin-bottom: 26px;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
+    /* margin-right: 17.5rem; */
+    /* margin-right: 28.5vw; */
+    margin-right: 290px;
+    margin-top: 26px;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
+    /* margin-right: 24vw; */
+    margin-right: 14rem;
+    margin-top: 4rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .usa {
+    margin-top: 3.5rem;
+    /* margin-left: 5vw; */
+    margin-left: 1rem;
+  }
+  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
+    /* padding-top: 10rem; */
+    padding-top: 160px;
+  }
+}
 .main__partners {
   background-size: cover;
   background-position: center;

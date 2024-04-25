@@ -4,24 +4,33 @@
     background-color: variables.$azul-marClaro;
 
     .presencia__title {
-        padding: 10rem 22rem 3rem;
+        padding: 10rem 18.5vw 2.5vw;
 
         .title__global {
             font-family: variables.$font-interstate;
             color: variables.$verde-oscuro;
             font-size: 3rem;
+            line-height: 1.04;
         }
     }
 
     .presencia__sectionMapa {
-        margin: 0 22rem;
+        margin: 0 18.5vw;
         padding-bottom: 3rem;
+        display: flex;
+        justify-content: center;
 
         .sectionMapa__containerMapa {
             background-image: url("../images/main/presencia/map_countries.png");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
+            background-position: center;
             height: 770px;
+            width: 100%;
+
+            .mobile__mapa {
+                display: none;
+            }
 
             .containerMapa__informacion {
                 display: flex;
@@ -54,16 +63,16 @@
                 }
 
                 .espania {
-                    margin-right: 10rem;
+                    margin-right: 8.5vw;
                 }
 
                 .italia {
-                    margin-right: 25rem;
+                    margin-right: 21vw;
                 }
 
                 .africa {
-                    margin-right: 20rem;
-                    margin-top: 3rem;
+                    margin-right: 16.5vw;
+                    margin-top: 2.5vw;
                 }
             }
 
@@ -87,13 +96,128 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .main__presencia {
+        .presencia__title {
+            padding: 6rem 3vw 4vw;
+        }
 
+        .presencia__sectionMapa {
+            margin: 0 11vw;
+            padding-bottom: 4rem;
+
+            .sectionMapa__containerMapa {
+                height: 50vw;
+
+                .containerMapa__informacion {
+                    .espania {
+                        margin-right: 8.5vw;
+                    }
+
+                    .italia {
+                        margin-right: 17vw;
+                    }
+
+                    .africa {
+                        margin-right: 14vw;
+                        margin-top: 0rem;
+                    }
+
+                    .usa {
+                        margin-top: 3rem;
+                    }
+                }
+
+                .fila_1 {
+                    padding-top: 14vw;
+                }
+            }
+        }
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
+    .main__presencia {
+        .presencia__title {
+            padding: 6rem 3vw 2vw;
 
+            .title__global {
+                font-size: 2.375rem;
+            }
+        }
+
+        .presencia__sectionMapa {
+            margin: 0 2vw;
+            padding-bottom: 4rem;
+
+            .sectionMapa__containerMapa {
+                background-image: none;
+                overflow-x: auto;
+                overflow-y: hidden;
+                position: relative;
+                height: 650px;
+
+                .mobile__mapa {
+                    display: block;
+                    width: auto;
+                    max-width: initial;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 1;
+                }
+
+                .containerMapa__informacion {
+                    display: flex;
+                    position: relative;
+                    z-index: 10;
+                    width: 978px;
+
+                    .informacion__datos {
+                        padding: 0.5rem 0.625rem;
+                        min-width: 100px;
+
+                        .datos__country {
+                            font-size: 0.875rem;
+                        }
+
+                        .datos__valor {
+                            padding: 0.375rem;
+                            margin-top: 0.625rem;
+                            font-size: 0.875rem;
+                        }
+                    }
+
+                    .espania {
+                        margin-right: 6.5rem;
+                        margin-bottom: 26px;
+                    }
+
+                    .italia {
+                        /* margin-right: 17.5rem; */
+                        /* margin-right: 28.5vw; */
+                        margin-right: 290px;
+                        margin-top: 26px;
+                    }
+
+                    .africa {
+                        /* margin-right: 24vw; */
+                        margin-right: 14rem;
+                        margin-top: 4rem;
+                    }
+
+                    .usa {
+                        margin-top: 3.5rem;
+                        /* margin-left: 5vw; */
+                        margin-left: 1rem;
+                    }
+                }
+
+                .fila_1 {
+                    /* padding-top: 10rem; */
+                    padding-top: 160px;
+                }
+            }
+        }
+    }
 }
 
-@media only screen and (max-width: 430px) {
-
-}
+@media only screen and (max-width: 430px) {}
