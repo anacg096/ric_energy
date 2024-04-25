@@ -47,6 +47,7 @@ $(document).ready(function () {
     // Inicializamos el slider de news
     var slider_news = $('.noticias__slider').slick({
         // Configuramos el slider de news
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,

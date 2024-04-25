@@ -145,7 +145,10 @@
         }
 
         .partners__slider {
-            margin: 0 5.75vw;
+            //margin: 0 5.75vw;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
 
             .slider__object {
                 .object__partner {
