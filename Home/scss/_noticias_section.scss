@@ -49,7 +49,7 @@
 
         .slider__container {
             background-color: variables.$verde-manzana;
-            margin: 3rem 12rem;
+            margin: 3rem 9vw;
 
             .container__newsInformation {
                 padding: 2rem 2rem 0 2rem;
@@ -195,19 +195,19 @@
             overflow-x: hidden;
 
             .slider__container {
-                margin: 3rem 12rem;
+                margin: 3rem 7vw;
 
                 .container__newsContent {
                     .newsContent__img {
                         width: 31vw;
-                        height: 25vw;
+                        height: 27.5vw;
                     }
                 }
             }
         }
 
         .noticias__controller {
-            margin: 0 14vw;
+            margin: 0 7vw;
         }
     }
 }
@@ -235,6 +235,8 @@
 
         .noticias__slider {
             .slider__container {
+                margin: 3rem 3vw;
+
                 .container__newsInformation {
 
                     .newsInformation__encabezado {
@@ -256,10 +258,6 @@
                     flex-direction: column;
 
                     .newsContent__bloque {
-                        display: flex;
-                        justify-content: baseline;
-                        align-items: end;
-
                         .bloque__newsParrafo {
                             font-size: 1.5rem;
 
@@ -278,38 +276,14 @@
         }
 
         .noticias__controller {
-            margin: 0 19vw;
-
-            .controller__progressBar {
-                width: 100%;
-                margin: 2.5rem 0 3rem;
-            }
-
-            .controller__panel {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 3rem;
-
-                .arrows__btn {
-                    .btn__flecha {
-                        background-color: transparent;
-                        border: 1px solid transparent;
-                        color: variables.$gris-oscuro;
-                        cursor: pointer;
-                        font-size: 3rem;
-                    }
-                }
-            }
+            margin: 0 3vw;
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
     .main__noticias {
-        /* Se oculta por problemas con el slider, no se ve en móviles */
-        display: none;
-        /* .noticias__encabezado {
+        .noticias__encabezado {
             flex-direction: column;
 
             .encabezado__bloqueLink {
@@ -325,10 +299,10 @@
                 .container__newsContent {
                     .newsContent__img {
                         width: 100%;
-                        height: 15vw;
+                        height: 58vw;
                     }
                 }
             }
-        } */
+        }
     }
 }
