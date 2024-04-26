@@ -1069,10 +1069,6 @@
   }
 }
 @media only screen and (max-width: 992px) {
-  body {
-    /* Necesario para que el desbordamiento del slider no haga que haya un scroll de izquierda a derecha */
-    overflow-x: hidden;
-  }
   .main__partners .partners__encabezado {
     padding: 2.5rem;
   }
@@ -1589,6 +1585,7 @@
   }
   .footer .footer__sectionFinal .sectionFinal__redesSociales {
     justify-content: center;
+    width: 100%;
   }
 }
 body {
