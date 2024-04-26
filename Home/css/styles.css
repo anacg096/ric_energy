@@ -437,8 +437,6 @@
   align-items: baseline;
 }
 .main__somos .somos__bottom .bottom__waves .waves__image {
-  /* width: 520px;
-  height: 230px; */
   width: 34vw;
   height: 15vw;
   margin-bottom: 0.25rem;
@@ -1084,9 +1082,7 @@
     display: none;
   }
   .main__partners .partners__slider {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    margin: 0 5.75vw;
   }
   .main__partners .partners__slider .slider__object .object__partner {
     width: 21vw;
@@ -1186,8 +1182,6 @@
   font-weight: 700;
 }
 .main__noticias .noticias__slider .slider__container .container__newsContent .newsContent__img {
-  /* width: 524px;
-  height: 420px; */
   width: 27vw;
   height: 20vw;
   background-repeat: no-repeat;
@@ -1256,7 +1250,6 @@
   .main__noticias .noticias__slider {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
   }
   .main__noticias .noticias__slider .slider__container {
     margin: 3rem 7vw;
