@@ -355,3 +355,23 @@
         padding-bottom: 5rem;
     }
 }
+
+@media only screen and (max-width: 430px) { 
+    .header {
+        padding-bottom: 5rem;
+
+        .navbar {
+            padding-top: 0.5rem;
+
+            .nav__menu {
+                .mobile_logo {
+                    margin-left: 1rem;
+                }
+
+                .navbar-toggler {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -291,6 +291,20 @@
     padding-bottom: 5rem;
   }
 }
+@media only screen and (max-width: 430px) {
+  .header {
+    padding-bottom: 5rem;
+  }
+  .header .navbar {
+    padding-top: 0.5rem;
+  }
+  .header .navbar .nav__menu .mobile_logo {
+    margin-left: 1rem;
+  }
+  .header .navbar .nav__menu .navbar-toggler {
+    margin-right: 1rem;
+  }
+}
 .section__cabecera {
   position: relative;
   width: 100%;
@@ -362,10 +376,9 @@
     text-align: center;
   }
   .section__cabecera .cabecera__vector .vector__title {
-    font-size: 2.75rem;
-    padding-right: 0;
-    padding-bottom: 25rem;
+    font-size: 2.6rem;
     margin: 2rem 0;
+    padding: 0 7vw 25rem;
   }
   .section__cabecera .cabecera__vector .vector__title .mobile__cabecera {
     display: none;
