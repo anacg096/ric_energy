@@ -34,6 +34,7 @@
 .header .navbar {
   align-items: end;
   justify-content: space-between;
+  padding-top: 0;
 }
 .header .navbar .nav__logotipo {
   margin: 0 3rem;
@@ -82,11 +83,14 @@
 .header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button {
   padding: 0.625rem 1rem;
   font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
   background-color: #98EF36;
   border: 1px solid #98EF36;
   color: #054349;
   font-family: "Haskoy-Medium";
   text-decoration: none;
+  transition: background-color linear 0.2s;
 }
 .header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button:hover {
   background-color: #fff;
@@ -121,6 +125,7 @@
   font-family: "Haskoy-Medium";
   text-decoration: none;
   font-size: 1rem;
+  transition: background-color linear 0.2s;
 }
 .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:hover, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink.show, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__ulDropdown .ulDropdown__li .li__optionLink:focus {
   color: #303030;
@@ -139,6 +144,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color linear 0.2s;
 }
 .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button .button__image {
   margin: 0 0.5rem;
@@ -152,6 +158,15 @@
 }
 .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_contactar, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_lenguaje {
   display: none;
+}
+.header .dropdown-toggle::after {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border-bottom: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  border-left: 0 solid transparent;
+  border-top: 0 solid transparent;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -173,7 +188,7 @@
     padding: 0.25rem 1rem;
   }
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__link {
-    font-size: 0.938rem;
+    font-size: 0.9375rem;
     margin-right: 0.7vw;
   }
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa .usa__button {
@@ -292,11 +307,8 @@
   }
 }
 @media only screen and (max-width: 430px) {
-  .header {
-    padding-bottom: 5rem;
-  }
   .header .navbar {
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
   }
   .header .navbar .nav__menu .mobile_logo {
     margin-left: 1rem;
@@ -319,7 +331,6 @@
   position: absolute;
   top: 12%;
   left: 0;
-  z-index: 1;
 }
 .section__cabecera .cabecera__vector {
   position: absolute;
@@ -413,6 +424,9 @@
 .main__somos .somos__informacion .informacion__contenido {
   color: #fff;
   font-family: "Haskoy-Medium";
+  font-size: 1.125rem;
+  line-height: 1.44;
+  font-weight: 500;
 }
 .main__somos .somos__bottom {
   display: flex;
@@ -437,12 +451,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas:hover {
   opacity: 0.75;
 }
+.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas:hover .verMas__row {
+  transform: translateX(5px);
+}
 .main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas .verMas__row {
   padding-left: 1rem;
+  transition: transform linear 0.2s;
 }
 .main__somos .somos__bottom .bottom__waves {
   display: flex;
@@ -510,13 +529,12 @@
   }
 }
 .main__nosotros {
+  width: 100%;
+  padding: 7.5rem 2.5rem;
   background-color: #fff;
-  padding-bottom: 4rem;
 }
 .main__nosotros .nosotros__cabecera {
-  padding-top: 7.5rem;
-  padding-left: 19vw;
-  padding-bottom: 2rem;
+  padding-bottom: 3.75rem;
 }
 .main__nosotros .nosotros__cabecera .cabecera__titulo {
   font-family: "Interstate-Condensed";
@@ -527,22 +545,38 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.5rem 8vw;
+  gap: 24px;
 }
 .main__nosotros .nosotros__bloques .bloques__resumen {
-  width: 384px;
-  height: 268px;
-  margin: 0 0.475rem 0.75rem;
+  width: 100%;
+  max-width: calc(33.3% - 1rem);
+  height: 329px;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(100%);
+  transition: transform 0.2s ease;
 }
 .main__nosotros .nosotros__bloques .bloques__resumen .resumen__title {
   font-family: "Haskoy-Medium";
   color: #054349;
   font-size: 4.25rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  line-height: 1.17;
+  font-weight: 500;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
 }
 .main__nosotros .nosotros__bloques .bloques__resumen .resumen__title .unidades {
   font-family: "Haskoy-Bold";
@@ -553,72 +587,92 @@
   font-family: "Haskoy-Bold";
   font-size: 1.375rem;
   line-height: 26px;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 .main__nosotros .nosotros__bloques .bloques__resumen .resumen_subtitle {
   color: #fff;
   font-family: "Haskoy-Bold";
   font-size: 1.75rem;
   line-height: 22px;
-  padding-left: 2rem;
+  padding-left: 3rem;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen__title,
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen__contenido,
+.main__nosotros .nosotros__bloques .bloques__resumen .resumen_subtitle {
+  transition: opacity 0.2s ease;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen:hover .resumen__title,
+.main__nosotros .nosotros__bloques .bloques__resumen:hover .resumen__contenido,
+.main__nosotros .nosotros__bloques .bloques__resumen:hover .resumen_subtitle {
+  opacity: 0;
+}
+.main__nosotros .nosotros__bloques .bloques__resumen:hover .resumen__background {
+  transform: translateX(0);
 }
 .main__nosotros .nosotros__bloques .pipeline {
   background-image: url("../images/main/nosotros/pipeline.png");
 }
+.main__nosotros .nosotros__bloques .pipeline:hover .resumen__background {
+  background-image: url("../images/main/nosotros/pipeline2.png");
+}
 .main__nosotros .nosotros__bloques .empleados {
   background-image: url("../images/main/nosotros/empleado.png");
+}
+.main__nosotros .nosotros__bloques .empleados:hover .resumen__background {
+  background-image: url("../images/main/nosotros/empleado2.png");
 }
 .main__nosotros .nosotros__bloques .continentes {
   background-image: url("../images/main/nosotros/continentes.png");
 }
+.main__nosotros .nosotros__bloques .continentes:hover .resumen__background {
+  background-image: url("../images/main/nosotros/continentes2.png");
+}
 .main__nosotros .nosotros__bloques .paises {
   background-image: url("../images/main/nosotros/paises.png");
+}
+.main__nosotros .nosotros__bloques .paises:hover .resumen__background {
+  background-image: url("../images/main/nosotros/paises2.png");
 }
 .main__nosotros .nosotros__bloques .proyectos {
   background-image: url("../images/main/nosotros/proyectos.png");
 }
+.main__nosotros .nosotros__bloques .proyectos:hover .resumen__background {
+  background-image: url("../images/main/nosotros/proyectos2.png");
+}
 
 @media only screen and (max-width: 1440px) {
-  .main__nosotros {
-    padding-bottom: 4rem;
-  }
   .main__nosotros .nosotros__cabecera {
-    padding-left: 9vw;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3.75rem;
   }
   .main__nosotros .nosotros__cabecera .cabecera__titulo {
     font-size: 3rem;
   }
-  .main__nosotros .nosotros__bloques {
-    margin: 1.5rem 0;
-  }
   .main__nosotros .nosotros__bloques .bloques__resumen {
-    width: 384px;
-    height: 268px;
+    min-height: 25.9027777778vw;
   }
 }
 @media only screen and (max-width: 992px) {
+  .main__nosotros {
+    padding: 2.5rem 1.25rem;
+  }
   .main__nosotros .nosotros__cabecera {
-    padding-top: 2.25rem;
-    padding-left: 2vw;
-    padding-bottom: 0.25rem;
+    padding-bottom: 2rem;
   }
   .main__nosotros .nosotros__cabecera .cabecera__titulo {
     font-size: 2.375rem;
   }
   .main__nosotros .nosotros__bloques .bloques__resumen {
-    width: 46vw;
-    height: 38vw;
+    max-width: calc(50% - 1rem);
+    height: 30.4861111111vw;
     background-size: contain;
     background-position: bottom;
     background-color: #14AD53;
-    margin-bottom: 1.5rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .main__nosotros .nosotros__bloques .bloques__resumen {
-    width: 92vw;
-    height: 50vw;
+    max-width: 100%;
+    min-height: 369px;
     background-position: right;
   }
   .main__nosotros .nosotros__bloques .bloques__resumen .resumen__contenido .mobile__nosotros {
@@ -627,15 +681,11 @@
 }
 @media only screen and (max-width: 430px) {
   .main__nosotros .nosotros__cabecera {
-    padding-left: 5vw;
     padding-bottom: 0.1rem;
   }
-  .main__nosotros .nosotros__bloques {
-    margin: 1.5rem 0;
-  }
   .main__nosotros .nosotros__bloques .bloques__resumen {
-    width: 90vw;
-    height: 72vw;
+    min-height: 296px;
+    background-position: bottom;
   }
 }
 .main__tecnologias {
@@ -1440,6 +1490,13 @@
     display: block;
   }
 }
+.container {
+  width: 100%;
+  max-width: 1218px;
+  margin: auto;
+  padding: 0;
+}
+
 .footer {
   padding: 3.5rem 2.5vw 2rem;
 }

@@ -1,107 +1,109 @@
 @use 'variables';
+@use 'functions';
 
 .section__cabecera {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 905px;
+
+  .cabecera__background {
+    background-image: url('../images/main/cabecera/mujer_bosque.png');
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 905px;
+    height: 800px;
+    position: absolute;
+    top: 12%;
+    left: 0;
+  }
 
-    .cabecera__background {
-        background-image: url('../images/main/cabecera/mujer_bosque.png');
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 800px;
-        position: absolute;
-        top: 12%;
-        left: 0;
-        z-index: 1;
+  .cabecera__vector {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    background-image: url("../images/main/cabecera/Vector_5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .vector__title {
+      font-family: variables.$font-interstate;
+      color: #fff;
+      font-size: functions.rem(72);
+      line-height: 1.1;
+      padding-right: functions.rem(112);
+      padding-bottom: functions.rem(64);
     }
-
-    .cabecera__vector {
-        position: absolute;
-        text-align: center;
-        z-index: 2;
-        background-image: url("../images/main/cabecera/Vector_5.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 440px;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-
-        .vector__title {
-            font-family: variables.$font-interstate;
-            color: #fff;
-            font-size: 4.5rem;
-            line-height: 1.1;
-            padding-right: 7rem;
-            padding-bottom: 4rem;
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 1440px) {
-    .section__cabecera {
-        height: 625px;
+  .section__cabecera {
+    height: 625px;
 
-        .cabecera__background {
-            height: 580px;
-            top: 18%;
-        }
-
-        .cabecera__vector {
-            background-size: inherit;
-
-            .vector__title {
-                font-size: 4rem;
-                padding-right: 8rem;
-                padding-bottom: 14rem;
-            }
-        }
+    .cabecera__background {
+      height: 580px;
+      top: 18%;
     }
+
+    .cabecera__vector {
+      background-size: inherit;
+
+      .vector__title {
+        font-size: functions.rem(64);
+        padding-right: functions.rem(128);
+        padding-bottom: functions.rem(224);
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .section__cabecera {
-        height: 315px;
-        .cabecera__background {
-            top: 5%;
-            height: 372px;
-        }
+  .section__cabecera {
+    height: 315px;
 
-        .cabecera__vector {
-            background-size: contain;
-            display: flex;
-            justify-content: right;
-            align-items: center;
-            text-align: center;
-
-            .vector__title {
-                font-size: 2.6rem;
-                margin: 2rem 0;
-                padding: 0 7vw 25rem;
-
-                .mobile__cabecera {
-                    display: none;
-                }
-            }
-        }
+    .cabecera__background {
+      top: 5%;
+      height: 372px;
     }
+
+    .cabecera__vector {
+      background-size: contain;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      text-align: center;
+
+      .vector__title {
+        font-size: functions.rem(41.6);
+        margin: functions.rem(32) 0;
+        padding: 0 7vw functions.rem(400);
+
+        .mobile__cabecera {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 430px) {
-    .section__cabecera {
-        height: 300px;
-        .cabecera__background {
-            top: 0%;
-        }
+  .section__cabecera {
+    height: 300px;
 
-        .cabecera__vector {
-            .vector__title {
-                padding-bottom: 29rem;
-                margin: 4rem 0;
-            }
-        }
+    .cabecera__background {
+      top: 0%;
     }
+
+    .cabecera__vector {
+      .vector__title {
+        padding-bottom: functions.rem(464);
+        margin: functions.rem(64) 0;
+      }
+    }
+  }
 }

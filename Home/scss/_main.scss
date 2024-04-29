@@ -5,3 +5,10 @@
 @use 'partners_section';
 @use 'noticias_section';
 @use 'contacto_section';
+
+.container {
+  width: 100%;
+  max-width: 1218px;
+  margin: auto;
+  padding: 0;
+}
