@@ -185,7 +185,6 @@
   }
   .header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button {
     font-size: 1rem;
-    padding: 0.25rem 1rem;
   }
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__link {
     font-size: 0.9375rem;
@@ -460,7 +459,7 @@
   transform: translateX(5px);
 }
 .main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas .verMas__row {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   transition: transform linear 0.2s;
 }
 .main__somos .somos__bottom .bottom__waves {
@@ -551,6 +550,7 @@
   width: 100%;
   max-width: calc(33.3% - 1rem);
   height: 329px;
+  min-height: 256px;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -648,7 +648,7 @@
     font-size: 3rem;
   }
   .main__nosotros .nosotros__bloques .bloques__resumen {
-    min-height: 25.9027777778vw;
+    height: 23vw;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -663,7 +663,7 @@
   }
   .main__nosotros .nosotros__bloques .bloques__resumen {
     max-width: calc(50% - 1rem);
-    height: 30.4861111111vw;
+    height: 31vw;
     background-size: contain;
     background-position: bottom;
     background-color: #14AD53;
@@ -672,7 +672,7 @@
 @media only screen and (max-width: 768px) {
   .main__nosotros .nosotros__bloques .bloques__resumen {
     max-width: 100%;
-    min-height: 369px;
+    height: 369px;
     background-position: right;
   }
   .main__nosotros .nosotros__bloques .bloques__resumen .resumen__contenido .mobile__nosotros {
@@ -690,42 +690,42 @@
 }
 .main__tecnologias {
   background-size: cover;
-  background-position: unset;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-image: url("../images/main/tecnologias/base_2.png");
+  padding-bottom: 12.875rem;
 }
 .main__tecnologias .tecnologias__vector {
   width: 100%;
   margin-top: -1rem;
 }
-.main__tecnologias .tecnologias__container {
-  width: 100%;
-}
 .main__tecnologias .tecnologias__container .container__title {
-  padding: 8rem 19vw 3rem;
+  padding-top: 7.5rem;
+  margin-bottom: 5rem;
 }
 .main__tecnologias .tecnologias__container .container__title .title {
   font-family: "Interstate-Condensed";
   color: #98EF36;
   font-size: 3rem;
+  line-height: 1.04;
+  font-weight: 700;
 }
 .main__tecnologias .tecnologias__container .container__tabs {
-  padding: 1rem 3vw 12rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
 }
 .main__tecnologias .tecnologias__container .container__tabs .tabs__tab {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 582px;
+  width: 100%;
+  max-width: calc(50% - 12px);
   height: 448.6px;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-bottom: 1.5rem;
-  margin-right: 2rem;
 }
 .main__tecnologias .tecnologias__container .container__tabs .tab__title {
   display: flex;
@@ -757,8 +757,10 @@
 .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar {
   padding: 1.75rem 1.625rem;
   font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
   background-color: #98EF36;
-  border: 1px solid #98EF36;
+  border: 0;
   color: #303030;
   font-family: "Haskoy-Medium";
   display: flex;
@@ -768,8 +770,12 @@
 .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar:hover {
   opacity: 0.75;
 }
+.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar:hover .ampliar__row {
+  transform: translateX(5px);
+}
 .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar .ampliar__row {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+  transition: transform linear 0.2s;
 }
 .main__tecnologias .tecnologias__container .solar {
   background-image: url("../images/main/tecnologias/solar.png");
@@ -785,15 +791,8 @@
 }
 
 @media only screen and (max-width: 1440px) {
-  .main__tecnologias .tecnologias__container .container__title {
-    padding: 9rem 4.5vw 3rem;
-  }
-  .main__tecnologias .tecnologias__container .container__tabs {
-    padding: 1rem 0 12rem;
-  }
   .main__tecnologias .tecnologias__container .container__tabs .tabs__tab {
-    width: 44vw;
-    height: 511px;
+    height: 448.6px;
     background-size: contain;
     background-position: top;
     background-color: #126B80;
@@ -806,19 +805,27 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .main__tecnologias {
+    padding-bottom: 5rem;
+    background-position: unset;
+  }
+  .main__tecnologias .tecnologias__container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
   .main__tecnologias .tecnologias__container .container__title {
-    padding: 2.5rem 2vw 0.5rem;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
   }
   .main__tecnologias .tecnologias__container .container__title .title {
     font-size: 2.375rem;
   }
   .main__tecnologias .tecnologias__container .container__tabs {
-    padding: 1rem 2vw 8rem;
     flex-wrap: inherit;
     flex-direction: column;
   }
   .main__tecnologias .tecnologias__container .container__tabs .tabs__tab {
-    width: 100%;
+    max-width: 100%;
     height: 292px;
     background-position: right;
   }
@@ -832,7 +839,7 @@
     font-size: 1.25rem;
   }
   .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar {
-    padding: 1rem 1.625rem;
+    padding: 1.25rem 1.625rem;
     font-size: 1rem;
   }
 }
@@ -845,12 +852,6 @@
   }
 }
 @media only screen and (max-width: 430px) {
-  .main__tecnologias .tecnologias__container .container__title {
-    padding: 2.5rem 1.5rem 0.5rem;
-  }
-  .main__tecnologias .tecnologias__container .container__tabs {
-    padding: 1rem 1.5rem 8rem;
-  }
   .main__tecnologias .tecnologias__container .container__tabs .tabs__tab {
     background-size: contain;
     background-position: top;
@@ -867,297 +868,251 @@
 }
 .main__presencia {
   background-color: #B8D3D9;
+  width: 100%;
+  padding: 0 2.5rem;
+  overflow: hidden;
 }
-.main__presencia .presencia__title {
-  padding: 10rem 18.5vw 2.5vw;
+.main__presencia .container {
+  padding-top: 5.9375rem;
+  padding-bottom: 3.75rem;
+  position: relative;
 }
-.main__presencia .presencia__title .title__global {
+.main__presencia .container .presencia__title {
+  margin-bottom: 4rem;
+}
+.main__presencia .container .presencia__title .title__global {
   font-family: "Interstate-Condensed";
   color: #072517;
   font-size: 3rem;
   line-height: 1.04;
+  font-weight: 700;
 }
-.main__presencia .presencia__sectionMapa {
-  margin: 0 18.5vw;
-  padding-bottom: 3rem;
+.main__presencia .container .presencia__sectionMapa {
+  width: 100%;
+  margin: 0 auto;
+}
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa {
+  width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa {
-  background-image: url("../images/main/presencia/map_countries.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 770px;
-  width: 100%;
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__mapa {
+  max-width: 100%;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .mobile__mapa {
-  display: none;
-}
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion {
-  display: flex;
-}
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos {
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__datos {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0.625rem 0.9375rem;
+  min-width: 8.125rem;
   cursor: pointer;
   background-color: #0F5E42;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0.625rem 0.938rem;
   border-radius: 5px;
-  min-width: 130px;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos .datos__country {
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__datos .datos__country {
   font-size: 1.125rem;
   color: #fff;
   font-family: "Haskoy-Bold";
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos .datos__valor {
-  padding: 0.625rem 1rem;
-  margin-top: 0.938rem;
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__datos .datos__valor {
+  padding: 0.625rem 0.625rem;
+  margin-top: 0.9375rem;
   background-color: #98EF36;
   color: #0F5E42;
   font-size: 1.125rem;
+  width: 100%;
   font-family: "Haskoy-SemiBold";
+  text-align: center;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .espania {
-  margin-right: 8.5vw;
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .usa {
+  left: 8%;
+  top: 53%;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
-  margin-right: 21vw;
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .spain {
+  left: 35%;
+  top: 28%;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
-  margin-right: 16.5vw;
-  margin-top: 2.5vw;
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .italy {
+  left: 56%;
+  top: 33%;
 }
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
-  padding-top: 17rem;
-  justify-content: end;
-  align-items: end;
-}
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_2 {
-  justify-content: start;
-  align-items: start;
-}
-.main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_3 {
-  justify-content: end;
-  align-items: end;
+.main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .africa {
+  left: 60%;
+  top: 70%;
 }
 
-@media only screen and (max-width: 1440px) {
-  .main__presencia .presencia__title {
-    padding: 6rem 3vw 4vw;
-  }
-  .main__presencia .presencia__sectionMapa {
-    margin: 0 11vw;
-    padding-bottom: 4rem;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa {
-    height: 50vw;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .espania {
-    margin-right: 8.5vw;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
-    margin-right: 17vw;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
-    margin-right: 14vw;
-    margin-top: 0rem;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .usa {
-    margin-top: 3rem;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
-    padding-top: 14vw;
-  }
-}
 @media only screen and (max-width: 992px) {
-  .main__presencia .presencia__title {
-    padding: 6rem 3vw 2vw;
+  .main__presencia {
+    padding: 0 1.25rem;
   }
-  .main__presencia .presencia__title .title__global {
+  .main__presencia .container .presencia__title .title__global {
     font-size: 2.375rem;
+    margin-bottom: 2rem;
   }
-  .main__presencia .presencia__sectionMapa {
-    margin: 0 2vw;
-    padding-bottom: 4rem;
+  .main__presencia .container .presencia__sectionMapa {
+    display: flex;
+    overflow: auto;
+    height: 60vh;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa {
-    background-image: none;
-    overflow-x: auto;
-    overflow-y: hidden;
-    position: relative;
-    height: 650px;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa {
+    display: flex;
+    width: auto;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .mobile__mapa {
-    display: block;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__mapa {
+    height: 100%;
     width: auto;
     max-width: initial;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion {
-    display: flex;
-    position: relative;
-    z-index: 10;
-    width: 978px;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos {
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__datos {
     padding: 0.5rem 0.625rem;
-    min-width: 100px;
+    min-width: 6.25rem;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos .datos__country {
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__datos .datos__country {
     font-size: 0.875rem;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .informacion__datos .datos__valor {
-    padding: 0.375rem;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__datos .datos__valor {
+    font-size: 0.875rem;
     margin-top: 0.625rem;
-    font-size: 0.875rem;
+    padding: 0.375rem;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .espania {
-    margin-right: 6.5rem;
-    margin-bottom: 26px;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .usa {
+    left: 8%;
+    top: 53%;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .italia {
-    margin-right: 340px;
-    margin-top: 26px;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .spain {
+    left: 35%;
+    top: 28%;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .africa {
-    margin-right: 16rem;
-    margin-top: 0rem;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .italy {
+    left: 56%;
+    top: 33%;
   }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .containerMapa__informacion .usa {
-    margin-top: 3.5rem;
-    margin-left: 1rem;
-  }
-  .main__presencia .presencia__sectionMapa .sectionMapa__containerMapa .fila_1 {
-    padding-top: 205px;
+  .main__presencia .container .presencia__sectionMapa .sectionMapa__containerMapa .africa {
+    left: 60%;
+    top: 70%;
   }
 }
 .main__partners {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url("../images/main/partners/fondo.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  overflow-x: hidden;
+  padding-top: 133px;
+  padding-bottom: 133px;
 }
-.main__partners .partners__encabezado {
-  padding: 8.5rem 0 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.main__partners .container .partners__encabezado {
+  width: 100%;
+  max-width: 732px;
+  margin: 0 auto;
 }
-.main__partners .partners__encabezado .encabezado__title {
+.main__partners .container .partners__encabezado .encabezado__title {
   font-family: "Interstate-Condensed";
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 700;
   line-height: 1.04;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
-.main__partners .partners__encabezado .encabezado__parrafo {
+.main__partners .container .partners__encabezado .encabezado__parrafo {
   font-family: "Haskoy-Medium";
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.33;
   font-weight: 700;
+  text-align: center;
 }
-.main__partners .partners__slider {
+.main__partners .container .partners__slider {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 12vw;
+  margin-top: 6.5rem;
+  margin-bottom: 2rem;
 }
-.main__partners .partners__slider .slider__object {
+.main__partners .container .partners__slider .slider__object {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main__partners .partners__slider .slider__object .object__partner {
-  width: 15vw;
+.main__partners .container .partners__slider .slider__object .object__partner {
+  max-width: initial;
+  max-height: 100%;
 }
-.main__partners .controls__slider {
+.main__partners .container .controls__slider {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 0 19.5vw;
 }
-.main__partners .controls__slider .slider__arrows {
+.main__partners .container .controls__slider .slider__arrows {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 2.25vw;
 }
-.main__partners .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
+.main__partners .container .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 0;
   color: #fff;
   cursor: pointer;
-  font-size: 3rem;
 }
-.main__partners .controls__slider .slider__arrows .arrows__arrow .opacity_partners {
+.main__partners .container .controls__slider .slider__arrows .arrows__arrow .arrow__btn .btn__img {
+  width: 3.125rem;
+  height: 2.5rem;
+}
+.main__partners .container .controls__slider .slider__arrows .arrows__arrow .opacity_partners {
   opacity: 0.5;
 }
-.main__partners .controls__slider .slider__progressBar {
+.main__partners .container .controls__slider .slider__progressBar {
   width: 100%;
-  margin: 2.5rem 0 10rem;
+  margin: 1rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main__partners .controls__slider .slider__progressBar .progressbar__section {
+.main__partners .container .controls__slider .slider__progressBar .progressbar__section {
   border-bottom: 2px solid #fff;
   width: 33%;
 }
-.main__partners .controls__slider .slider__progressBar .active_partners {
-  border-bottom: 10px solid #fff;
+.main__partners .container .controls__slider .slider__progressBar .active_partners {
+  border-bottom: 15px solid #fff;
 }
 
-@media only screen and (max-width: 1440px) {
-  .main__partners .partners__slider {
-    margin: 0 5vw;
-  }
-  .main__partners .controls__slider {
-    margin: 0 8.5vw;
-  }
-  .main__partners .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
-    font-size: 3rem;
-  }
-  .main__partners .controls__slider .slider__arrows {
-    margin-left: 4vw;
-  }
-}
 @media only screen and (max-width: 992px) {
-  .main__partners .partners__encabezado {
-    padding: 2.5rem;
+  .main__partners {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-size: 1440px;
   }
-  .main__partners .partners__encabezado .encabezado__title {
+  .main__partners .container .partners__encabezado {
+    max-width: 100%;
+  }
+  .main__partners .container .partners__encabezado .encabezado__title {
     font-size: 2.375rem;
   }
-  .main__partners .partners__encabezado .encabezado__parrafo {
-    font-size: 1.188rem;
-    padding: 1rem 0;
+  .main__partners .container .partners__encabezado .encabezado__parrafo {
+    font-size: 1.1875rem;
     font-weight: inherit;
   }
-  .main__partners .partners__encabezado .encabezado__parrafo .partners__br {
-    display: none;
+  .main__partners .container .partners__slider {
+    margin-top: 1.875rem;
   }
-  .main__partners .partners__slider {
-    margin: 0 5.75vw;
-  }
-  .main__partners .partners__slider .slider__object .object__partner {
+  .main__partners .container .partners__slider .slider__object .object__partner {
     width: 21vw;
   }
-  .main__partners .controls__slider {
+  .main__partners .container .controls__slider {
     margin: 0 10.5vw;
   }
-  .main__partners .controls__slider .slider__arrows .arrows__arrow .arrow__btn {
-    font-size: 2.5rem;
+  .main__partners .container .controls__slider .slider__progressBar {
+    margin: 0.5rem 0 0;
   }
-  .main__partners .controls__slider .slider__progressBar {
-    margin: 2rem 0 4rem;
+  .main__partners .container .controls__slider .slider__arrows .arrows__arrow .arrow__btn .btn__img {
+    width: 26px;
+    height: 21px;
   }
 }
 .main__noticias {
@@ -1492,9 +1447,8 @@
 }
 .container {
   width: 100%;
-  max-width: 1218px;
+  max-width: 1188px;
   margin: auto;
-  padding: 0;
 }
 
 .footer {

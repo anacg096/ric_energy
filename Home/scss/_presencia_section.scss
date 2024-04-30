@@ -2,216 +2,164 @@
 @use 'functions';
 
 .main__presencia {
-    background-color: variables.$azul-marClaro;
+  background-color: variables.$azul-marClaro;
+  width: 100%;
+  padding: 0 functions.rem(40);
+  overflow: hidden;
+
+  .container {
+    padding-top: functions.rem(95);
+    padding-bottom: functions.rem(60);
+    position: relative;
 
     .presencia__title {
-        padding: 10rem 18.5vw 2.5vw;
+      margin-bottom: functions.rem(64);
 
-        .title__global {
-            font-family: variables.$font-interstate;
-            color: variables.$verde-oscuro;
-            font-size: 3rem;
-            line-height: 1.04;
-        }
+      .title__global {
+        font-family: variables.$font-interstate;
+        color: variables.$verde-oscuro;
+        font-size: functions.rem(48);
+        line-height: 1.04;
+        font-weight: 700;
+      }
     }
 
     .presencia__sectionMapa {
-        margin: 0 18.5vw;
-        padding-bottom: 3rem;
+      width: 100%;
+      margin: 0 auto;
+
+      .sectionMapa__containerMapa {
+        width: 100%;
+        position: relative;
         display: flex;
         justify-content: center;
 
-        .sectionMapa__containerMapa {
-            background-image: url("../images/main/presencia/map_countries.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            height: 770px;
+        .containerMapa__mapa {
+          max-width: 100%;
+        }
+
+        .containerMapa__datos {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          padding: functions.rem(10) functions.rem(15);
+          min-width: functions.rem(130);
+          cursor: pointer;
+          background-color: variables.$verde-ric;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 5px;
+
+          .datos__country {
+            font-size: functions.rem(18);
+            color: #fff;
+            //font-weight: 700;
+            font-family: variables.$font-haskoy_bold;
+          }
+
+          .datos__valor {
+            padding: functions.rem(10) functions.rem(10);
+            margin-top: functions.rem(15);
+            //font-weight: 600;
+            background-color: variables.$verde-lima;
+            color: variables.$verde-ric;
+            font-size: functions.rem(18);
             width: 100%;
-
-            .mobile__mapa {
-                display: none;
-            }
-
-            .containerMapa__informacion {
-                display: flex;
-
-                .informacion__datos {
-                    cursor: pointer;
-                    background-color: variables.$verde-ric;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 0.625rem 0.938rem;
-                    border-radius: 5px;
-                    min-width: 130px;
-
-                    .datos__country {
-                        font-size: 1.125rem;
-                        color: #fff;
-                        font-family: variables.$font-haskoy_bold;
-                    }
-
-                    .datos__valor {
-                        padding: 0.625rem 1rem;
-                        margin-top: 0.938rem;
-                        background-color: variables.$verde-lima;
-                        color: variables.$verde-ric;
-                        font-size: 1.125rem;
-                        font-family: variables.$font-haskoy_semibold;
-                    }
-                }
-
-                .espania {
-                    margin-right: 8.5vw;
-                }
-
-                .italia {
-                    margin-right: 21vw;
-                }
-
-                .africa {
-                    margin-right: 16.5vw;
-                    margin-top: 2.5vw;
-                }
-            }
-
-            .fila_1 {
-                padding-top: 17rem;
-                justify-content: end;
-                align-items: end;
-            }
-
-            .fila_2 {
-                justify-content: start;
-                align-items: start;
-            }
-
-            .fila_3 {
-                justify-content: end;
-                align-items: end;
-            }
+            font-family: variables.$font-haskoy_semibold;
+            text-align: center;
+          }
         }
+
+        .usa {
+          left: 8%;
+          top: 53%;
+        }
+
+        .spain {
+          left: 35%;
+          top: 28%;
+        }
+
+        .italy {
+          left: 56%;
+          top: 33%;
+        }
+
+        .africa {
+          left: 60%;
+          top: 70%;
+        }
+
+      }
     }
-}
-
-@media only screen and (max-width: 1440px) {
-    .main__presencia {
-        .presencia__title {
-            padding: 6rem 3vw 4vw;
-        }
-
-        .presencia__sectionMapa {
-            margin: 0 11vw;
-            padding-bottom: 4rem;
-
-            .sectionMapa__containerMapa {
-                height: 50vw;
-
-                .containerMapa__informacion {
-                    .espania {
-                        margin-right: 8.5vw;
-                    }
-
-                    .italia {
-                        margin-right: 17vw;
-                    }
-
-                    .africa {
-                        margin-right: 14vw;
-                        margin-top: 0rem;
-                    }
-
-                    .usa {
-                        margin-top: 3rem;
-                    }
-                }
-
-                .fila_1 {
-                    padding-top: 14vw;
-                }
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .main__presencia {
-        .presencia__title {
-            padding: 6rem 3vw 2vw;
+  .main__presencia {
+    padding: 0 functions.rem(20);
 
-            .title__global {
-                font-size: 2.375rem;
-            }
+    .container {
+      .presencia__title {
+        .title__global {
+          font-size: functions.rem(38);
+          margin-bottom: functions.rem(32);
         }
+      }
 
-        .presencia__sectionMapa {
-            margin: 0 2vw;
-            padding-bottom: 4rem;
+      .presencia__sectionMapa {
+        display: flex;
+        overflow: auto;
+        height: 60vh;
 
-            .sectionMapa__containerMapa {
-                background-image: none;
-                overflow-x: auto;
-                overflow-y: hidden;
-                position: relative;
-                height: 650px;
+        .sectionMapa__containerMapa {
+          display: flex;
+          width: auto;
 
-                .mobile__mapa {
-                    display: block;
-                    width: auto;
-                    max-width: initial;
-                    height: 100%;
-                    position: absolute;
-                    z-index: 1;
-                }
+          .containerMapa__mapa {
+            height: 100%;
+            width: auto;
+            max-width: initial;
+          }
 
-                .containerMapa__informacion {
-                    display: flex;
-                    position: relative;
-                    z-index: 10;
-                    width: 978px;
+          .containerMapa__datos {
+            padding: functions.rem(8) functions.rem(10);
+            min-width: functions.rem(100);
 
-                    .informacion__datos {
-                        padding: 0.5rem 0.625rem;
-                        min-width: 100px;
-
-                        .datos__country {
-                            font-size: 0.875rem;
-                        }
-
-                        .datos__valor {
-                            padding: 0.375rem;
-                            margin-top: 0.625rem;
-                            font-size: 0.875rem;
-                        }
-                    }
-
-                    .espania {
-                        margin-right: 6.5rem;
-                        margin-bottom: 26px;
-                    }
-
-                    .italia {
-                        margin-right: 340px;
-                        margin-top: 26px;
-                    }
-
-                    .africa {
-                        margin-right: 16rem;
-                        margin-top: 0rem;
-                    }
-
-                    .usa {
-                        margin-top: 3.5rem;
-                        margin-left: 1rem;
-                    }
-                }
-
-                .fila_1 {
-                    padding-top: 205px;
-                }
+            .datos__country {
+              font-size: functions.rem(14);
             }
+
+            .datos__valor {
+              font-size: functions.rem(14);
+              margin-top: functions.rem(10);
+              padding: functions.rem(6);
+            }
+          }
+
+          .usa {
+            left: 8%;
+            top: 53%;
+          }
+
+          .spain {
+            left: 35%;
+            top: 28%;
+          }
+
+          .italy {
+            left: 56%;
+            top: 33%;
+          }
+
+          .africa {
+            left: 60%;
+            top: 70%;
+          }
         }
+      }
     }
+  }
 }

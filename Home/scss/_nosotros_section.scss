@@ -25,7 +25,9 @@
     .bloques__resumen {
       width: 100%;
       max-width: calc(33.3% - functions.rem(16));
+      //height: 17vw;
       height: 329px;
+      min-height: 256px;
       background-size: cover;
       background-position: right;
       background-repeat: no-repeat;
@@ -160,8 +162,7 @@
 
     .nosotros__bloques {
       .bloques__resumen {
-        //329px
-        min-height: functions.vw(373);
+        height: 23vw;
       }
     }
   }
@@ -183,7 +184,7 @@
       .bloques__resumen {
         max-width: calc(50% - functions.rem(16));
         //295px
-        height: functions.vw(439);
+        height: 31vw;
         background-size: contain;
         background-position: bottom;
         background-color: variables.$verde-manzana;
@@ -197,7 +198,7 @@
     .nosotros__bloques {
       .bloques__resumen {
         max-width: 100%;
-        min-height: 369px;
+        height: 369px;
         background-position: right;
 
         .resumen__contenido {

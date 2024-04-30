@@ -2,167 +2,157 @@
 @use 'functions';
 
 .main__partners {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../images/main/partners/fondo.png");
+  background-image: url("../images/main/partners/fondo.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  overflow-x: hidden;
+  padding-top: 133px;
+  padding-bottom: 133px;
 
+  .container {
     .partners__encabezado {
-        padding: 8.5rem 0 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      //padding: 8.5rem 0 5rem;
+      width: 100%;
+      max-width: 732px;
+      margin: 0 auto;
+
+      .encabezado__title {
+        font-family: variables.$font-interstate;
+        color: #fff;
+        font-size: functions.rem(48);
+        font-weight: 700;
+        line-height: 1.04;
         text-align: center;
+        margin-bottom: functions.rem(24);
+      }
 
-        .encabezado__title {
-            font-family: variables.$font-interstate;
-            color: #fff;
-            font-size: 4rem;
-            line-height: 1.04;
-        }
-
-        .encabezado__parrafo {
-            font-family: variables.$font-haskoy_medium;
-            color: #fff;
-            font-size: 1.5rem;
-            line-height: 1.33;
-            font-weight: 700;
-        }
+      .encabezado__parrafo {
+        font-family: variables.$font-haskoy_medium;
+        color: #fff;
+        font-size: functions.rem(24);
+        line-height: 1.33;
+        font-weight: 700;
+        text-align: center;
+      }
     }
 
     .partners__slider {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: functions.rem(104);
+      margin-bottom: functions.rem(32);
+
+      .slider__object {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        margin: 0 12vw;
+        justify-content: center;
 
-        .slider__object {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .object__partner {
-                width: 15vw;
-            }
+        .object__partner {
+          max-width: initial;
+          max-height: 100%;
         }
+      }
     }
 
     .controls__slider {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+
+      .slider__arrows {
         display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        margin: 0 19.5vw;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2.25vw;
 
-        .slider__arrows {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 2.25vw;
+        .arrows__arrow {
+          .arrow__btn {
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
 
-            .arrows__arrow {
-                .arrow__btn {
-                    background-color: transparent;
-                    border: 1px solid transparent;
-                    color: #fff;
-                    cursor: pointer;
-                    font-size: 3rem;
-                }
-
-                .opacity_partners {
-                    opacity: 0.5;
-                }
+            .btn__img {
+              width: functions.rem(50);
+              height: functions.rem(40);
             }
+          }
+          .opacity_partners {
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .slider__progressBar {
+        width: 100%;
+        margin: 1rem 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .progressbar__section {
+          border-bottom: 2px solid #fff;
+          width: 33%;
         }
 
-        .slider__progressBar {
-            width: 100%;
-            margin: 2.5rem 0 10rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .progressbar__section {
-                border-bottom: 2px solid #fff;
-                width: 33%;
-            }
-
-            .active_partners {
-                border-bottom: 10px solid #fff;
-            }
+        .active_partners {
+          border-bottom: 15px solid #fff;
         }
+      }
     }
-}
-
-@media only screen and (max-width: 1440px) {
-    .main__partners {
-        .partners__slider {
-            margin: 0 5vw;
-        }
-
-        .controls__slider {
-            margin: 0 8.5vw;
-
-            .slider__arrows {
-                .arrows__arrow {
-                    .arrow__btn {
-                        font-size: 3rem;
-                    }
-                }
-            }
-
-            .slider__arrows {
-                margin-left: 4vw;
-            }
-        }
-    }
-
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .main__partners {
-        .partners__encabezado {
-            padding: 2.5rem;
+  .main__partners {
+    padding-top: functions.rem(40);
+    padding-bottom: functions.rem(40);
+    background-size: 1440px;
 
-            .encabezado__title {
-                font-size: 2.375rem;
-            }
+    .container {
+      .partners__encabezado {
+        max-width: 100%;
 
-            .encabezado__parrafo {
-                font-size: 1.188rem;
-                padding: 1rem 0;
-                font-weight: inherit;
-
-                .partners__br {
-                    display: none;
-                }
-            }
+        .encabezado__title {
+          font-size: functions.rem(38);
         }
 
-        .partners__slider {
-            margin: 0 5.75vw;
+        .encabezado__parrafo {
+          font-size: functions.rem(19);
+          font-weight: inherit;
+        }
+      }
 
-            .slider__object {
-                .object__partner {
-                    width: 21vw;
-                }
-            }
+      .partners__slider {
+        //margin: 0 5.75vw;
+        margin-top: functions.rem(30);
+
+        .slider__object {
+          .object__partner {
+            width: 21vw;
+          }
+        }
+      }
+
+      .controls__slider {
+        margin: 0 10.5vw;
+
+        .slider__progressBar {
+          margin: 0.5rem 0 0;
         }
 
-        .controls__slider {
-            margin: 0 10.5vw;
-
-            .slider__arrows {
-                .arrows__arrow {
-                    .arrow__btn {
-                        font-size: 2.5rem;
-                    }
-                }
+        .slider__arrows {
+          .arrows__arrow {
+            .arrow__btn {
+              .btn__img {
+                width: 26px;
+                height: 21px;
+              }
             }
-
-            .slider__progressBar {
-                margin: 2rem 0 4rem;
-            }
+          }
         }
+      }
     }
+  }
 }

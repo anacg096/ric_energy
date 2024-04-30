@@ -152,7 +152,7 @@
 
 <main class="main">
     <section class="main__somos">
-        <div class="somos__informacion aos-init aos-animate">
+        <div class="somos__informacion" data-aos="fade-right">
             <h1 class="informacion__titulo">
                 ¿QUIÉNES SOMOS?
             </h1>
@@ -166,7 +166,7 @@
             </p>
         </div>
         <div class="somos__bottom">
-            <div class="bottom__enlace">
+            <div class="bottom__enlace" data-aos="fade-right">
                 <a class="enlace__link" href="#">
                     <button class="link__verMas">
                         VER MÁS
@@ -187,7 +187,7 @@
                     SOBRE NOSOTROS
                 </h1>
             </div>
-            <div class="nosotros__bloques">
+            <div class="nosotros__bloques" data-aos="fade-up">
                 <div class="bloques__resumen pipeline">
                     <div class="resumen__background "></div>
                     <h1 class="resumen__title">
@@ -245,14 +245,14 @@
     <section class="main__tecnologias">
         <img class="tecnologias__vector" src="./images/main/nosotros/vector_blanco.png" alt="vector_blanco"/>
 
-        <div class="tecnologias__container">
+        <div class="tecnologias__container container">
             <div class="container__title">
                 <h1 class="title">
                     NUESTRAS TECNOLOGÍAS
                 </h1>
             </div>
 
-            <div class="container__tabs">
+            <div class="container__tabs" data-aos="fade-up">
                 <div class="tabs__tab solar">
                     <div class="tab__title">
                         <h1 class="title__tech">
@@ -268,7 +268,7 @@
                     <div class="tab__button">
                         <a class="button__enlace" href="#">
                             <button class="enlace__ampliar">
-                                VER MÁS
+                                LEER MÁS
                                 <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha"/>
                             </button>
                         </a>
@@ -289,7 +289,7 @@
                     <div class="tab__button">
                         <a class="button__enlace" href="#">
                             <button class="enlace__ampliar">
-                                VER MÁS
+                                LEER MÁS
                                 <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha"/>
                             </button>
                         </a>
@@ -310,7 +310,7 @@
                     <div class="tab__button">
                         <a class="button__enlace" href="#">
                             <button class="enlace__ampliar">
-                                VER MÁS
+                                LEER MÁS
                                 <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha"/>
                             </button>
                         </a>
@@ -332,7 +332,7 @@
                     <div class="tab__button">
                         <a class="button__enlace" href="#">
                             <button class="enlace__ampliar">
-                                VER MÁS
+                                LEER MÁS
                                 <img class="ampliar__row" src="./images/main/somos/row.png" alt="flecha"/>
                             </button>
                         </a>
@@ -343,17 +343,17 @@
     </section>
 
     <section class="main__presencia">
-        <div class="presencia__title">
-            <h1 class="title__global">
-                NUESTRA <br/>
-                PRESENCIA GLOBAL
-            </h1>
-        </div>
-        <section class="presencia__sectionMapa">
-            <div class="sectionMapa__containerMapa">
-                <img class="mobile__mapa" src="./images/main/presencia/map_countries.png" alt="mapa">
-                <div class="containerMapa__informacion fila_1">
-                    <div class="informacion__datos espania">
+        <div class="container">
+            <div class="presencia__title">
+                <h1 class="title__global">
+                    NUESTRA <br/>
+                    PRESENCIA GLOBAL
+                </h1>
+            </div>
+            <div class="presencia__sectionMapa">
+                <div class="sectionMapa__containerMapa">
+                    <img class="containerMapa__mapa" src="./images/main/presencia/map_countries.png" alt="mapa">
+                    <div class="containerMapa__datos spain">
                         <div class="datos__country">
                             ESPAÑA
                         </div>
@@ -361,7 +361,7 @@
                             15 GW
                         </div>
                     </div>
-                    <div class="informacion__datos italia">
+                    <div class="containerMapa__datos italy">
                         <div class="datos__country">
                             ITALIA
                         </div>
@@ -369,9 +369,7 @@
                             200 MW
                         </div>
                     </div>
-                </div>
-                <div class="containerMapa__informacion fila_2">
-                    <div class="informacion__datos usa">
+                    <div class="containerMapa__datos usa">
                         <div class="datos__country">
                             USA
                         </div>
@@ -379,9 +377,7 @@
                             1,8 GW
                         </div>
                     </div>
-                </div>
-                <div class="containerMapa__informacion fila_3">
-                    <div class="informacion__datos africa">
+                    <div class="containerMapa__datos africa">
                         <div class="datos__country">
                             ÁFRICA
                         </div>
@@ -391,65 +387,66 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
     <section class="main__partners">
-        <div class="partners__encabezado">
-            <h1 class="encabezado__title">
-                CLIENTES QUE NOS LLENAN DE ENERGÍA
-            </h1>
-            <p class="encabezado__parrafo">
-                Grandes grupos empresariales han confiando en RIC Energy para <br class="partners__br"/>
-                llevar a cabo sus proyectos renovables
-            </p>
-        </div>
-        <div class="partners__slider slider">
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/qenergy.png" alt="Qenergy"/>
+        <div class="container">
+            <div class="partners__encabezado" data-aos="fade-up">
+                <h2 class="encabezado__title">
+                    CLIENTES QUE NOS LLENAN DE ENERGÍA
+                </h2>
+                <p class="encabezado__parrafo">
+                    Grandes grupos empresariales han confiando en RIC Energy para llevar a cabo sus proyectos renovables
+                </p>
             </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/Macquarie.png" alt="Macquarie"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/lightsource_bp.png" alt="Lightsource bp"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/GoldmanSachs.png" alt="Golman Sachs"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/PGE.png" alt="PGE"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/Trinasolar.png" alt="Trinasolar"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/Panasonic.png" alt="Panasonic"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/Everwood.png" alt="Everwood"/>
-            </div>
-            <div class="slider__object">
-                <img class="object__partner" src="./images/main/partners/Sonnedix.png" alt="Sonnedix"/>
-            </div>
-        </div>
-
-        <div class="controls__slider">
-            <div class="slider__progressBar">
-                <div id="progress_one" class="progressbar__section active_partners"></div>
-                <div id="progress_two" class="progressbar__section"></div>
-                <div id="progress_three" class="progressbar__section"></div>
-            </div>
-            <div class="slider__arrows">
-                <div class="arrows__arrow">
-                    <button id="prev_partners" class="arrow__btn opacity_partners">
-                        <i class="bi bi-arrow-left"></i>
-                    </button>
+            <div class="partners__slider slider">
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/qenergy.png" alt="Qenergy"/>
                 </div>
-                <div class="arrows__arrow">
-                    <button id="next_partners" class="arrow__btn">
-                        <i class="bi bi-arrow-right"></i>
-                    </button>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/Macquarie.png" alt="Macquarie"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/lightsource_bp.png" alt="Lightsource bp"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/GoldmanSachs.png" alt="Golman Sachs"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/PGE.png" alt="PGE"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/Trinasolar.png" alt="Trinasolar"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/Panasonic.png" alt="Panasonic"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/Everwood.png" alt="Everwood"/>
+                </div>
+                <div class="slider__object">
+                    <img class="object__partner" src="./images/main/partners/Sonnedix.png" alt="Sonnedix"/>
+                </div>
+            </div>
+
+            <div class="controls__slider">
+                <div class="slider__progressBar">
+                    <div id="progress_one" class="progressbar__section active_partners"></div>
+                    <div id="progress_two" class="progressbar__section"></div>
+                    <div id="progress_three" class="progressbar__section"></div>
+                </div>
+                <div class="slider__arrows">
+                    <div class="arrows__arrow">
+                        <button id="prev_partners" class="arrow__btn opacity_partners">
+                            <img class="btn__img" src="./images/main/partners/left-arrow.png" alt="left_arrow" />
+                        </button>
+                    </div>
+                    <div class="arrows__arrow">
+                        <button id="next_partners" class="arrow__btn">
+                            <img class="btn__img" src="./images/main/partners/right-arrow.png" alt="right_arrow" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

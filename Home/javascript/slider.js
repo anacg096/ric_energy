@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    //Inicializamos el Animate On Scroll
+    AOS.init();
+
     // Inicializamos el slider de partners
     var slider_partners = $('.partners__slider').slick({
         // Configuramos el slider de partners
