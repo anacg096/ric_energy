@@ -1580,16 +1580,29 @@
   font-family: "Haskoy-SemiBold";
   color: #0F5E42;
   font-size: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.125rem;
+  font-weight: 600;
+  position: relative;
 }
-.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__title:hover {
-  text-decoration: underline;
+.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #0F5E42;
+  transition: width linear 0.2s;
+}
+.footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__title:hover::after {
+  width: 100%;
 }
 .footer .footer__sectionppal .sectionppal__enlaces .enlaces__columna .columna__link {
   text-decoration: none;
   font-family: "Haskoy-Regular";
   color: #303030;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 .footer .footer__sectionFinal {
   padding-top: 1.5rem;
@@ -1613,6 +1626,20 @@
   font-family: "Haskoy-Regular";
   color: #303030;
   font-size: 0.875rem;
+  position: relative;
+}
+.footer .footer__sectionFinal .sectionFinal__politicas .politicas__bloque .bloque__enlacePoliticas::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #303030;
+  transition: width linear 0.2s;
+}
+.footer .footer__sectionFinal .sectionFinal__politicas .politicas__bloque .bloque__enlacePoliticas:hover::after {
+  width: 100%;
 }
 .footer .footer__sectionFinal .sectionFinal__redesSociales {
   width: 50%;

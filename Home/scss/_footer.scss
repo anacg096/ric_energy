@@ -2,23 +2,23 @@
 @use 'functions';
 
 .footer {
-    padding: 3.5rem 2.5vw 2rem;
+    padding: functions.rem(56) 2.5vw functions.rem(32);
 
     .footer__sectionppal {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid variables.$gris-oscuro;
-        padding-bottom: 1rem;
+        padding-bottom: functions.rem(16);
 
         .sectionppal__logotipo {
             display: flex;
             justify-content: end;
             align-items: end;
-            padding-bottom: 1rem;
+            padding-bottom: functions.rem(16);
 
             .logotipo__ric {
                 width: 100px;
-                margin-bottom: 1.5rem;
+                margin-bottom: functions.rem(24);
             }
         }
 
@@ -32,7 +32,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                margin-left: 6rem;
+                margin-left: functions.rem(96);
                 min-width: 210px;
 
                 .columna__linkTitle {
@@ -42,11 +42,24 @@
                 .columna__title {
                     font-family: variables.$font-haskoy_semibold;
                     color: variables.$verde-ric;
-                    font-size: 1.25rem;
-                    margin-bottom: 1.25rem;
+                    font-size: functions.rem(20);
+                    margin-bottom: functions.rem(18);
+                    font-weight: 600;
+                    position: relative;
 
-                    &:hover {
-                        text-decoration: underline;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: variables.$verde-ric;
+                        transition: width linear 0.2s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
                     }
                 }
 
@@ -54,14 +67,15 @@
                     text-decoration: none;
                     font-family: variables.$font-haskoy_regular;
                     color: variables.$gris-oscuro;
-                    font-size: 1.25rem;
+                    font-size: functions.rem(18);
+                    font-weight: 400;
                 }
             }
         }
     }
 
     .footer__sectionFinal {
-        padding-top: 1.5rem;
+        padding-top: functions.rem(24);
         display: flex;
         justify-content: space-between;
 
@@ -75,13 +89,29 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-right: 3rem;
+                padding-right: functions.rem(48);
 
                 .bloque__enlacePoliticas {
                     text-decoration: none;
                     font-family: variables.$font-haskoy_regular;
                     color: variables.$gris-oscuro;
-                    font-size: 0.875rem;
+                    font-size: functions.rem(14);
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 1px;
+                        background: variables.$gris-oscuro;
+                        transition: width linear 0.2s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -121,12 +151,12 @@
 
 @media only screen and (max-width: 1440px) {
     .footer {
-        padding: 2.5rem 3.5vw 2.5rem;
+        padding: functions.rem(40) 3.5vw functions.rem(40);
 
         .footer__sectionppal {
             .sectionppal__enlaces {
                 .enlaces__columna {
-                    margin-left: 2rem;
+                    margin-left: functions.rem(32);
                 }
             }
         }
@@ -135,7 +165,7 @@
 
 @media only screen and (max-width: 992px) {
     .footer {
-        padding: 2.5rem;
+        padding: functions.rem(40);
 
         .footer__sectionppal {
             justify-content: flex-start;
@@ -149,7 +179,7 @@
 
                 .logotipo__ric {
                     width: 50px;
-                    margin-bottom: 1.5rem;
+                    margin-bottom: functions.rem(24);
                 }
             }
 
