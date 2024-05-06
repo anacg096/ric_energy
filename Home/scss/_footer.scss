@@ -123,14 +123,14 @@
             align-items: end;
 
             .redesSociales__bloque {
-                width: 78px;
-                height: 78px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                text-decoration: none;
 
                 .bloque__enlaceRedesSociales {
-                    text-decoration: none;
+                    width: 78px;
+                    height: 78px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 

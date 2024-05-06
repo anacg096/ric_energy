@@ -1648,14 +1648,14 @@
   align-items: end;
 }
 .footer .footer__sectionFinal .sectionFinal__redesSociales .redesSociales__bloque {
+  text-decoration: none;
+}
+.footer .footer__sectionFinal .sectionFinal__redesSociales .redesSociales__bloque .bloque__enlaceRedesSociales {
   width: 78px;
   height: 78px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer .footer__sectionFinal .sectionFinal__redesSociales .redesSociales__bloque .bloque__enlaceRedesSociales {
-  text-decoration: none;
 }
 .footer .footer__sectionFinal .sectionFinal__redesSociales .instagram {
   background-color: #14AD53;
