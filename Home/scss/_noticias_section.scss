@@ -148,6 +148,9 @@
                     align-items: center;
 
                     &:hover {
+                      border: 0;
+                      background-color: variables.$verde-hover;
+
                       .leer__row {
                         transform: translateX(5px);
                       }
@@ -312,6 +315,8 @@
       }
 
       .noticias__slider {
+        margin-bottom: 0;
+
         .slider__container {
           .container__newsInformation {
             padding: functions.rem(20) functions.rem(20) 0;
@@ -351,6 +356,7 @@
 
             .newsContent__enlaceDiv {
               justify-content: center;
+
               .enlaceDiv__enlace {
                 .enlace__img {
                   width: 82vw;
@@ -367,6 +373,7 @@
           }
         }
       }
+
       .noticias__controller {
         .controller__panel {
           .arrows__btn {

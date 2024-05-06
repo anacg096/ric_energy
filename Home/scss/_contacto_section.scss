@@ -3,72 +3,89 @@
 
 .main__contacto {
     background-color: variables.$azul-claro;
+    padding: 100px 0 0 0;
 
-    .contacto__divContenido {
-        padding: 6.5rem 18.5vw 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1268px;
+        padding: 0 40px;
 
-        .divContenido__bloqueTitulos {
-            padding: 0 0 1rem;
+        .contacto__divContenido {
+            .divContenido__bloqueTitulos {
+                width: 100%;
 
-            .bloqueTitulos__contacto {
-                color: variables.$verde-manzana;
-                font-family: variables.$font-haskoy_bold;
-                font-size: 1.5rem;
-                line-height: .8;
-                margin-bottom: 20px;
-            }
+                .bloqueTitulos__contacto {
+                    color: variables.$verde-manzana;
+                    font-family: variables.$font-haskoy_bold;
+                    font-size: functions.rem(24);
+                    font-weight: 700;
+                    line-height: 0.8;
+                    margin-bottom: 20px;
+                }
 
-            .bloqueTitulos__pregunta {
-                color: variables.$verde-ric;
-                font-family: variables.$font-interstate;
-                font-size: 5rem;
-                line-height: 1;
-            }
-        }
-
-        .divContenido__texto {
-            display: flex;
-            justify-content: end;
-            align-items: end;
-            text-align: right;
-            padding: 0 0 1rem;
-
-            .texto__dudas {
-                color: variables.$verde-ric;
-                font-family: variables.$font-haskoy_medium;
-                font-size: 1.625rem;
-                line-height: 1.15;
-            }
-        }
-
-        .divContenido__enlaceContacto {
-            display: flex;
-            justify-content: end;
-            align-items: end;
-
-            .enlaceContacto__link {
-                text-decoration: none;
-
-                .link__btnContacto {
-                    padding: 1.75rem 1.625rem;
-                    font-size: 1.125rem;
+                .bloqueTitulos__pregunta {
+                    color: variables.$verde-ric;
+                    font-family: variables.$font-interstate;
+                    font-size: functions.rem(80);
                     line-height: 1;
-                    font-weight: 500;
-                    background-color: variables.$verde-lima;
-                    border: 1px solid variables.$verde-lima;
-                    color: variables.$gris-oscuro;
-                    font-family: variables.$font-haskoy_medium;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+            }
 
-                    &:hover {
-                        border: 1px solid variables.$verde-hover;
-                        background-color: variables.$verde-hover;
+            .divContenido__bloqueTexto {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                .bloqueTexto__textoEnlace {
+                    width: 46%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    .textoEnlace__dudas {
+                        color: variables.$verde-ric;
+                        font-family: variables.$font-haskoy_medium;
+                        font-size: functions.rem(26);
+                        line-height: 1.15;
+                        font-weight: 500;
+                        text-align: right;
+                        margin-bottom: 40px;
                     }
 
-                    .contacto__row {
-                        padding-left: 1rem;
+                    .textoEnlace__enlaceContacto {
+                        .enlaceContacto__link {
+                            text-decoration: none;
+
+                            .link__btnContacto {
+                                padding: functions.rem(28) functions.rem(26);
+                                font-size: functions.rem(18);
+                                line-height: 1;
+                                font-weight: 500;
+                                background-color: variables.$verde-lima;
+                                border: 0;
+                                color: variables.$gris-oscuro;
+                                font-family: variables.$font-haskoy_medium;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                &:hover {
+                                    background-color: variables.$verde-hover;
+
+                                    .contacto__row {
+                                        transform: translateX(5px);
+                                    }
+                                }
+
+                                .contacto__row {
+                                    padding-left: functions.rem(8);
+                                    transition: transform linear 0.2s;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -80,69 +97,46 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
-    .main__contacto {
-        .contacto__divContenido {
-            padding: 4.25rem 4vw 0;
-        }
-    }
-}
-
 @media only screen and (max-width: 992px) {
     .main__contacto {
-        .contacto__divContenido {
-            padding: 2.75rem 2vw 0.5rem;
+        padding-top: 40px;
 
-            .divContenido__bloqueTitulos {
-                padding: 0 0 1rem;
+        .container {
+            padding: 0 20px;
 
-                .bloqueTitulos__contacto {
-                    font-size: 1rem;
-                    margin-bottom: 12px;
-                }
+            .contacto__divContenido {
+                .divContenido__bloqueTitulos {
+                    .bloqueTitulos__contacto {
+                        font-size: functions.rem(16);
+                        margin-bottom: 12px;
+                    }
 
-                .bloqueTitulos__pregunta {
-                    font-size: 3.125rem;
-                }
-            }
-
-            .divContenido__texto {
-                padding: 0 0 1rem;
-
-                .texto__dudas {
-                    font-size: 1rem;
-
-                    .contacto__br {
-                        display: none;
+                    .bloqueTitulos__pregunta {
+                        font-size: functions.rem(50);
                     }
                 }
-            }
 
-            .divContenido__enlaceContacto {
-                .enlaceContacto__link {
-                    .link__btnContacto {
-                        padding: 1.25rem 1.625rem;
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
-}
+                .divContenido__bloqueTexto {
+                    .bloqueTexto__textoEnlace {
+                        width: 90%;
 
-@media only screen and (max-width: 430px) {
-    .main__contacto {
-        .contacto__divContenido {
-            padding: 2.75rem 5vw 0.5rem;
+                        .textoEnlace__dudas {
+                            font-size: functions.rem(16);
+                        }
 
-            .divContenido__texto {
-                .texto__dudas {
-                    .contacto__br {
-                        display: block;
+                        .textoEnlace__enlaceContacto {
+                            margin-bottom: functions.rem(8);
+
+                            .enlaceContacto__link {
+                                .link__btnContacto {
+                                    padding: functions.rem(20) functions.rem(26);
+                                    font-size: functions.rem(16);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
 }

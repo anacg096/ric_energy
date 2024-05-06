@@ -2,6 +2,9 @@ $(document).ready(function () {
     //Inicializamos el Animate On Scroll
     AOS.init();
 
+    // Necesario para que no falle al añadir la clase aos-animate (sección de contacto)
+    window.addEventListener('load', AOS.refresh);
+
     // Inicializamos el slider de partners
     var slider_partners = $('.partners__slider').slick({
         // Configuramos el slider de partners
