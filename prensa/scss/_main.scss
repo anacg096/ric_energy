@@ -1,0 +1,13 @@
+@use 'somos_section';
+@use 'nosotros_section';
+@use 'tecnologias_section';
+@use 'presencia_section';
+@use 'partners_section';
+@use 'noticias_section';
+@use 'contacto_section';
+
+.container {
+  width: 100%;
+  max-width: 1188px;
+  margin: auto;
+}

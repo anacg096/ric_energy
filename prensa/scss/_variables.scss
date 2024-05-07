@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Haskoy-Medium';
+    src: url('../../fonts/Haskoy_Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haskoy-Bold';
+    src: url('../../fonts/Haskoy-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haskoy-SemiBold';
+    src: url('../../fonts/Haskoy-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haskoy-Regular';
+    src: url('../../fonts/Haskoy-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Interstate-Condensed';
+    src: url('../../fonts/Interstate_Condensed_Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-haskoy_medium: 'Haskoy-Medium';
+$font-haskoy_bold: 'Haskoy-Bold';
+$font-haskoy_semibold: 'Haskoy-SemiBold';
+$font-haskoy_regular: 'Haskoy-Regular';
+$font-interstate: 'Interstate-Condensed';
+
+
+$verde-ric: #0F5E42;
+$verde-usa: #0d533a;
+$verde-hover:#6fc33a;
+$verde-bosque: #088745;
+$verde-manzana: #14AD53;
+$verde-lima: #98EF36;
+$azul-aqua: #12B0A0;
+$azul-cielo: #81D8D0;
+$azul-mar: #126B80;
+$azul-egeo: #054349;
+$gris-claro: #CBCBCB;
+$gris-oscuro: #303030;
+$negro: #000000;
+$verde-oscuro: #072517;
+$azul-claro: #E9F3ED;
+$azul-marClaro: #B8D3D9;
