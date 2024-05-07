@@ -1,0 +1,221 @@
+@use 'variables';
+@use 'functions';
+
+.seccionppal {
+  min-height: 53vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 40px;
+
+  .seccionppal__breadcrumb {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    width: 100%;
+    padding: 0 functions.rem(56);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: functions.rem(25);
+    font-size: functions.rem(14);
+    font-weight: 400;
+    z-index: 2;
+    color: #fff;
+
+    .breadcrumb__crumbItem {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      font-family: variables.$font-haskoy_regular;
+      font-size: functions.rem(14);
+      font-weight: 400;
+      color: #fff;
+
+      .crumbItem__enlace {
+        text-decoration: underline;
+        color: inherit;
+      }
+
+      .crumbItem__enlace,
+      .crumbItem__pagina {
+        white-space: nowrap;
+        max-width: 200px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+
+    }
+
+    .breadcrumb__separador {
+      content: "";
+      display: inline-block;
+      width: functions.rem(68);
+      height: 1px;
+      background: variables.$verde-lima;
+      margin: 0 10px;
+    }
+  }
+
+  .seccionppal__vector {
+    background-color: variables.$verde-ric;
+    //background-color: variables.$verde-lima;
+    width: 56vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .vector__svg {
+      content: "";
+      position: absolute;
+      width: 8vw; //120px
+      height: 100%;
+      top: 0;
+      right: -95px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+  }
+
+  .seccionppal__imagen {
+    width: 56%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    background-image: url("../images/seccionppal/seccionppal_chica.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 10%;
+    padding-top: 240px;
+    margin: 0 auto;
+    z-index: 10;
+    padding-left: 0;
+
+    .seccionppal__cabeceraText {
+      width: calc(56vw - (100vw - 1188px)/2 - 40px);
+      padding: 0;
+      margin: 0;
+
+      .cabeceraText__title {
+        font-family: variables.$font-interstate;
+        font-size: functions.rem(80);
+        line-height: 1;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: functions.rem(20);
+      }
+
+      .cabeceraText__parrafo {
+        font-size: functions.rem(24);
+        line-height: 1.33;
+        font-weight: 600;
+        color: #fff;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .seccionppal {
+    .seccionppal__breadcrumb {
+      padding: 0 functions.rem(40);
+    }
+    .seccionppal__vector {
+      .vector__svg {
+        width: 11vw;
+      }
+    }
+    .container {
+      .seccionppal__cabeceraText {
+        width: 54vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .seccionppal {
+    .seccionppal__vector {
+      .vector__svg {
+        width: 14vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .seccionppal {
+    padding: 0;
+    min-height: initial;
+
+    .seccionppal__breadcrumb {
+      position: absolute;
+      left: 0;
+      top: initial;
+      bottom: 0;
+      z-index: 11;
+
+      display: flex;
+      overflow: auto;
+      padding: 0 functions.rem(20) functions.rem(10);
+
+      .breadcrumb__separador {
+        width: functions.rem(30);
+      }
+    }
+
+    .seccionppal__vector {
+      display: none;
+    }
+
+    .seccionppal__imagen {
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    .container {
+      background-color: variables.$verde-fondo;
+      padding: functions.rem(60) 0;
+      position: relative;
+      top: 0;
+      left: 0;
+
+      .seccionppal__cabeceraText {
+        padding: functions.rem(20);
+        width: 100%;
+
+        .cabeceraText__title {
+          font-size: functions.rem(48);
+        }
+
+        .cabeceraText__parrafo {
+          margin-bottom: 0;
+          font-size: functions.rem(18);
+        }
+      }
+    }
+  }
+}
