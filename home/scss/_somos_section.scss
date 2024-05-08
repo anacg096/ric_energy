@@ -37,12 +37,13 @@
         text-decoration: none;
 
         .link__verMas {
+          min-width: 178px;
           padding: functions.rem(32) functions.rem(36);
           font-size: functions.rem(18);
-          line-height: 1.44;
+          line-height: 1;
           font-weight: 500;
           background-color: variables.$verde-lima;
-          border: 1px solid variables.$verde-lima;
+          border: 0;
           color: variables.$gris-oscuro;
           font-family: variables.$font-haskoy_medium;
           display: flex;
@@ -85,7 +86,6 @@
   .main__somos {
     .somos__informacion {
       margin-left: 17vw;
-      margin-top: functions.rem(62.4);
 
       .informacion__titulo {
         padding-bottom: functions.rem(28);
@@ -107,12 +107,11 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .main__somos {
     .somos__informacion {
       margin-left: 3vw;
       margin-right: 3vw;
-      margin-top: functions.rem(72);
 
       .informacion__titulo {
         font-size: functions.rem(38);
@@ -133,6 +132,10 @@
       .bottom__enlace {
         margin-left: 3vw;
         margin-bottom: functions.rem(64);
+
+        .link__verMas {
+          font-size: functions.rem(16);
+        }
       }
 
       .bottom__waves {
