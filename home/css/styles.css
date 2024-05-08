@@ -1155,6 +1155,12 @@
 .main__noticias .container .noticias__slider .slider__container {
   background-color: #14AD53;
 }
+.main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
+  width: 32vw;
+}
+.main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img .img__containerLink {
+  display: block;
+}
 .main__noticias .container .noticias__slider .slider__container .container__newsInformation {
   padding: 2rem 2rem 0;
   display: flex;
@@ -1245,12 +1251,6 @@
   padding-left: 0.5rem;
   transition: transform linear 0.2s;
 }
-.main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img {
-  width: 32vw;
-}
-.main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img .img__containerLink {
-  display: block;
-}
 .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .new1 {
   background-image: url("../images/main/noticias/new1.png");
 }
@@ -1310,12 +1310,12 @@
 }
 
 @media only screen and (max-width: 1440px) {
+  .main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
+    width: 46vw;
+  }
   .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
     width: 39vw;
     height: 27.5vw;
-  }
-  .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img {
-    width: 46vw;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -1340,6 +1340,9 @@
   }
   .main__noticias .container .noticias__slider {
     margin-bottom: 0;
+  }
+  .main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
+    width: 82vw;
   }
   .main__noticias .container .noticias__slider .slider__container .container__newsInformation {
     padding: 1.25rem 1.25rem 0;
@@ -1377,9 +1380,6 @@
     width: 82vw;
     height: 423px;
   }
-  .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img {
-    width: 82vw;
-  }
   .main__noticias .container .noticias__controller .controller__panel .arrows__btn .btn__flecha .flecha__news {
     width: 1.625rem;
     height: 1.3125rem;
@@ -1398,24 +1398,24 @@
     max-width: 100%;
     width: 100%;
   }
+  .main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
+    width: 78vw;
+  }
   .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
     width: 78vw;
     height: 423px;
   }
-  .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img {
-    width: 78vw;
-  }
 }
 @media only screen and (max-width: 443px) {
+  .main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
+    width: 70vw;
+  }
+  .main__noticias .container .noticias__slider .slider__container:hover .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img .img__containerLink {
+    display: none;
+  }
   .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace .enlace__img {
     width: 70vw;
     height: 224px;
-  }
-  .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img {
-    width: 70vw;
-  }
-  .main__noticias .container .noticias__slider .slider__container .container__newsContent .newsContent__enlaceDiv .enlaceDiv__enlace:hover .enlace__img .img__containerLink {
-    display: none;
   }
 }
 .main__contacto {

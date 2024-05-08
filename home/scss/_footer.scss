@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'functions';
+@use '../../shared_scss/variables';
+@use '../../shared_scss/functions';
 
 .footer {
     padding: functions.rem(56) 2.5vw functions.rem(32);

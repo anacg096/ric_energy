@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'functions';
+@use '../../shared_scss/variables';
+@use '../../shared_scss/functions';
 
 .main__partners {
   background-image: url("../images/main/partners/fondo.png");

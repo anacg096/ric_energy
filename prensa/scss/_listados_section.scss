@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'functions';
+@use '../../shared_scss/variables';
+@use '../../shared_scss/functions';
 
 .main {
   .main__bloqueListados {
@@ -17,7 +17,8 @@
         .bloque__listItem {
           width: 100%;
           max-width: calc(33.3% - 15px);
-          height: 595px;
+          //height: 595px;
+          height: auto; //Añadido para quitar tanto espacio debajo de la imagen
           padding: functions.rem(30);
           border: 2px solid variables.$azul-mar;
           margin-bottom: functions.rem(50);
@@ -75,6 +76,7 @@
             height: 250px;
             overflow: hidden;
             margin: 30px 0;
+            //margin: 30px 0 0;
 
             .imgBox__contenedor {
               width: 100%;
@@ -120,24 +122,6 @@
         .bloque__listItem:hover:nth-child(10n+1) .listItem__imgBox .imgBox__contenedor .contenedor__img,
         .bloque__listItem:hover:nth-child(10n+7) .listItem__imgBox .imgBox__contenedor .contenedor__img {
           transform: scale(1.2);
-        }
-
-        .bloque__textBox {
-          .textBox__parrafo {
-            font-family: variables.$font-haskoy_regular;
-            font-size: functions.rem(18);
-            line-height: 1.44;
-            font-weight: 500;
-            color: variables.$gris-oscuro;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-          }
-        }
-
-        .bloque__textBox:nth-child(10n+1) .textBox__parrafo,
-        .bloque__textBox:nth-child(10n+7) .textBox__parrafo {
-          -webkit-line-clamp: 2;
         }
 
         .bloque__listLink {

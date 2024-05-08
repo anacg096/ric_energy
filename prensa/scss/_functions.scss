@@ -1,7 +1,0 @@
-@use "sass:math";
-
-$browser-context: 16; // Estándar
-
-@function rem($pixels, $context: $browser-context) {
-  @return #{math.div($pixels, $context)}rem;
-}

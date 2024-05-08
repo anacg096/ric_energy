@@ -517,7 +517,7 @@
 .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listItem {
   width: 100%;
   max-width: calc(33.3% - 15px);
-  height: 595px;
+  height: auto;
   padding: 1.875rem;
   border: 2px solid #126B80;
   margin-bottom: 3.125rem;
@@ -602,20 +602,6 @@
 .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listItem:hover:nth-child(10n+1) .listItem__imgBox .imgBox__contenedor .contenedor__img,
 .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listItem:hover:nth-child(10n+7) .listItem__imgBox .imgBox__contenedor .contenedor__img {
   transform: scale(1.2);
-}
-.main .main__bloqueListados .container .bloqueListados__bloque .bloque__textBox .textBox__parrafo {
-  font-family: "Haskoy-Regular";
-  font-size: 1.125rem;
-  line-height: 1.44;
-  font-weight: 500;
-  color: #303030;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.main .main__bloqueListados .container .bloqueListados__bloque .bloque__textBox:nth-child(10n+1) .textBox__parrafo,
-.main .main__bloqueListados .container .bloqueListados__bloque .bloque__textBox:nth-child(10n+7) .textBox__parrafo {
-  -webkit-line-clamp: 2;
 }
 .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listLink {
   position: absolute;
