@@ -82,7 +82,7 @@
 .header .navbar .nav__menu .menu__top .top__language .toggle__menu .menu__item .seleccionado {
   font-weight: bold;
 }
-.header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button {
+.header .navbar .nav__menu .menu__top .top__contactar .contactar__link {
   padding: 0.625rem 1rem;
   font-size: 1.125rem;
   font-weight: 500;
@@ -94,7 +94,7 @@
   text-decoration: none;
   transition: background-color linear 0.2s;
 }
-.header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button:hover {
+.header .navbar .nav__menu .menu__top .top__contactar .contactar__link:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -136,8 +136,6 @@
 }
 .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa {
   text-decoration: none;
-}
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button {
   padding: 0.625rem 1rem;
   min-width: 132px;
   font-size: 1.125rem;
@@ -153,14 +151,14 @@
   align-items: center;
   transition: background-color linear 0.2s;
 }
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button .button__image {
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .button__image {
   margin: 0 0.5rem;
 }
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:hover {
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa:hover {
   background-color: #98EF36;
   color: #0F5E42;
 }
-.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa .usa__button:hover .button__image {
+.header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .navbar__usa:hover .button__image {
   filter: hue-rotate(150deg) saturate(100%) brightness(50%);
 }
 .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_contactar, .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .mobile_lenguaje {
@@ -187,7 +185,7 @@
     width: 180px;
     margin-bottom: 0.75rem;
   }
-  .header .navbar .nav__menu .menu__top .top__contactar .contactar__link .link__button {
+  .header .navbar .nav__menu .menu__top .top__contactar .contactar__link {
     font-size: 1rem;
     min-width: 115px;
     padding: 0.625rem 0.75rem;
@@ -199,7 +197,7 @@
     font-size: 0.9375rem;
     margin-right: 1.25rem;
   }
-  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa .usa__button {
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa {
     font-size: 1rem;
     min-width: 115px;
     padding: 0.625rem 0.75rem;
@@ -227,7 +225,7 @@
     width: 120px;
   }
   .header .navbar .nav__menu .navbar-toggler {
-    border: 1px solid transparent;
+    border: 0;
     padding: 0;
   }
   .header .navbar .nav__menu .navbar-toggler .navbar-toggler-icon {
@@ -269,8 +267,6 @@
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa {
     margin: 0 0.625rem;
     line-height: 1.3;
-  }
-  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .navbar__usa .usa__button {
     font-size: 1rem;
     min-width: 115px;
     padding: 0.625rem 0.75rem;
@@ -278,8 +274,6 @@
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .contactar__link {
     margin: 0 0.625rem;
     line-height: 1.3;
-  }
-  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .contactar__link .link__button {
     font-size: 1rem;
     background-color: #98EF36;
     border: 0;
@@ -289,9 +283,8 @@
     min-width: 115px;
     padding: 0.625rem 0.75rem;
   }
-  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .contactar__link .link__button:hover {
+  .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .list__navbar .contactar__link:hover {
     background-color: #fff;
-    border: 1px solid #fff;
   }
   .header .navbar .nav__menu .nav__navbar .navbar__ul .ul__list .top__language {
     margin-right: 0;
@@ -320,6 +313,36 @@
   .header .navbar .nav__menu .nav__navbar .navbar__ul .mobile__list {
     border-bottom: 2px solid transparent;
   }
+}
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 .section__cabecera {
   position: relative;
@@ -394,6 +417,36 @@
     background-position-x: right;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main__somos {
   background-color: #072517;
 }
@@ -425,8 +478,6 @@
 }
 .main__somos .somos__bottom .bottom__enlace .enlace__link {
   text-decoration: none;
-}
-.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas {
   min-width: 178px;
   padding: 2rem 2.25rem;
   font-size: 1.125rem;
@@ -441,13 +492,13 @@
   align-items: center;
   position: relative;
 }
-.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas:hover {
+.main__somos .somos__bottom .bottom__enlace .enlace__link:hover {
   opacity: 0.75;
 }
-.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas:hover .verMas__row {
+.main__somos .somos__bottom .bottom__enlace .enlace__link:hover .verMas__row {
   transform: translateX(5px);
 }
-.main__somos .somos__bottom .bottom__enlace .enlace__link .link__verMas .verMas__row {
+.main__somos .somos__bottom .bottom__enlace .enlace__link .verMas__row {
   padding-left: 0.5rem;
   transition: transform linear 0.2s;
 }
@@ -517,6 +568,36 @@
     margin-left: 5vw;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main__nosotros {
   width: 100%;
   padding: 7.5rem 2.5rem;
@@ -538,7 +619,7 @@
 }
 .main__nosotros .nosotros__bloques .bloques__resumen {
   width: 100%;
-  max-width: calc(33.3% - 1rem);
+  max-width: calc(33.3% - 16px);
   height: 329px;
   min-height: 256px;
   background-size: cover;
@@ -652,7 +733,7 @@
     font-size: 2.375rem;
   }
   .main__nosotros .nosotros__bloques .bloques__resumen {
-    max-width: calc(50% - 1rem);
+    max-width: calc(50% - 16px);
     height: 31vw;
     background-size: contain;
     background-position: bottom;
@@ -677,6 +758,36 @@
     min-height: 296px;
     background-position: bottom;
   }
+}
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 .main__tecnologias {
   background-size: cover;
@@ -743,8 +854,6 @@
 }
 .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace {
   text-decoration: none;
-}
-.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar {
   padding: 1.75rem 1.625rem;
   font-size: 1.125rem;
   font-weight: 500;
@@ -757,13 +866,13 @@
   justify-content: center;
   align-items: center;
 }
-.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar:hover {
+.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace:hover {
   opacity: 0.75;
 }
-.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar:hover .ampliar__row {
+.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace:hover .ampliar__row {
   transform: translateX(5px);
 }
-.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar .ampliar__row {
+.main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .ampliar__row {
   padding-left: 0.5rem;
   transition: transform linear 0.2s;
 }
@@ -828,7 +937,7 @@
   .main__tecnologias .tecnologias__container .container__tabs .tabs__tab .tab__contenido {
     font-size: 1.25rem;
   }
-  .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace .enlace__ampliar {
+  .main__tecnologias .tecnologias__container .container__tabs .tab__button .button__enlace {
     padding: 1.25rem 1.625rem;
     font-size: 1rem;
   }
@@ -855,6 +964,36 @@
   .main__tecnologias .tecnologias__container .container__tabs .tabs__tab .tab__contenido {
     font-size: 1rem;
   }
+}
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 .main__presencia {
   background-color: #B8D3D9;
@@ -987,6 +1126,36 @@
     top: 70%;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main__partners {
   background-image: url("../images/main/partners/fondo.png");
   background-size: 100%;
@@ -1105,6 +1274,36 @@
     height: 1.3125rem;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main__noticias {
   padding-top: 120px;
   padding-bottom: 80px;
@@ -1126,8 +1325,6 @@
 }
 .main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace {
   text-decoration: none;
-}
-.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace .enlace__noticias {
   padding: 1.75rem 1.625rem;
   font-size: 1.125rem;
   font-weight: 500;
@@ -1139,13 +1336,13 @@
   justify-content: center;
   align-items: center;
 }
-.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace .enlace__noticias:hover {
+.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace:hover {
   background-color: #6fc33a;
 }
-.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace .enlace__noticias:hover .noticias__row {
+.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace:hover .noticias__row {
   transform: translateX(5px);
 }
-.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace .enlace__noticias .noticias__row {
+.main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace .noticias__row {
   padding-left: 1rem;
   transition: transform linear 0.2s;
 }
@@ -1334,7 +1531,7 @@
   .main__noticias .container .noticias__encabezado .encabezado__bloqueTitle .bloqueTitle {
     font-size: 2.375rem;
   }
-  .main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace .enlace__noticias {
+  .main__noticias .container .noticias__encabezado .encabezado__bloqueLink .bloqueLink__enlace {
     padding: 1.25rem 1.625rem;
     font-size: 1rem;
   }
@@ -1418,6 +1615,36 @@
     height: 224px;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main__contacto {
   background-color: #E9F3ED;
   padding: 100px 0 0 0;
@@ -1469,8 +1696,6 @@
 }
 .main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link {
   text-decoration: none;
-}
-.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link .link__btnContacto {
   padding: 1.75rem 1.625rem;
   font-size: 1.125rem;
   line-height: 1;
@@ -1483,13 +1708,13 @@
   justify-content: center;
   align-items: center;
 }
-.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link .link__btnContacto:hover {
+.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link:hover {
   background-color: #6fc33a;
 }
-.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link .link__btnContacto:hover .contacto__row {
+.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link:hover .contacto__row {
   transform: translateX(5px);
 }
-.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link .link__btnContacto .contacto__row {
+.main__contacto .container .contacto__divContenido .divContenido__bloqueTexto .bloqueTexto__textoEnlace .textoEnlace__enlaceContacto .enlaceContacto__link .contacto__row {
   padding-left: 0.5rem;
   transition: transform linear 0.2s;
 }
@@ -1532,6 +1757,36 @@
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .footer {
   padding: 3.5rem 2.5vw 2rem;
 }

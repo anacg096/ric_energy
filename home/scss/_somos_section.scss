@@ -1,8 +1,8 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .main__somos {
-  background-color: variables.$verde-oscuro;
+  background-color: $verde-oscuro;
 
   .somos__informacion {
     margin-left: 25vw;
@@ -10,16 +10,16 @@
 
     .informacion__titulo {
       color: #fff;
-      font-family: variables.$font-interstate;
-      font-size: functions.rem(48);
+      font-family: $font-interstate;
+      font-size: rem(48);
       line-height: 1.04;
-      padding-bottom: functions.rem(16);
+      padding-bottom: rem(16);
     }
 
     .informacion__contenido {
       color: #fff;
-      font-family: variables.$font-haskoy_medium;
-      font-size: functions.rem(18);
+      font-family: $font-haskoy_medium;
+      font-size: rem(18);
       line-height: 1.44;
       font-weight: 500;
     }
@@ -30,39 +30,36 @@
     justify-content: space-between;
 
     .bottom__enlace {
-      padding-top: functions.rem(48);
+      padding-top: rem(48);
       margin-left: 25vw;
 
       .enlace__link {
         text-decoration: none;
+        min-width: 178px;
+        padding: rem(32) rem(36);
+        font-size: rem(18);
+        line-height: 1;
+        font-weight: 500;
+        background-color: $verde-lima;
+        border: 0;
+        color: $gris-oscuro;
+        font-family: $font-haskoy_medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
 
-        .link__verMas {
-          min-width: 178px;
-          padding: functions.rem(32) functions.rem(36);
-          font-size: functions.rem(18);
-          line-height: 1;
-          font-weight: 500;
-          background-color: variables.$verde-lima;
-          border: 0;
-          color: variables.$gris-oscuro;
-          font-family: variables.$font-haskoy_medium;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-
-          &:hover {
-            opacity: 0.75;
-
-            .verMas__row {
-              transform: translateX(5px);
-            }
-          }
+        &:hover {
+          opacity: 0.75;
 
           .verMas__row {
-            padding-left: functions.rem(8);
-            transition: transform linear 0.2s;
+            transform: translateX(5px);
           }
+        }
+
+        .verMas__row {
+          padding-left: rem(8);
+          transition: transform linear 0.2s;
         }
       }
     }
@@ -75,7 +72,7 @@
       .waves__image {
         width: 34vw;
         height: 15vw;
-        margin-bottom: functions.rem(4);
+        margin-bottom: rem(4);
       }
     }
   }
@@ -88,7 +85,7 @@
       margin-left: 17vw;
 
       .informacion__titulo {
-        padding-bottom: functions.rem(28);
+        padding-bottom: rem(28);
       }
     }
 
@@ -114,9 +111,9 @@
       margin-right: 3vw;
 
       .informacion__titulo {
-        font-size: functions.rem(38);
-        padding-bottom: functions.rem(16);
-        padding-top: functions.rem(16);
+        font-size: rem(38);
+        padding-bottom: rem(16);
+        padding-top: rem(16);
       }
 
       .informacion__contenido {
@@ -131,10 +128,10 @@
 
       .bottom__enlace {
         margin-left: 3vw;
-        margin-bottom: functions.rem(64);
+        margin-bottom: rem(64);
 
         .link__verMas {
-          font-size: functions.rem(16);
+          font-size: rem(16);
         }
       }
 
@@ -154,8 +151,8 @@
       margin-left: 5vw;
 
       .informacion__titulo {
-        padding-bottom: functions.rem(48);
-        padding-top: functions.rem(44);
+        padding-bottom: rem(48);
+        padding-top: rem(44);
       }
     }
 

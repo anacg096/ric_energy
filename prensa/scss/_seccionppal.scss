@@ -1,5 +1,5 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .seccionppal {
   min-height: 53vw;
@@ -17,12 +17,12 @@
     left: 0;
     top: 160px;
     width: 100%;
-    padding: 0 functions.rem(56);
+    padding: 0 rem(56);
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: functions.rem(25);
-    font-size: functions.rem(14);
+    margin-top: rem(25);
+    font-size: rem(14);
     font-weight: 400;
     z-index: 2;
     color: #fff;
@@ -31,8 +31,8 @@
       position: relative;
       display: inline-flex;
       align-items: center;
-      font-family: variables.$font-haskoy_regular;
-      font-size: functions.rem(14);
+      font-family: $font-haskoy_regular;
+      font-size: rem(14);
       font-weight: 400;
       color: #fff;
 
@@ -55,15 +55,15 @@
     .breadcrumb__separador {
       content: "";
       display: inline-block;
-      width: functions.rem(68);
+      width: rem(68);
       height: 1px;
-      background: variables.$verde-lima;
+      background: $verde-lima;
       margin: 0 10px;
     }
   }
 
   .seccionppal__vector {
-    background-color: variables.$verde-ric;
+    background-color: $verde-ric;
     //background-color: variables.$verde-lima;
     width: 56vw;
     height: 100%;
@@ -116,17 +116,17 @@
       margin: 0;
 
       .cabeceraText__title {
-        font-family: variables.$font-interstate;
-        font-size: functions.rem(80);
+        font-family: $font-interstate;
+        font-size: rem(80);
         line-height: 1;
         font-weight: 100;
         text-transform: uppercase;
         color: #fff;
-        margin-bottom: functions.rem(20);
+        margin-bottom: rem(20);
       }
 
       .cabeceraText__parrafo {
-        font-size: functions.rem(24);
+        font-size: rem(24);
         line-height: 1.33;
         font-weight: 600;
         color: #fff;
@@ -139,7 +139,7 @@
 @media only screen and (max-width: 1440px) {
   .seccionppal {
     .seccionppal__breadcrumb {
-      padding: 0 functions.rem(40);
+      padding: 0 rem(40);
     }
     .seccionppal__vector {
       .vector__svg {
@@ -178,10 +178,10 @@
 
       display: flex;
       overflow: auto;
-      padding: 0 functions.rem(20) functions.rem(10);
+      padding: 0 rem(20) rem(10);
 
       .breadcrumb__separador {
-        width: functions.rem(30);
+        width: rem(30);
       }
     }
 
@@ -197,23 +197,23 @@
     }
 
     .container {
-      background-color: variables.$verde-fondo;
-      padding: functions.rem(60) 0;
+      background-color: $verde-fondo;
+      padding: rem(60) 0;
       position: relative;
       top: 0;
       left: 0;
 
       .seccionppal__cabeceraText {
-        padding: functions.rem(20);
+        padding: rem(20);
         width: 100%;
 
         .cabeceraText__title {
-          font-size: functions.rem(48);
+          font-size: rem(48);
         }
 
         .cabeceraText__parrafo {
           margin-bottom: 0;
-          font-size: functions.rem(18);
+          font-size: rem(18);
         }
       }
     }

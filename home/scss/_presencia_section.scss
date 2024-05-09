@@ -1,24 +1,24 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .main__presencia {
-  background-color: variables.$azul-marClaro;
+  background-color: $azul-marClaro;
   width: 100%;
-  padding: 0 functions.rem(40);
+  padding: 0 rem(40);
   overflow: hidden;
 
   .container {
-    padding-top: functions.rem(95);
-    padding-bottom: functions.rem(60);
+    padding-top: rem(95);
+    padding-bottom: rem(60);
     position: relative;
 
     .presencia__title {
-      margin-bottom: functions.rem(64);
+      margin-bottom: rem(64);
 
       .title__global {
-        font-family: variables.$font-interstate;
-        color: variables.$verde-oscuro;
-        font-size: functions.rem(48);
+        font-family: $font-interstate;
+        color: $verde-oscuro;
+        font-size: rem(48);
         line-height: 1.04;
         font-weight: 700;
       }
@@ -42,10 +42,10 @@
           position: absolute;
           left: 50%;
           top: 50%;
-          padding: functions.rem(10) functions.rem(15);
-          min-width: functions.rem(130);
+          padding: rem(10) rem(15);
+          min-width: rem(130);
           cursor: pointer;
-          background-color: variables.$verde-ric;
+          background-color: $verde-ric;
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -53,21 +53,21 @@
           border-radius: 5px;
 
           .datos__country {
-            font-size: functions.rem(18);
+            font-size: rem(18);
             color: #fff;
             //font-weight: 700;
-            font-family: variables.$font-haskoy_bold;
+            font-family: $font-haskoy_bold;
           }
 
           .datos__valor {
-            padding: functions.rem(10) functions.rem(10);
-            margin-top: functions.rem(15);
+            padding: rem(10) rem(10);
+            margin-top: rem(15);
             //font-weight: 600;
-            background-color: variables.$verde-lima;
-            color: variables.$verde-ric;
-            font-size: functions.rem(18);
+            background-color: $verde-lima;
+            color: $verde-ric;
+            font-size: rem(18);
             width: 100%;
-            font-family: variables.$font-haskoy_semibold;
+            font-family: $font-haskoy_semibold;
             text-align: center;
           }
         }
@@ -99,13 +99,13 @@
 
 @media only screen and (max-width: 992px) {
   .main__presencia {
-    padding: 0 functions.rem(20);
+    padding: 0 rem(20);
 
     .container {
       .presencia__title {
         .title__global {
-          font-size: functions.rem(38);
-          margin-bottom: functions.rem(32);
+          font-size: rem(38);
+          margin-bottom: rem(32);
         }
       }
 
@@ -125,17 +125,17 @@
           }
 
           .containerMapa__datos {
-            padding: functions.rem(8) functions.rem(10);
-            min-width: functions.rem(100);
+            padding: rem(8) rem(10);
+            min-width: rem(100);
 
             .datos__country {
-              font-size: functions.rem(14);
+              font-size: rem(14);
             }
 
             .datos__valor {
-              font-size: functions.rem(14);
-              margin-top: functions.rem(10);
-              padding: functions.rem(6);
+              font-size: rem(14);
+              margin-top: rem(10);
+              padding: rem(6);
             }
           }
 

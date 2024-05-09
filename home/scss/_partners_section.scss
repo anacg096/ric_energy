@@ -1,5 +1,5 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .main__partners {
   background-image: url("../images/main/partners/fondo.png");
@@ -17,19 +17,19 @@
       margin: 0 auto;
 
       .encabezado__title {
-        font-family: variables.$font-interstate;
+        font-family: $font-interstate;
         color: #fff;
-        font-size: functions.rem(48);
+        font-size: rem(48);
         font-weight: 700;
         line-height: 1.04;
         text-align: center;
-        margin-bottom: functions.rem(24);
+        margin-bottom: rem(24);
       }
 
       .encabezado__parrafo {
-        font-family: variables.$font-haskoy_medium;
+        font-family: $font-haskoy_medium;
         color: #fff;
-        font-size: functions.rem(24);
+        font-size: rem(24);
         line-height: 1.33;
         font-weight: 700;
         text-align: center;
@@ -40,8 +40,8 @@
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-top: functions.rem(104);
-      margin-bottom: functions.rem(32);
+      margin-top: rem(104);
+      margin-bottom: rem(32);
 
       .slider__object {
         display: flex;
@@ -74,10 +74,11 @@
             cursor: pointer;
 
             .btn__img {
-              width: functions.rem(50);
-              height: functions.rem(40);
+              width: rem(50);
+              height: rem(40);
             }
           }
+
           .opacity_partners {
             opacity: 0.5;
           }
@@ -106,8 +107,8 @@
 
 @media only screen and (max-width: 992px) {
   .main__partners {
-    padding-top: functions.rem(40);
-    padding-bottom: functions.rem(40);
+    padding-top: rem(40);
+    padding-bottom: rem(40);
     background-size: 1440px;
 
     .container {
@@ -115,18 +116,18 @@
         max-width: 100%;
 
         .encabezado__title {
-          font-size: functions.rem(38);
+          font-size: rem(38);
         }
 
         .encabezado__parrafo {
-          font-size: functions.rem(19);
+          font-size: rem(19);
           font-weight: inherit;
         }
       }
 
       .partners__slider {
         //margin: 0 5.75vw;
-        margin-top: functions.rem(30);
+        margin-top: rem(30);
 
         .slider__object {
           .object__partner {
@@ -146,8 +147,8 @@
           .arrows__arrow {
             .arrow__btn {
               .btn__img {
-                width: functions.rem(26);
-                height: functions.rem(21);
+                width: rem(26);
+                height: rem(21);
               }
             }
           }

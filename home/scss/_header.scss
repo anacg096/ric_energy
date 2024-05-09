@@ -1,12 +1,12 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: functions.rem(24) functions.rem(55);
+  padding: rem(24) rem(55);
   z-index: 100;
 
   .navbar {
@@ -32,7 +32,7 @@
       .menu__top {
         display: flex;
         justify-content: end;
-        padding-bottom: functions.rem(20);
+        padding-bottom: rem(20);
 
         .top__language {
           margin-right: 3rem;
@@ -41,9 +41,9 @@
 
           .language__toggle {
             color: #fff;
-            font-family: variables.$font-haskoy_medium;
+            font-family: $font-haskoy_medium;
             text-decoration: none;
-            font-size: functions.rem(16);
+            font-size: rem(16);
           }
 
           .toggle__menu {
@@ -51,12 +51,12 @@
 
             .menu__item {
               .item__option {
-                font-family: variables.$font-haskoy_medium;
+                font-family: $font-haskoy_medium;
                 text-decoration: none;
-                font-size: functions.rem(16);
+                font-size: rem(16);
 
                 &:hover, &.show, &:focus {
-                  background-color: variables.$azul-claro;
+                  background-color: $azul-claro;
                 }
               }
 
@@ -69,22 +69,20 @@
 
         .top__contactar {
           .contactar__link {
-            .link__button {
-              padding: functions.rem(10) functions.rem(16);
-              font-size: functions.rem(18);
-              font-weight: 500;
-              line-height: 1;
-              background-color: variables.$verde-lima;
-              border: 1px solid variables.$verde-lima;
-              color: variables.$azul-egeo;
-              font-family: variables.$font-haskoy_medium;
-              text-decoration: none;
-              transition: background-color linear 0.2s;
+            padding: rem(10) rem(16);
+            font-size: rem(18);
+            font-weight: 500;
+            line-height: 1;
+            background-color: $verde-lima;
+            border: 1px solid $verde-lima;
+            color: $azul-egeo;
+            font-family: $font-haskoy_medium;
+            text-decoration: none;
+            transition: background-color linear 0.2s;
 
-              &:hover {
-                background-color: #fff;
-                border: 1px solid #fff;
-              }
+            &:hover {
+              background-color: #fff;
+              border: 1px solid #fff;
             }
           }
         }
@@ -101,33 +99,33 @@
 
           .ul__list {
             border-top: 1px solid #fff;
-            padding-top: functions.rem(20);
+            padding-top: rem(20);
             display: flex;
             align-items: center;
 
             .list__link {
               color: #fff;
-              font-family: variables.$font-haskoy_medium;
+              font-family: $font-haskoy_medium;
               text-decoration: none;
-              font-size: functions.rem(16);
+              font-size: rem(16);
               font-weight: 500;
-              margin-right: functions.rem(23); //23px
+              margin-right: rem(23); //23px
             }
 
             .list__ulDropdown {
-              background-color: variables.$azul-cielo;
+              background-color: $azul-cielo;
 
               .ulDropdown__li {
                 .li__optionLink {
-                  color: variables.$gris-oscuro;
-                  font-family: variables.$font-haskoy_medium;
+                  color: $gris-oscuro;
+                  font-family: $font-haskoy_medium;
                   text-decoration: none;
-                  font-size: functions.rem(16);
+                  font-size: rem(16);
                   transition: background-color linear 0.2s;
 
                   &:hover, &.show, &:focus {
-                    color: variables.$gris-oscuro;
-                    background-color: variables.$azul-cielo;
+                    color: $gris-oscuro;
+                    background-color: $azul-cielo;
                   }
                 }
               }
@@ -135,34 +133,31 @@
 
             .navbar__usa {
               text-decoration: none;
+              padding: rem(10) rem(16);
+              min-width: 132px;
+              font-size: rem(18);
+              font-weight: 500;
+              line-height: 1;
+              background: $gris-negro;
+              backdrop-filter: blur(22px);
+              border: 1px solid #fff;
+              color: #fff;
+              font-family: $font-haskoy_medium;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: background-color linear 0.2s;
 
-              .usa__button {
-                padding: functions.rem(10) functions.rem(16);
-                min-width: 132px;
-                font-size: functions.rem(18);
-                font-weight: 500;
-                line-height: 1;
-                background: variables.$gris-negro;
-                backdrop-filter: blur(22px);
-                border: 1px solid #fff;
-                color: #fff;
-                font-family: variables.$font-haskoy_medium;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: background-color linear 0.2s;
+              .button__image {
+                margin: 0 rem(8);
+              }
+
+              &:hover {
+                background-color: $verde-lima;
+                color: $verde-ric;
 
                 .button__image {
-                  margin: 0 functions.rem(8);
-                }
-
-                &:hover {
-                  background-color: variables.$verde-lima;
-                  color: variables.$verde-ric;
-
-                  .button__image {
-                    filter: hue-rotate(150deg) saturate(100%) brightness(50%);
-                  }
+                  filter: hue-rotate(150deg) saturate(100%) brightness(50%);
                 }
               }
             }
@@ -189,7 +184,8 @@
 
 @media only screen and (max-width: 1280px) {
   .header {
-    padding: functions.rem(24) functions.rem(40);
+    padding: rem(24) rem(40);
+
     .navbar {
       .nav__logotipo {
         margin-right: 1vw;
@@ -204,11 +200,9 @@
         .menu__top {
           .top__contactar {
             .contactar__link {
-              .link__button {
-                font-size: functions.rem(16);
-                min-width: 115px;
-                padding: functions.rem(10) functions.rem(12);
-              }
+              font-size: rem(16);
+              min-width: 115px;
+              padding: rem(10) rem(12);
             }
           }
         }
@@ -216,20 +210,18 @@
         .nav__navbar {
           .navbar__ul {
             .ul__list {
-              padding-top: functions.rem(16);
+              padding-top: rem(16);
+
               .list__link {
-                font-size: functions.rem(15);
-                margin-right: functions.rem(20);
+                font-size: rem(15);
+                margin-right: rem(20);
               }
 
               .list__navbar {
                 .navbar__usa {
-                  .usa__button {
-                    font-size: functions.rem(16);
-                    min-width: 115px;
-                    padding: functions.rem(10) functions.rem(12);
-
-                  }
+                  font-size: rem(16);
+                  min-width: 115px;
+                  padding: rem(10) rem(12);
                 }
               }
             }
@@ -242,7 +234,7 @@
 
 @media only screen and (max-width: 992px) {
   .header {
-    padding: functions.rem(10) functions.rem(20);
+    padding: rem(10) rem(20);
 
     .navbar {
       align-items: start;
@@ -265,7 +257,7 @@
         }
 
         .navbar-toggler {
-          border: 1px solid transparent;
+          border: 0;
           padding: 0;
 
           .navbar-toggler-icon {
@@ -278,7 +270,7 @@
         }
 
         .nav__navbar {
-          background-color: variables.$azul-egeo;
+          background-color: $azul-egeo;
 
           .navbar__ul {
             width: 100%;
@@ -287,9 +279,9 @@
             justify-content: flex-start;
 
             .ul__list {
-              margin: 0 functions.rem(32);
+              margin: 0 rem(32);
               border-top: 1px solid transparent;
-              border-bottom: 2px solid variables.$azul-cielo;
+              border-bottom: 2px solid $azul-cielo;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -297,7 +289,7 @@
               flex-direction: column;
 
               .list__link {
-                margin-bottom: functions.rem(8);
+                margin-bottom: rem(8);
                 margin-right: 0;
               }
 
@@ -310,47 +302,41 @@
                 display: inline-flex;
 
                 .navbar__usa {
-                  margin: 0 functions.rem(10);
+                  margin: 0 rem(10);
                   line-height: 1.3;
-
-                  .usa__button {
-                    font-size: functions.rem(16);
-                    min-width: 115px;
-                    padding: functions.rem(10) functions.rem(12);
-                  }
+                  font-size: rem(16);
+                  min-width: 115px;
+                  padding: rem(10) rem(12);
                 }
 
                 .contactar__link {
-                  margin: 0 functions.rem(10);
+                  margin: 0 rem(10);
                   line-height: 1.3;
 
-                  .link__button {
-                    font-size: functions.rem(16);
-                    background-color: variables.$verde-lima;
-                    border: 0;
-                    color: variables.$azul-egeo;
-                    font-family: variables.$font-haskoy_medium;
-                    text-decoration: none;
-                    min-width: 115px;
-                    padding: functions.rem(10) functions.rem(12);
+                  font-size: rem(16);
+                  background-color: $verde-lima;
+                  border: 0;
+                  color: $azul-egeo;
+                  font-family: $font-haskoy_medium;
+                  text-decoration: none;
+                  min-width: 115px;
+                  padding: rem(10) rem(12);
 
-                    &:hover {
-                      background-color: #fff;
-                      border: 1px solid #fff;
-                    }
+                  &:hover {
+                    background-color: #fff;
                   }
                 }
               }
 
               .top__language {
                 margin-right: 0;
-                margin-top: functions.rem(16);
+                margin-top: rem(16);
 
                 .language__toggle {
                   color: #fff;
-                  font-family: variables.$font-haskoy_medium;
+                  font-family: $font-haskoy_medium;
                   text-decoration: none;
-                  font-size: functions.rem(16);
+                  font-size: rem(16);
                 }
 
                 .toggle__menu {
@@ -358,12 +344,12 @@
 
                   .menu__item {
                     .item__option {
-                      font-family: variables.$font-haskoy_medium;
+                      font-family: $font-haskoy_medium;
                       text-decoration: none;
-                      font-size: functions.rem(16);
+                      font-size: rem(16);
 
                       &:hover, &.show, &:focus {
-                        background-color: variables.$azul-claro;
+                        background-color: $azul-claro;
                       }
                     }
 

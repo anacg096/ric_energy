@@ -1,18 +1,18 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .main__nosotros {
   width: 100%;
-  padding: functions.rem(120) functions.rem(40);
+  padding: rem(120) rem(40);
   background-color: #fff;
 
   .nosotros__cabecera {
-    padding-bottom: functions.rem(60);
+    padding-bottom: rem(60);
 
     .cabecera__titulo {
-      font-family: variables.$font-interstate;
-      color: variables.$azul-egeo;
-      font-size: functions.rem(48);
+      font-family: $font-interstate;
+      color: $azul-egeo;
+      font-size: rem(48);
     }
   }
 
@@ -24,7 +24,7 @@
 
     .bloques__resumen {
       width: 100%;
-      max-width: calc(33.3% - functions.rem(16));
+      max-width: calc(33.3% - 16px);
       //height: 17vw;
       height: 329px;
       min-height: 256px;
@@ -48,34 +48,34 @@
       }
 
       .resumen__title {
-        font-family: variables.$font-haskoy_medium;
-        color: variables.$azul-egeo;
-        font-size: functions.rem(68);
+        font-family: $font-haskoy_medium;
+        color: $azul-egeo;
+        font-size: rem(68);
         line-height: 1.17;
         font-weight: 500;
-        padding-left: functions.rem(48);
-        padding-top: functions.rem(24);
+        padding-left: rem(48);
+        padding-top: rem(24);
 
         .unidades {
-          font-family: variables.$font-haskoy_bold;
-          font-size: functions.rem(28);
+          font-family: $font-haskoy_bold;
+          font-size: rem(28);
         }
       }
 
       .resumen__contenido {
         color: #fff;
-        font-family: variables.$font-haskoy_bold;
-        font-size: functions.rem(22);
+        font-family: $font-haskoy_bold;
+        font-size: rem(22);
         line-height: 26px;
-        padding-left: functions.rem(48);
+        padding-left: rem(48);
       }
 
       .resumen_subtitle {
         color: #fff;
-        font-family: variables.$font-haskoy_bold;
-        font-size: functions.rem(28);
+        font-family: $font-haskoy_bold;
+        font-size: rem(28);
         line-height: 22px;
-        padding-left: functions.rem(48);
+        padding-left: rem(48);
       }
 
       .resumen__title,
@@ -153,10 +153,10 @@
 @media only screen and (max-width: 1440px) {
   .main__nosotros {
     .nosotros__cabecera {
-      padding-bottom: functions.rem(60);
+      padding-bottom: rem(60);
 
       .cabecera__titulo {
-        font-size: functions.rem(48);
+        font-size: rem(48);
       }
     }
 
@@ -170,24 +170,24 @@
 
 @media only screen and (max-width: 992px) {
   .main__nosotros {
-    padding: functions.rem(40) functions.rem(20);
+    padding: rem(40) rem(20);
 
     .nosotros__cabecera {
-      padding-bottom: functions.rem(32);
+      padding-bottom: rem(32);
 
       .cabecera__titulo {
-        font-size: functions.rem(38);
+        font-size: rem(38);
       }
     }
 
     .nosotros__bloques {
       .bloques__resumen {
-        max-width: calc(50% - functions.rem(16));
+        max-width: calc(50% - 16px);
         //295px
         height: 31vw;
         background-size: contain;
         background-position: bottom;
-        background-color: variables.$verde-manzana;
+        background-color: $verde-manzana;
       }
     }
   }
@@ -214,7 +214,7 @@
 @media only screen and (max-width: 430px) {
   .main__nosotros {
     .nosotros__cabecera {
-      padding-bottom: functions.rem(1.6);
+      padding-bottom: rem(1.6);
     }
 
     .nosotros__bloques {

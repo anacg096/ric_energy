@@ -1,24 +1,24 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .footer {
-    padding: functions.rem(56) 2.5vw functions.rem(32);
+    padding: rem(56) 2.5vw rem(32);
 
     .footer__sectionppal {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid variables.$gris-oscuro;
-        padding-bottom: functions.rem(16);
+        border-bottom: 1px solid $gris-oscuro;
+        padding-bottom: rem(16);
 
         .sectionppal__logotipo {
             display: flex;
             justify-content: end;
             align-items: end;
-            padding-bottom: functions.rem(16);
+            padding-bottom: rem(16);
 
             .logotipo__ric {
                 width: 100px;
-                margin-bottom: functions.rem(24);
+                margin-bottom: rem(24);
             }
         }
 
@@ -32,7 +32,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                margin-left: functions.rem(96);
+                margin-left: rem(96);
                 min-width: 210px;
 
                 .columna__linkTitle {
@@ -40,10 +40,10 @@
                 }
 
                 .columna__title {
-                    font-family: variables.$font-haskoy_semibold;
-                    color: variables.$verde-ric;
-                    font-size: functions.rem(20);
-                    margin-bottom: functions.rem(18);
+                    font-family: $font-haskoy_semibold;
+                    color: $verde-ric;
+                    font-size: rem(20);
+                    margin-bottom: rem(18);
                     font-weight: 600;
                     position: relative;
 
@@ -54,7 +54,7 @@
                         bottom: 0;
                         width: 0;
                         height: 1px;
-                        background-color: variables.$verde-ric;
+                        background-color: $verde-ric;
                         transition: width linear 0.2s;
                     }
 
@@ -65,9 +65,9 @@
 
                 .columna__link {
                     text-decoration: none;
-                    font-family: variables.$font-haskoy_regular;
-                    color: variables.$gris-oscuro;
-                    font-size: functions.rem(18);
+                    font-family: $font-haskoy_regular;
+                    color: $gris-oscuro;
+                    font-size: rem(18);
                     font-weight: 400;
                 }
             }
@@ -75,7 +75,7 @@
     }
 
     .footer__sectionFinal {
-        padding-top: functions.rem(24);
+        padding-top: rem(24);
         display: flex;
         justify-content: space-between;
 
@@ -89,13 +89,13 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-right: functions.rem(48);
+                padding-right: rem(48);
 
                 .bloque__enlacePoliticas {
                     text-decoration: none;
-                    font-family: variables.$font-haskoy_regular;
-                    color: variables.$gris-oscuro;
-                    font-size: functions.rem(14);
+                    font-family: $font-haskoy_regular;
+                    color: $gris-oscuro;
+                    font-size: rem(14);
                     position: relative;
 
                     &::after {
@@ -105,7 +105,7 @@
                         bottom: 0;
                         width: 0;
                         height: 1px;
-                        background: variables.$gris-oscuro;
+                        background: $gris-oscuro;
                         transition: width linear 0.2s;
                     }
 
@@ -135,15 +135,15 @@
             }
 
             .instagram {
-                background-color: variables.$verde-manzana;
+                background-color: $verde-manzana;
             }
 
             .facebook {
-                background-color: variables.$verde-bosque;
+                background-color: $verde-bosque;
             }
 
             .twitter {
-                background-color: variables.$verde-ric;
+                background-color: $verde-ric;
             }
         }
     }
@@ -151,12 +151,12 @@
 
 @media only screen and (max-width: 1440px) {
     .footer {
-        padding: functions.rem(40) 3.5vw functions.rem(40);
+        padding: rem(40) 3.5vw rem(40);
 
         .footer__sectionppal {
             .sectionppal__enlaces {
                 .enlaces__columna {
-                    margin-left: functions.rem(32);
+                    margin-left: rem(32);
                 }
             }
         }
@@ -165,7 +165,7 @@
 
 @media only screen and (max-width: 992px) {
     .footer {
-        padding: functions.rem(40);
+        padding: rem(40);
 
         .footer__sectionppal {
             justify-content: flex-start;
@@ -179,7 +179,7 @@
 
                 .logotipo__ric {
                     width: 50px;
-                    margin-bottom: functions.rem(24);
+                    margin-bottom: rem(24);
                 }
             }
 

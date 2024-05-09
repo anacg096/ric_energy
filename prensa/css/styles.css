@@ -321,6 +321,36 @@
     border-bottom: 2px solid transparent;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .seccionppal {
   min-height: 53vw;
   height: auto;
@@ -502,6 +532,36 @@
     font-size: 1.125rem;
   }
 }
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .main .main__bloqueListados {
   width: 100%;
   padding: 200px 40px 40px;
@@ -564,7 +624,7 @@
   width: 100%;
   height: 250px;
   overflow: hidden;
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
 .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listItem .listItem__imgBox .imgBox__contenedor {
   width: 100%;
@@ -614,36 +674,33 @@
   display: flex;
   justify-content: flex-end;
 }
-.main .main__bloqueListados .container .bloqueListados__loadButton .loadButto__link {
+.main .main__bloqueListados .container .bloqueListados__loadButton .loadButton__link {
   text-decoration: none;
-}
-.main .main__bloqueListados .container .bloqueListados__loadButton .loadButto__link .link__btnCarga {
   padding: 1.75rem 1.625rem;
   font-size: 1.125rem;
   line-height: 1;
   font-weight: 500;
-  background-color: #98EF36;
-  border: 0;
+  background: #98EF36;
   color: #303030;
   font-family: "Haskoy-Medium";
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.main .main__bloqueListados .container .bloqueListados__loadButton .loadButto__link .link__btnCarga:hover {
+.main .main__bloqueListados .container .bloqueListados__loadButton .loadButton__link:hover {
   background-color: #6fc33a;
 }
-.main .main__bloqueListados .container .bloqueListados__loadButton .loadButto__link .link__btnCarga:hover .carga__row {
+.main .main__bloqueListados .container .bloqueListados__loadButton .loadButton__link:hover .carga__row {
   transform: translateX(5px);
 }
-.main .main__bloqueListados .container .bloqueListados__loadButton .loadButto__link .link__btnCarga .carga__row {
+.main .main__bloqueListados .container .bloqueListados__loadButton .loadButton__link .carga__row {
   padding-left: 0.5rem;
   transition: transform linear 0.2s;
 }
 
 @media only screen and (max-width: 992px) {
   .main .main__bloqueListados {
-    padding: 72px 20px 40px;
+    padding: 4.5rem 1.25rem 2.5rem;
   }
   .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listItem {
     max-width: 100%;
@@ -672,10 +729,40 @@
   .main .main__bloqueListados .container .bloqueListados__bloque .bloque__listItem:nth-child(10n+7) .listItem__imgBox .imgBox__contenedor .contenedor__img {
     height: auto;
   }
-  .main .main__bloqueListados .container .bloqueListados__loadButton .loadButto__link .link__btnCarga {
+  .main .main__bloqueListados .container .bloqueListados__loadButton .loadButton__link {
     padding: 1.25rem 1.625rem;
     font-size: 1rem;
   }
+}
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 .main__contacto {
   background-color: #E9F3ED;
@@ -790,6 +877,36 @@
   margin: auto;
 }
 
+@font-face {
+  font-family: "Haskoy-Medium";
+  src: url("../../fonts/Haskoy_Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Bold";
+  src: url("../../fonts/Haskoy-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-SemiBold";
+  src: url("../../fonts/Haskoy-SemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Haskoy-Regular";
+  src: url("../../fonts/Haskoy-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Interstate-Condensed";
+  src: url("../../fonts/Interstate_Condensed_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .footer {
   padding: 3.5rem 2.5vw 2rem;
 }

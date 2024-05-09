@@ -1,249 +1,247 @@
-@use '../../shared_scss/variables';
-@use '../../shared_scss/functions';
+@import '../../shared_scss/variables';
+@import '../../shared_scss/functions';
 
 .main__tecnologias {
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-image: url("../images/main/tecnologias/base_2.png");
-    padding-bottom: functions.rem(206);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../images/main/tecnologias/base_2.png");
+  padding-bottom: rem(206);
 
-    .tecnologias__vector {
+  .tecnologias__vector {
+    width: 100%;
+    margin-top: -1rem;
+  }
+
+  .tecnologias__container {
+    .container__title {
+      //padding: 8rem 19vw 3rem;
+      padding-top: rem(120);
+      margin-bottom: rem(80);
+
+      .title {
+        font-family: $font-interstate;
+        color: $verde-lima;
+        font-size: rem(48);
+        line-height: 1.04;
+        font-weight: 700;
+      }
+    }
+
+    .container__tabs {
+      //padding: 1rem 3vw 12rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+
+
+      .tabs__tab {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        //width: 582px;
         width: 100%;
-        margin-top: -1rem;
+        max-width: calc(50% - 12px);
+        height: 448.6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      .tab__title {
+        display: flex;
+        align-items: end;
+        justify-content: flex-start;
+        padding: 0 rem(32);
+
+        .title__tech {
+          font-family: $font-haskoy_bold;
+          color: $verde-lima;
+          font-size: rem(30);
+          line-height: 1.23;
+        }
+      }
+
+      .tab__contenido {
+        font-family: $font-haskoy_medium;
+        color: #fff;
+        font-size: rem(24);
+        line-height: 1.29;
+        padding: 0 rem(32);
+      }
+
+      .tab__button {
+        display: flex;
+        justify-content: right;
+        align-items: flex-end;
+
+        .button__enlace {
+          text-decoration: none;
+          padding: rem(28) rem(26);
+          font-size: rem(18);
+          font-weight: 500;
+          line-height: 1;
+          background-color: $verde-lima;
+          border: 0;
+          color: $gris-oscuro;
+          font-family: $font-haskoy_medium;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            opacity: 0.75;
+
+            .ampliar__row {
+              transform: translateX(5px);
+            }
+          }
+
+          .ampliar__row {
+            padding-left: rem(8);
+            transition: transform linear 0.2s;
+          }
+        }
+      }
     }
 
-    .tecnologias__container {
-        .container__title {
-            //padding: 8rem 19vw 3rem;
-            padding-top: functions.rem(120);
-            margin-bottom: functions.rem(80);
-            .title {
-                font-family: variables.$font-interstate;
-                color: variables.$verde-lima;
-                font-size: functions.rem(48);
-                line-height: 1.04;
-                font-weight: 700;
-            }
-        }
-
-        .container__tabs {
-            //padding: 1rem 3vw 12rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 24px;
-
-
-            .tabs__tab {
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                //width: 582px;
-                width: 100%;
-                max-width: calc(50% - 12px);
-                height: 448.6px;
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-            }
-
-            .tab__title {
-                display: flex;
-                align-items: end;
-                justify-content: flex-start;
-                padding: 0 functions.rem(32);
-
-                .title__tech {
-                    font-family: variables.$font-haskoy_bold;
-                    color: variables.$verde-lima;
-                    font-size: functions.rem(30);
-                    line-height: 1.23;
-                }
-            }
-
-            .tab__contenido {
-                font-family: variables.$font-haskoy_medium;
-                color: #fff;
-                font-size: functions.rem(24);
-                line-height: 1.29;
-                padding: 0 functions.rem(32);
-            }
-
-            .tab__button {
-                display: flex;
-                justify-content: right;
-                align-items: flex-end;
-
-                .button__enlace {
-                    text-decoration: none;
-
-                    .enlace__ampliar {
-                        padding: functions.rem(28) functions.rem(26);
-                        font-size: functions.rem(18);
-                        font-weight: 500;
-                        line-height: 1;
-                        background-color: variables.$verde-lima;
-                        border: 0;
-                        color: variables.$gris-oscuro;
-                        font-family: variables.$font-haskoy_medium;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        &:hover {
-                            opacity: 0.75;
-                            .ampliar__row {
-                                transform: translateX(5px);
-                            }
-                        }
-
-                        .ampliar__row {
-                            padding-left: functions.rem(8);
-                            transition: transform linear 0.2s;
-                        }
-                    }
-                }
-            }
-        }
-
-        .solar {
-            background-image: url('../images/main/tecnologias/solar.png');
-        }
-
-        .hidrogeno {
-            background-image: url('../images/main/tecnologias/hidrogeno.png');
-        }
-
-        .biogas {
-            background-image: url('../images/main/tecnologias/biogas.png');
-        }
-
-        .almacenamiento {
-            background-image: url('../images/main/tecnologias/almacenamiento.png');
-        }
+    .solar {
+      background-image: url('../images/main/tecnologias/solar.png');
     }
+
+    .hidrogeno {
+      background-image: url('../images/main/tecnologias/hidrogeno.png');
+    }
+
+    .biogas {
+      background-image: url('../images/main/tecnologias/biogas.png');
+    }
+
+    .almacenamiento {
+      background-image: url('../images/main/tecnologias/almacenamiento.png');
+    }
+  }
 }
 
 @media only screen and (max-width: 1440px) {
-    .main__tecnologias {
-        .tecnologias__container {
-            .container__tabs {
-                .tabs__tab {
-                    //width: 44vw;
-                    height: 448.6px;
-                    background-size: contain;
-                    background-position: top;
-                    background-color: variables.$azul-mar;
+  .main__tecnologias {
+    .tecnologias__container {
+      .container__tabs {
+        .tabs__tab {
+          //width: 44vw;
+          height: 448.6px;
+          background-size: contain;
+          background-position: top;
+          background-color: $azul-mar;
 
-                    .tab__title {
-                        .title__tech {
-                            .tech_br {
-                                display: none;
-                            }
-                        }
-                    }
-                }
-
-                .tab__contenido {
-                    .tab__br {
-                        display: none;
-                    }
-                }
+          .tab__title {
+            .title__tech {
+              .tech_br {
+                display: none;
+              }
             }
+          }
         }
+
+        .tab__contenido {
+          .tab__br {
+            display: none;
+          }
+        }
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .main__tecnologias {
-        padding-bottom: functions.rem(80);
-        background-position: unset;
+  .main__tecnologias {
+    padding-bottom: rem(80);
+    background-position: unset;
 
-        .tecnologias__container {
-            padding-left: functions.rem(20);
-            padding-right: functions.rem(20);
+    .tecnologias__container {
+      padding-left: rem(20);
+      padding-right: rem(20);
 
-            .container__title {
-                padding-top: functions.rem(40);
-                margin-bottom: functions.rem(32);
+      .container__title {
+        padding-top: rem(40);
+        margin-bottom: rem(32);
 
-                .title {
-                    font-size: functions.rem(38);
-                }
-            }
-
-            .container__tabs {
-                flex-wrap: inherit;
-                flex-direction: column;
-
-                .tabs__tab {
-                    max-width: 100%;
-                    height: 292px;
-                    background-position: right;
-
-                    .tab__title {
-                        width: 85%;
-
-                        .title__tech {
-                            font-size: functions.rem(24);
-                        }
-                    }
-
-                    .tab__contenido {
-                        font-size: functions.rem(20);
-                    }
-                }
-
-                .tab__button {
-                    .button__enlace {
-                        .enlace__ampliar {
-                            padding: functions.rem(20) functions.rem(26);
-                            font-size: functions.rem(16);
-                        }
-                    }
-                }
-            }
+        .title {
+          font-size: rem(38);
         }
+      }
+
+      .container__tabs {
+        flex-wrap: inherit;
+        flex-direction: column;
+
+        .tabs__tab {
+          max-width: 100%;
+          height: 292px;
+          background-position: right;
+
+          .tab__title {
+            width: 85%;
+
+            .title__tech {
+              font-size: rem(24);
+            }
+          }
+
+          .tab__contenido {
+            font-size: rem(20);
+          }
+        }
+
+        .tab__button {
+          .button__enlace {
+            padding: rem(20) rem(26);
+            font-size: rem(16);
+          }
+        }
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .main__tecnologias {
-        .tecnologias__container {
-            .container__tabs {
-                .tabs__tab {
-                    height: 350px;
-                    .tab__title {
-                        width: 75%;
-                    }
-                }
-            }
+  .main__tecnologias {
+    .tecnologias__container {
+      .container__tabs {
+        .tabs__tab {
+          height: 350px;
+
+          .tab__title {
+            width: 75%;
+          }
         }
+      }
     }
+  }
 }
 
 @media only screen and (max-width: 430px) {
-    .main__tecnologias {
-        .tecnologias__container {
-            .container__tabs {
-                .tabs__tab {
-                    background-size: contain;
-                    background-position: top;
+  .main__tecnologias {
+    .tecnologias__container {
+      .container__tabs {
+        .tabs__tab {
+          background-size: contain;
+          background-position: top;
 
-                    .tab__title {
-                        width: 100%;
+          .tab__title {
+            width: 100%;
 
-                        .title__tech {
-                            font-size: functions.rem(20);
-                        }
-                    }
-
-                    .tab__contenido {
-                        font-size: functions.rem(16);
-                    }
-                }
+            .title__tech {
+              font-size: rem(20);
             }
+          }
+
+          .tab__contenido {
+            font-size: rem(16);
+          }
         }
+      }
     }
+  }
 }
